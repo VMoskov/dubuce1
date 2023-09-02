@@ -20,7 +20,8 @@ def logreg_train(X, Y_):
                b: bias of the trained model
        """
 
-    c = max(Y_) + 1
+    # c = max(Y_) + 1
+    c = 3
     w = np.random.randn(c, 2)
     b = np.zeros(c)
 
@@ -84,8 +85,7 @@ def logreg_classify(X, w, b):
 
 def logreg_decfun(w, b):
     def classify(X):
-        return logreg_classify(X, w, b)
-
+        return np.argmax(logreg_classify(X, w, b), axis=1)
     return classify
 
 
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # np.random.seed()
 
     # get the training dataset
-    X, Y_ = data.sample_gauss_2d(2, 100)
+    X, Y_ = data.sample_gauss_2d(3, 100)
 
     # train the model
     w, b = logreg_train(X, Y_)
@@ -105,5 +105,15 @@ if __name__ == "__main__":
 
     # report performance
     accuracy, pr, M = data.eval_perf_multi(Y, Y_)
-    AP = data.eval_AP(Y_)
-    print(f"accuracy: {accuracy}, precision matrix: {pr}, confusion matrix: {M}, AP: {AP}")
+    print(f"accuracy: {accuracy}\nconfusion matrix:\n{M}\nprecision matrix: {pr}")
+
+    # graph the decision surface
+    decfun = logreg_decfun(w, b)
+    bbox = (np.min(X, axis=0) - 1, np.max(X, axis=0) + 1)
+    data.graph_surface(decfun, bbox, offset=0.5)
+
+    # graph the data points
+    data.graph_data(X, Y_, Y)
+
+    # show the results
+    plt.show()
