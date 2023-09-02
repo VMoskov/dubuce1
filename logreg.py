@@ -56,6 +56,16 @@ def logreg_train(X, Y_):
         w += -param_delta * grad_w
         b += -param_delta * grad_b
 
+        if i % 15 == 0:
+            decfun = logreg_decfun(w, b)
+            bbox = (np.min(X, axis=0) - 1, np.max(X, axis=0) + 1)
+            data.graph_surface(decfun, bbox, offset=0.5)
+
+            Y = np.argmax(probs, axis=1)
+            data.graph_data(X, Y_, Y)
+
+            plt.show()
+
     return w, b
 
 
