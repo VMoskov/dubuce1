@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41d4c593-c3db-41ed-98d8-815b9f3439e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logreg.py" beforeDir="false" afterPath="$PROJECT_DIR$/logreg.py" afterDir="false" />
     </list>
@@ -98,9 +97,6 @@
       <module name="dubuce1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -182,8 +178,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.logreg" />
-        <item itemvalue="Python.binlogreg" />
         <item itemvalue="Python.data" />
+        <item itemvalue="Python.binlogreg" />
         <item itemvalue="Python.slinisa" />
       </list>
     </recent_temporary>
@@ -223,7 +219,7 @@
       <workItem from="1692446552850" duration="5204000" />
       <workItem from="1692546380090" duration="443000" />
       <workItem from="1693575221609" duration="7991000" />
-      <workItem from="1693586971664" duration="3592000" />
+      <workItem from="1693586971664" duration="6954000" />
     </task>
     <servers />
   </component>
