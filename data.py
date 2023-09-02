@@ -110,7 +110,7 @@ def graph_data(X, Y_, Y):
             Y_: true class
             Y: predicted class
     """
-    colors = np.where(Y_ == 1, "white", "grey")
+    colors = np.where(Y_ == 0, "grey", np.where(Y_ == 1, "white", "darkslategray"))
     correct = Y == Y_
     wrong = Y != Y_
 
