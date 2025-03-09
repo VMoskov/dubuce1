@@ -1,2 +1,2 @@
 # dubuce1
-Izvedba binarne i višeklasne logističke regresije primjenom gradijentnog spusta
+Laboratory exercises for deep learning course at FER
