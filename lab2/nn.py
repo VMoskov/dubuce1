@@ -69,7 +69,8 @@ def train(train_x, train_y, valid_x, valid_y, net, loss, config):
 
   if 'weight_decay' in config:
     save_dir = os.path.join(save_dir, format(config['weight_decay'], '.0e'))
-    save_dir.mkdir(parents=True, exist_ok=True)
+    if not os.path.exists(save_dir):
+      os.makedirs(save_dir)
 
   num_examples = train_x.shape[0]
   assert num_examples % batch_size == 0
