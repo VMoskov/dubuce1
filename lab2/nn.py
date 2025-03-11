@@ -66,6 +66,11 @@ def train(train_x, train_y, valid_x, valid_y, net, loss, config):
   batch_size = config['batch_size']
   max_epochs = config['max_epochs']
   save_dir = config['save_dir']
+
+  if 'weight_decay' in config:
+    save_dir = os.path.join(save_dir, format(config['weight_decay'], '.0e'))
+    save_dir.mkdir(parents=True, exist_ok=True)
+
   num_examples = train_x.shape[0]
   assert num_examples % batch_size == 0
   num_batches = num_examples // batch_size
