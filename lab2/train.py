@@ -8,7 +8,7 @@ import nn
 import layers
 
 DATA_DIR = Path(__file__).parent / 'datasets' / 'MNIST'
-SAVE_DIR = Path(__file__).parent / 'out' / 'non-regularized'
+SAVE_DIR = Path(__file__).parent / 'out' / 'non_regularized'
 
 # create directories if they don't exist
 for dir_ in [DATA_DIR, SAVE_DIR]:
