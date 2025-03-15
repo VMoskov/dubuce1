@@ -14,7 +14,7 @@ from convpt_utils import train, evaluate
 
 
 DATA_DIR = Path(__file__).parent / 'datasets' / 'MNIST'
-SAVE_DIR = Path(__file__).parent / 'out' / 'pt_conv'
+SAVE_DIR = Path(__file__).parent / 'out' / 'pt_conv' / 'MNIST'
 
 # create directories if they don't exist
 for dir_ in [DATA_DIR, SAVE_DIR]:
