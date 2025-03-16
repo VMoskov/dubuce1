@@ -1,30 +1,40 @@
 import cv2
 import numpy as np
 import torch
+import skimage as ski
+import skimage.io
 
 
 def draw_conv_filters(epoch, step, conv_layer, save_dir):
     weights = conv_layer.weight.data.cpu().numpy()
-    num_filters = weights.shape[0]
-    num_channels = weights.shape[1]
-    k = weights.shape[2]
-
-    assert weights.shape[2] == weights.shape[3]  # Ensure square filters
+    num_filters, num_channels, k, _ = weights.shape  # (filters, channels, height, width)
+    
+    assert k == weights.shape[3], "Filters should be square"
     
     num_rows, num_cols = 2, 8  
     assert num_filters >= num_rows * num_cols, "Not enough filters to fill the grid"
 
     border_size = 1  
     filter_images = []
-    
+
     for i in range(num_rows * num_cols):
-        img = weights[i, 0, :, :]  
-        img -= img.min()
-        img /= img.max()
-        img = (img * 255).astype(np.uint8)
-        img = np.repeat(np.expand_dims(img, 2), 3, axis=2)  
+        img = weights[i]  # Shape: (C, k, k)
+
+        # Normalize per-channel
+        for c in range(num_channels):
+            img[c] -= img[c].min()
+            img[c] /= img[c].max() if img[c].max() > 0 else 1  # Avoid division by zero
+            img[c] *= 255
+
+        img = np.transpose(img, (1, 2, 0))  # Convert from (C, H, W) to (H, W, C)
+        img = img.astype(np.uint8)
+
+        # If grayscale (1 channel), convert to RGB by repeating channels
+        if num_channels == 1:
+            img = np.repeat(img, 3, axis=2)
+
         filter_images.append(img)
-    
+
     filter_h, filter_w, _ = filter_images[0].shape
 
     # Create a blank black canvas with separators
@@ -39,6 +49,16 @@ def draw_conv_filters(epoch, step, conv_layer, save_dir):
             canvas[y:y + filter_h, x:x + filter_w] = filter_images[row * num_cols + col]
 
     cv2.imwrite(f'{save_dir}/conv1_epoch_{epoch:02d}_step_{step:06d}_input_000.png', canvas)
+
+
+def draw_image(img, mean, std):
+  #  show image and cancel out normalization
+  img = img.transpose(1, 2, 0)
+  img *= std
+  img += mean
+  img = img.astype(np.uint8)
+  ski.io.imshow(img)
+  ski.io.show()
 
 
 def train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR):
@@ -69,7 +89,7 @@ def train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR)
             optimizer.step()
 
             if i % 100 == 0:
-                draw_conv_filters(epoch, i*batch_size, model.layers[0], SAVE_DIR)
+                draw_conv_filters(epoch, i*batch_size, model.conv1, SAVE_DIR)
 
         accuracy = evaluate(model, valloader)
         print(f'Epoch {epoch}, validation accuracy: {accuracy}, loss: {epoch_loss}')
