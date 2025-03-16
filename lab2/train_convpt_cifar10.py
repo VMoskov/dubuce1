@@ -34,13 +34,27 @@ np.random.seed(int(time.time() * 1e6) % 2**31)
 
 mean, std = (0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)  # https://github.com/kuangliu/pytorch-cifar/issues/19
 
-transform = transforms.Compose([
+# scale images to higher resolution
+train_transform = transforms.Compose([
+    transforms.Resize((64, 64)),   
+    transforms.RandomCrop(size=64, padding=8),
+    transforms.RandomHorizontalFlip(p=0.5), 
+    transforms.RandomRotation(degrees=15),  
+    transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),  
+    transforms.GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 2.0)), 
     transforms.ToTensor(),
     transforms.Normalize(mean, std)
-    ])
+])
 
-trainset = CIFAR10(DATA_DIR, train=True, download=True, transform=transform)
-testset = CIFAR10(DATA_DIR, train=False, transform=transform)
+# No augmentations for test/validation (only resizing & normalization)
+test_transform = transforms.Compose([
+    transforms.Resize((64, 64)),
+    transforms.ToTensor(),
+    transforms.Normalize(mean, std)
+])
+
+trainset = CIFAR10(DATA_DIR, train=True, download=True, transform=train_transform)
+testset = CIFAR10(DATA_DIR, train=False, transform=test_transform)
 
 train_size = len(trainset)
 valid_size = train_size // 10
@@ -58,8 +72,8 @@ if __name__ == '__main__':
     SAVE_DIR = SAVE_DIR / format(weight_decay, '.0e')
     SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # model = ResidualModel(input_size=(32, 32, 3), n_classes=10)
-    model = SimpleModel(input_size=(32, 32, 3), n_classes=10)
+    model = ResidualModel(input_size=(64, 64, 3), n_classes=10)
+    # model = SimpleModel(input_size=(64, 64, 3), n_classes=10)
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=config['weight_decay'])
 
