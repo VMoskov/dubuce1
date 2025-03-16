@@ -1,2 +1,8 @@
+8 EPOCHS
+--------------------
 SimpleModel - 70.03% accuracy
-ResidualModel - 74.74% accuracy
+ResidualModel - 74.74% accuracy, 71.93% accuracy
+SimpleModel (64, 64) - 63.26% accuracy, 63.74% accuracy
+ResidualModel (64, 64) - 72.67% accuracy, 72.47% accuracy, 72.88% accuracy
+ResidualModel [(64, 64) + better data augmentation] - 65.61% accuracy
+
