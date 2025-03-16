@@ -1,0 +1,2 @@
+SimpleModel - 70.03% accuracy
+ResidualModel - 74.74% accuracy
