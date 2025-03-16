@@ -28,6 +28,7 @@ def draw_conv_filters(epoch, step, conv_layer, save_dir):
 
         img = np.transpose(img, (1, 2, 0))  # Convert from (C, H, W) to (H, W, C)
         img = img.astype(np.uint8)
+        # img = np.clip(img * 255, 0, 255).astype(np.uint8)
 
         # If grayscale (1 channel), convert to RGB by repeating channels
         if num_channels == 1:
@@ -70,6 +71,7 @@ def train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR)
     lr_policy = config['lr_policy']
 
     losses = []
+    best_accuracy = 0
     for epoch in range(1, max_epochs + 1):
         epoch_loss = 0
         model.train()
@@ -86,15 +88,23 @@ def train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR)
             loss = criterion(outputs, labels)
             epoch_loss += loss.item()
             loss.backward()
+
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1)  # clip avoid exploding gradients
             optimizer.step()
 
             if i % 100 == 0:
                 draw_conv_filters(epoch, i*batch_size, model.conv1, SAVE_DIR)
 
         accuracy = evaluate(model, valloader)
+
+        if accuracy > best_accuracy:
+            best_accuracy = accuracy
+            torch.save(model.state_dict(), f'{SAVE_DIR}/best_model.pth')
+
         print(f'Epoch {epoch}, validation accuracy: {accuracy}, loss: {epoch_loss}')
         losses.append(epoch_loss)
 
+    model.load_state_dict(torch.load(f'{SAVE_DIR}/best_model.pth', weights_only=True))
     return model, losses
 
 
