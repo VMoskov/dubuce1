@@ -22,13 +22,22 @@ for dir_ in [DATA_DIR, SAVE_DIR]:
     dir_.mkdir(parents=True, exist_ok=True)
 
 config = {}
-config['max_epochs'] = 8
-config['batch_size'] = 50
+# config['max_epochs'] = 8
+config['max_epochs'] = 50
+# config['batch_size'] = 50
+config['batch_size'] = 64
 config['save_dir'] = SAVE_DIR
-config['weight_decay'] = 1e-3
+config['weight_decay'] = 1e-4
+# config['weight_decay'] = 1e-3
 # config['weight_decay'] = 1e-2
 # config['weight_decay'] = 1e-1
-config['lr_policy'] = {1:{'lr':1e-1}, 3:{'lr':1e-2}, 5:{'lr':1e-3}, 7:{'lr':1e-4}}
+# config['lr_policy'] = {1:{'lr':1e-1}, 3:{'lr':1e-2}, 5:{'lr':1e-3}, 7:{'lr':1e-4}}
+config['lr_policy'] = {
+    1:  {'lr': 1e-1},   # Start high
+    15: {'lr': 1e-2},   # Decay slower
+    30: {'lr': 1e-3},   # Further reduce
+    40: {'lr': 1e-4}    # Final fine-tuning
+}
 
 np.random.seed(int(time.time() * 1e6) % 2**31)
 
