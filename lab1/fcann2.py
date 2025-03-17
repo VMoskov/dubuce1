@@ -38,9 +38,9 @@ def fcann2_train(X, y):
 
     # gradient descent
     for i in range(param_niter):
-        s1 = X @ W1 + b1[np.newaxis, :]
+        s1 = X @ W1 + b1
         h1 = relu(s1)
-        s2 = h1 @ W2 + b2[np.newaxis, :]
+        s2 = h1 @ W2 + b2
 
         probs = softmax(s2)
         log_probs = np.log(probs)
