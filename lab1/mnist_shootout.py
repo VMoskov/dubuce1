@@ -9,7 +9,6 @@ import data
 import sklearn.svm as svm
 
 
-param_niter = 10000
 param_epochs = 10
 param_batch_size = 64
 
@@ -37,14 +36,15 @@ x_train, y_train = x_train[indices[N_val:]], y_train[indices[N_val:]]
 N = x_train.shape[0]
 
 
-def train_mb(model, x, y, x_val, y_val, n_iter, epochs, batch_size):
+def train_mb(model, x, y, x_val, y_val, epochs, batch_size):
     model.train()
+    n_samples = x.shape[0]
     optimizer = optim.Adam(model.parameters(), lr=1e-4)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=1-1e-4)
 
     losses = []
     best_model = None
-    best_loss = float('inf')
+    best_accuracy = 0
 
     for epoch in range(epochs):
         # shuffle the data
@@ -52,7 +52,7 @@ def train_mb(model, x, y, x_val, y_val, n_iter, epochs, batch_size):
         x, y = x[indices], y[indices]
         epoch_loss = 0
 
-        for i in range(0, n_iter, batch_size):  # batch training
+        for i in range(0, n_samples, batch_size):  # batch training
             x_batch = x[i:i+batch_size].view(-1, D)
             y_batch = y[i:i+batch_size]
             y_batch = nn.functional.one_hot(y_batch, num_classes=C).float()
@@ -69,10 +69,10 @@ def train_mb(model, x, y, x_val, y_val, n_iter, epochs, batch_size):
         with torch.no_grad():
             model.eval()
             accuracy, precision, recall, val_loss = eval_mb(model, x_val, y_val)
-            if val_loss < best_loss:
-                best_loss = val_loss
+            if accuracy > best_accuracy:
+                best_accuracy = accuracy
                 best_model = model.state_dict()
-            print(f'epoch: {epoch}, loss: {val_loss:.5f}, accuracy: {accuracy:.5f}, precision: {precision:.5f}, recall: {recall:.5f}')
+            print(f'epoch: {epoch}, loss: {epoch_loss:.5f}, accuracy: {accuracy:.5f}, precision: {precision:.5f}, recall: {recall:.5f}')
         
         scheduler.step()
             
@@ -117,7 +117,7 @@ if __name__ == '__main__':
     for config in configs:
         model = PTDeep(config)
         print(f'training PTDeep model with config: {config}')
-        model, losses = train_mb(model, x_train, y_train, x_val, y_val, n_iter=param_niter, epochs=param_epochs, batch_size=param_batch_size)
+        model, losses = train_mb(model, x_train, y_train, x_val, y_val, epochs=param_epochs, batch_size=param_batch_size)
         plt.plot(losses)
         plt.title(f'Epoch loss for config: {config}')
         plt.xlabel('epoch')
