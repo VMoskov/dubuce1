@@ -81,12 +81,12 @@ def train_mb(model, x, y, x_val, y_val, epochs, batch_size):
 
 
 def eval_mb(model, x, y):
-    x_val = torch.tensor(x, dtype=torch.float32).view(-1, D)
+    x_val = x.view(-1, D)
     y_val = torch.tensor(y, dtype=torch.long)
     y_val = nn.functional.one_hot(y_val, num_classes=C).float()
 
-    probs = model(x_val)
-    y_pred = probs.argmax(dim=1)
+    logits = model(x_val)
+    y_pred = logits.argmax(dim=1)  # argmax over logits is the same as argmax over probs
     loss = model.get_loss(x_val, y_val)
     
     acc, pr, M = data.eval_perf_multi(y, y_pred.numpy())
