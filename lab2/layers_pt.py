@@ -141,3 +141,40 @@ class ResidualModel(nn.Module):
         dummy_input = torch.zeros(1, C, H, W)
         dummy_output = self.residual_blocks(dummy_input)
         return dummy_output.size(1) * dummy_output.size(2) * dummy_output.size(3)
+    
+
+class FMPModel(nn.Module):
+    '''
+    Fractional Max Pooling model
+        a x a max pooling where a is allowed to be non-integer (1 < a < 2), as proposed in https://arxiv.org/abs/1412.6071,
+
+    torch.nn.FractionalMaxPool2d() is not currently implemented for the MPS device, so CPU or CUDA needs to be used
+    '''
+    def __init__(self, input_size, n_classes):
+        # CONFIG: (160nC2−FMP 3 √2)12 − C2 − C1 − output
+        super().__init__()
+        H, W, C = input_size
+        
+        scale = 2 ** (1/3)
+        num_pairs = 12  # see above config
+        num_filters = 160
+        downsample = lambda h, w: (round(h/scale), round(w/scale))  # √2 downsampling
+        downsampled_dim = (H, W)
+
+        self.layers = nn.Sequential()
+        for i in range(1, num_pairs + 1):
+            in_channels = num_filters*(i-1) if i != 1 else C
+            out_channels = num_filters*i
+            self.layers.append(nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=2, padding=1))
+            self.layers.append(nn.ReLU())
+            downsampled_dim = downsample(*downsampled_dim)
+            self.layers.append(nn.FractionalMaxPool2d(kernel_size=2, output_size=downsampled_dim))
+
+        final_out_channels = num_filters * num_pairs
+        self.layers.append(nn.AdaptiveMaxPool2d(output_size=(1, 1)))  # reduce to 1x1xfinal_out_channels
+        self.layers.append(nn.Flatten())
+        self.layers.append(nn.Linear(in_features=final_out_channels, out_features=n_classes))
+
+
+    def forward(self, x):
+        return self.layers(x)
