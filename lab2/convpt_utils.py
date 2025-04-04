@@ -3,6 +3,108 @@ import numpy as np
 import torch
 import skimage as ski
 import skimage.io
+import torch.nn as nn
+import os
+import matplotlib.pyplot as plt
+
+
+def draw_image(ax, img, label, preds, loss, mean, std):
+    #  show image and cancel out normalization
+    mean = np.array(mean)
+    std = np.array(std)
+
+    ax.axis('off')
+    ax.set_title(f'Loss: {loss:.2f}')
+    img = img.permute(1, 2, 0).numpy()  # (C, H, W) -> (H, W, C)
+    img = img * std + mean
+    img = np.clip(img, 0, 1)  # Ensure values are in [0, 1]
+    img = img * 255
+    img = img.astype(np.uint8)
+    ax.set_xlabel(f'Label: {label}, Top3 preds: {preds}')
+    ax.text(0.5, -0.1, f'Label: {label}\nTop3:\n{'\n'.join(preds)}', 
+            fontsize=8, ha='center', va='top', transform=ax.transAxes)
+    ax.imshow(img)
+
+
+def show_highest_loss_images(model, dataloader, label_names, mean, std, num_images=20, criterion=nn.CrossEntropyLoss(reduction='none')):
+    device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+    # device = torch.device('cpu')
+    model.to(device)
+
+    model.eval()
+    losses = []
+    images = []
+    labels = []
+    preds = []
+    label_names = np.array(label_names)
+    with torch.no_grad():
+        for inputs, label in dataloader:
+            inputs, label = inputs.to(device), label.to(device)
+
+            outputs = model(inputs)
+            loss = criterion(outputs, label) 
+
+            _, top3 = torch.topk(outputs, 3, dim=1)
+
+            losses.extend(loss.cpu().numpy())
+            images.extend(inputs.cpu())
+            # extract label names
+            labels.extend(label_names[label.cpu().numpy()])
+            preds.extend(label_names[top3.cpu().numpy()])
+
+    losses = np.array(losses)
+    indices = np.argsort(losses)[-num_images:]
+
+    # 2 rows, 10 columns
+    num_rows = 2
+    num_cols = 10
+
+    fig, axes = plt.subplots(num_rows, num_cols, figsize=(20, 8))
+    fig.subplots_adjust(hspace=0.4, wspace=0.4)
+    for i in range(num_rows):
+        for j in range(num_cols):
+            idx = indices[i * num_cols + j]
+            ax = axes[i, j]
+            img = images[idx]
+            label = labels[idx]
+            pred = preds[idx]
+            loss = losses[idx]
+            draw_image(ax, img, label, pred, loss, mean, std)
+    plt.suptitle('Highest loss images')
+    plt.show()
+    
+
+
+def plot_training_progress(save_dir, data):
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16,8))
+
+    linewidth = 2
+    legend_size = 10
+    train_color = 'm'
+    val_color = 'c'
+
+    num_points = len(data['train_loss'])
+    x_data = np.linspace(1, num_points, num_points)
+    ax1.set_title('Cross-entropy loss')
+    ax1.plot(x_data, data['train_loss'], marker='o', color=train_color,
+            linewidth=linewidth, linestyle='-', label='train')
+    ax1.plot(x_data, data['valid_loss'], marker='o', color=val_color,
+            linewidth=linewidth, linestyle='-', label='validation')
+    ax1.legend(loc='upper right', fontsize=legend_size)
+    ax2.set_title('Average class accuracy')
+    ax2.plot(x_data, data['train_acc'], marker='o', color=train_color,
+            linewidth=linewidth, linestyle='-', label='train')
+    ax2.plot(x_data, data['valid_acc'], marker='o', color=val_color,
+            linewidth=linewidth, linestyle='-', label='validation')
+    ax2.legend(loc='upper left', fontsize=legend_size)
+    ax3.set_title('Learning rate')
+    ax3.plot(x_data, data['lr'], marker='o', color=train_color,
+            linewidth=linewidth, linestyle='-', label='learning_rate')
+    ax3.legend(loc='upper left', fontsize=legend_size)
+
+    save_path = os.path.join(save_dir, 'training_plot.png')
+    print('Plotting in: ', save_path)
+    plt.savefig(save_path)
 
 
 def draw_conv_filters(epoch, step, conv_layer, save_dir):
@@ -52,33 +154,26 @@ def draw_conv_filters(epoch, step, conv_layer, save_dir):
     cv2.imwrite(f'{save_dir}/conv1_epoch_{epoch:02d}_step_{step:06d}_input_000.png', canvas)
 
 
-def draw_image(img, mean, std):
-  #  show image and cancel out normalization
-  img = img.transpose(1, 2, 0)
-  img *= std
-  img += mean
-  img = img.astype(np.uint8)
-  ski.io.imshow(img)
-  ski.io.show()
+def train(model, criterion, optimizer, scheduler, trainloader, valloader, config, SAVE_DIR):
+    plot_data = {}
+    plot_data['train_loss'] = []
+    plot_data['valid_loss'] = []
+    plot_data['train_acc'] = []
+    plot_data['valid_acc'] = []
+    plot_data['lr'] = []
 
-
-def train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR):
     device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+    # device = torch.device('cpu')
     model.to(device)
 
     max_epochs = config['max_epochs']
     batch_size = config['batch_size']
-    lr_policy = config['lr_policy']
 
     losses = []
     best_accuracy = 0
     for epoch in range(1, max_epochs + 1):
         epoch_loss = 0
         model.train()
-
-        if epoch in lr_policy:
-            for param_group in optimizer.param_groups:
-                param_group['lr'] = lr_policy[epoch]['lr']
 
         for i, (inputs, labels) in enumerate(trainloader):
             inputs, labels = inputs.to(device), labels.to(device)
@@ -93,36 +188,51 @@ def train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR)
             optimizer.step()
 
             if i % 100 == 0:
-                draw_conv_filters(epoch, i*batch_size, model.conv1, SAVE_DIR)
+                ...#draw_conv_filters(epoch, i*batch_size, model.conv1, SAVE_DIR)
 
-        accuracy = evaluate(model, valloader)
 
+        train_accuracy, train_loss = evaluate(model, trainloader, criterion)
+        val_accuracy, val_loss = evaluate(model, valloader, criterion)
+
+        plot_data['train_loss'] += [train_loss]
+        plot_data['valid_loss'] += [val_loss]
+        plot_data['train_acc'] += [train_accuracy]
+        plot_data['valid_acc'] += [val_accuracy]
+        plot_data['lr'] += [scheduler.get_last_lr()]
+
+        accuracy = val_accuracy
         if accuracy > best_accuracy:
             best_accuracy = accuracy
             torch.save(model.state_dict(), f'{SAVE_DIR}/best_model.pth')
 
         print(f'Epoch {epoch}, validation accuracy: {accuracy}, loss: {epoch_loss}')
         losses.append(epoch_loss)
+        scheduler.step()
 
     model.load_state_dict(torch.load(f'{SAVE_DIR}/best_model.pth', weights_only=True))
+    plot_training_progress(SAVE_DIR, plot_data)
     return model, losses
 
 
-def evaluate(model, dataloader):
+def evaluate(model, dataloader, criterion):
     device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+    # device = torch.device('cpu')
     model.to(device)
 
     model.eval()
     correct = 0
     total = 0
+    eval_loss = 0
     with torch.no_grad():
         for inputs, labels in dataloader:
             inputs, labels = inputs.to(device), labels.to(device)
 
             outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            eval_loss += loss.item()
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
 
     accuracy = 100 * correct / total
-    return accuracy
+    return accuracy, eval_loss

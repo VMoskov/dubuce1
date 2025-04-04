@@ -8,10 +8,9 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 import torch.optim as optim
 import matplotlib.pyplot as plt
-from PIL import Image
 
-from layers_pt import ConvolutionalModel, ResidualModel, SimpleModel
-from convpt_utils import train, evaluate
+from layers_pt import ConvolutionalModel, ResidualModel, SimpleModel, FMPModel
+from convpt_utils import train, evaluate, show_highest_loss_images
 
 
 DATA_DIR = Path(__file__).parent / 'datasets' / 'CIFAR10'
@@ -22,7 +21,6 @@ for dir_ in [DATA_DIR, SAVE_DIR]:
     dir_.mkdir(parents=True, exist_ok=True)
 
 config = {}
-# config['max_epochs'] = 8
 config['max_epochs'] = 50
 # config['batch_size'] = 50
 config['batch_size'] = 64
@@ -31,13 +29,6 @@ config['weight_decay'] = 1e-4
 # config['weight_decay'] = 1e-3
 # config['weight_decay'] = 1e-2
 # config['weight_decay'] = 1e-1
-# config['lr_policy'] = {1:{'lr':1e-1}, 3:{'lr':1e-2}, 5:{'lr':1e-3}, 7:{'lr':1e-4}}
-config['lr_policy'] = {
-    1:  {'lr': 1e-1},   # Start high
-    15: {'lr': 1e-2},   # Decay slower
-    30: {'lr': 1e-3},   # Further reduce
-    40: {'lr': 1e-4}    # Final fine-tuning
-}
 
 np.random.seed(int(time.time() * 1e6) % 2**31)
 
@@ -65,6 +56,8 @@ test_transform = transforms.Compose([
 trainset = CIFAR10(DATA_DIR, train=True, download=True, transform=train_transform)
 testset = CIFAR10(DATA_DIR, train=False, transform=test_transform)
 
+label_names = trainset.classes
+
 train_size = len(trainset)
 valid_size = train_size // 10
 train_size -= valid_size
@@ -83,9 +76,22 @@ if __name__ == '__main__':
 
     model = ResidualModel(input_size=(64, 64, 3), n_classes=10)
     # model = SimpleModel(input_size=(64, 64, 3), n_classes=10)
+    # model = FMPModel(input_size=(64, 64, 3), n_classes=10)
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = optim.SGD(model.parameters(), lr=config['weight_decay'])
+    optimizer = optim.Adam(model.parameters(), lr=config['weight_decay'])
+    scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9)
 
-    model, losses = train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR)
-    accuracy = evaluate(model, testloader)
+    model, losses = train(model, criterion, optimizer, scheduler, trainloader, valloader, config, SAVE_DIR)
+    accuracy, _ = evaluate(model, testloader, criterion)
     print(f'Test accuracy: {accuracy}')
+
+    # plot losses
+    plt.plot(losses)
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.title(f'Training loss, weight decay: {weight_decay}')
+    plt.savefig(SAVE_DIR.parent / f'{format(weight_decay, '.0e')}_loss.png')
+    plt.show()
+
+    # show highest loss images
+    show_highest_loss_images(model, testloader, label_names, mean, std)

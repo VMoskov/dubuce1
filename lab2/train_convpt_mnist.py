@@ -10,7 +10,7 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 from layers_pt import ConvolutionalModel
-from convpt_utils import train, evaluate
+from convpt_utils import train, evaluate, show_highest_loss_images
 
 
 DATA_DIR = Path(__file__).parent / 'datasets' / 'MNIST'
@@ -26,18 +26,21 @@ config['batch_size'] = 50
 config['save_dir'] = SAVE_DIR
 # config['weight_decay'] = 1e-3
 # config['weight_decay'] = 1e-2
-config['weight_decay'] = 1e-1
-config['lr_policy'] = {1:{'lr':1e-1}, 3:{'lr':1e-2}, 5:{'lr':1e-3}, 7:{'lr':1e-4}}
+config['weight_decay'] = 1e-4
 
 np.random.seed(int(time.time() * 1e6) % 2**31)
 
+mean, std = (0.1307,), (0.3081,)  # MNIST mean and std
+
 transform = transforms.Compose([
     transforms.ToTensor(),
-    transforms.Normalize((0.1307,), (0.3081,))
+    transforms.Normalize(mean, std)
     ])
 
 trainset = MNIST(DATA_DIR, train=True, download=True, transform=transform)
 testset = MNIST(DATA_DIR, train=False, transform=transform)
+
+label_names = [str(i) for i in range(10)]
 
 train_size = len(trainset)
 valid_size = train_size // 12
@@ -57,10 +60,11 @@ if __name__ == '__main__':
 
     model = ConvolutionalModel(input_size=(28, 28, 1), n_classes=10)
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = optim.SGD(model.parameters(), lr=config['weight_decay'])
+    optimizer = optim.Adam(model.parameters(), lr=config['weight_decay'])
+    scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9)
 
-    model, losses = train(model, criterion, optimizer, trainloader, valloader, config, SAVE_DIR)
-    accuracy = evaluate(model, testloader)
+    model, losses = train(model, criterion, optimizer, scheduler, trainloader, valloader, config, SAVE_DIR)
+    accuracy, _ = evaluate(model, testloader, criterion)
     print(f'Test accuracy: {accuracy}')
 
     # plot losses
@@ -70,3 +74,6 @@ if __name__ == '__main__':
     plt.title(f'Training loss, weight decay: {weight_decay}')
     plt.savefig(SAVE_DIR.parent / f'{format(weight_decay, '.0e')}_loss.png')
     plt.show()
+
+    # show highest loss images
+    show_highest_loss_images(model, testloader, label_names, (0.1307,), (0.3081,))
