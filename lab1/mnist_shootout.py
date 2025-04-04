@@ -39,7 +39,7 @@ N = x_train.shape[0]
 def train_mb(model, x, y, x_val, y_val, epochs, batch_size):
     model.train()
     n_samples = x.shape[0]
-    optimizer = optim.Adam(model.parameters(), lr=1e-4)
+    optimizer = optim.Adam(model.parameters(), lr=1e-4, weight_decay=0.1)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=1-1e-4)
 
     losses = []
@@ -48,7 +48,7 @@ def train_mb(model, x, y, x_val, y_val, epochs, batch_size):
 
     for epoch in range(epochs):
         # shuffle the data
-        indices = torch.randperm(x.shape[0])
+        indices = torch.randperm(n_samples)
         x, y = x[indices], y[indices]
         epoch_loss = 0
 
