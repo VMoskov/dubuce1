@@ -71,7 +71,8 @@ weight_decay = config['weight_decay']
 
 
 if __name__ == '__main__':
-    SAVE_DIR = SAVE_DIR / format(weight_decay, '.0e')
+    weight_decay_str = format(weight_decay, '.0e')
+    SAVE_DIR = SAVE_DIR / weight_decay_str
     SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
     model = ResidualModel(input_size=(64, 64, 3), n_classes=10)
@@ -90,7 +91,7 @@ if __name__ == '__main__':
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
     plt.title(f'Training loss, weight decay: {weight_decay}')
-    plt.savefig(SAVE_DIR.parent / f'{format(weight_decay, '.0e')}_loss.png')
+    plt.savefig(SAVE_DIR.parent / f'{weight_decay_str}_loss.png')
     plt.show()
 
     # show highest loss images

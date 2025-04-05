@@ -25,6 +25,7 @@ def backward_pass(net, loss, x, y):
     grad_out = grad_inputs
   return grads
 
+
 def sgd_update_params(grads, config):
   lr = config['lr']
   for layer_grads in grads:

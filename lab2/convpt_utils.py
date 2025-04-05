@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
 import torch
-import skimage as ski
-import skimage.io
 import torch.nn as nn
 import os
 import matplotlib.pyplot as plt
@@ -21,14 +19,16 @@ def draw_image(ax, img, label, preds, loss, mean, std):
     img = img * 255
     img = img.astype(np.uint8)
     ax.set_xlabel(f'Label: {label}, Top3 preds: {preds}')
-    ax.text(0.5, -0.1, f'Label: {label}\nTop3:\n{'\n'.join(preds)}', 
+    pred_str = '\n'.join(preds)
+    ax.text(0.5, -0.1, f'Label: {label}\nTop3:\n{pred_str}', 
             fontsize=8, ha='center', va='top', transform=ax.transAxes)
     ax.imshow(img)
 
 
 def show_highest_loss_images(model, dataloader, label_names, mean, std, num_images=20, criterion=nn.CrossEntropyLoss(reduction='none')):
-    device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+    # device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     # device = torch.device('cpu')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device)
 
     model.eval()
@@ -72,7 +72,6 @@ def show_highest_loss_images(model, dataloader, label_names, mean, std, num_imag
             draw_image(ax, img, label, pred, loss, mean, std)
     plt.suptitle('Highest loss images')
     plt.show()
-    
 
 
 def plot_training_progress(save_dir, data):
@@ -162,8 +161,9 @@ def train(model, criterion, optimizer, scheduler, trainloader, valloader, config
     plot_data['valid_acc'] = []
     plot_data['lr'] = []
 
-    device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+    # device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     # device = torch.device('cpu')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device)
 
     max_epochs = config['max_epochs']
@@ -215,8 +215,9 @@ def train(model, criterion, optimizer, scheduler, trainloader, valloader, config
 
 
 def evaluate(model, dataloader, criterion):
-    device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+    # device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     # device = torch.device('cpu')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device)
 
     model.eval()
