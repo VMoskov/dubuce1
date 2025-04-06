@@ -171,6 +171,7 @@ def train(model, criterion, optimizer, scheduler, trainloader, valloader, config
 
     losses = []
     best_accuracy = 0
+    best_model = None
     for epoch in range(1, max_epochs + 1):
         epoch_loss = 0
         model.train()
@@ -203,13 +204,14 @@ def train(model, criterion, optimizer, scheduler, trainloader, valloader, config
         accuracy = val_accuracy
         if accuracy > best_accuracy:
             best_accuracy = accuracy
-            torch.save(model.state_dict(), f'{SAVE_DIR}/best_model.pth')
+            best_model = model.state_dict()
 
         print(f'Epoch {epoch}, validation accuracy: {accuracy}, loss: {epoch_loss}')
         losses.append(epoch_loss)
         scheduler.step()
 
-    model.load_state_dict(torch.load(f'{SAVE_DIR}/best_model.pth', weights_only=True))
+    model.load_state_dict(best_model)
+    torch.save(model.state_dict(), os.path.join(SAVE_DIR, 'best_model.pth'))
     plot_training_progress(SAVE_DIR, plot_data)
     return model, losses
 
@@ -236,4 +238,5 @@ def evaluate(model, dataloader, criterion):
             correct += (predicted == labels).sum().item()
 
     accuracy = 100 * correct / total
+    eval_loss /= len(dataloader.dataset)
     return accuracy, eval_loss
