@@ -47,9 +47,12 @@ class SimpleModel(nn.Module):
         H, W, C = input_size
         # H_out, W_out = H//4, W//4
 
-        self.conv1 = nn.Conv2d(in_channels=C, out_channels=32, kernel_size=5, padding='same')  # save for visualization
+        self.conv1 = nn.Conv2d(in_channels=C, out_channels=16, kernel_size=5, padding='same')  # save for visualization
         self.conv_layers = nn.Sequential(
             self.conv1,
+            nn.ReLU(),
+            nn.MaxPool2d(kernel_size=3, stride=2),
+            nn.Conv2d(in_channels=16, out_channels=32, kernel_size=5, padding='same'),
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=3, stride=2)
         )
@@ -111,6 +114,8 @@ class ResidualModel(nn.Module):
         
         self.conv1 = nn.Conv2d(in_channels=C, out_channels=16, kernel_size=5, padding='same')  # save for visualization
         self.init_conv = nn.Sequential(
+            nn.BatchNorm2d(C),
+            nn.ReLU(),
             self.conv1,
             nn.MaxPool2d(kernel_size=2),
             nn.ReLU()
@@ -121,6 +126,7 @@ class ResidualModel(nn.Module):
             ResidualBlock(in_channels=16, out_channels=32, kernel_size=5, downsample=True),
             ResidualBlock(in_channels=32, out_channels=64, kernel_size=5, downsample=True),
             ResidualBlock(in_channels=64, out_channels=128, kernel_size=5, downsample=True),
+            nn.AdaptiveAvgPool2d(output_size=(1, 1))  # reduce to 1x1xfinal_out_channels
         )
         # dinamically compute the size of the output of the residual blocks
         residual_out_size = self._residual_output_size(H_out, W_out, C=16)  
@@ -129,18 +135,22 @@ class ResidualModel(nn.Module):
             nn.Flatten(),
             nn.Linear(in_features=residual_out_size, out_features=n_classes),
         )
+
+        self.layers = nn.Sequential(
+            self.init_conv,
+            self.residual_blocks,
+            self.fc
+        )
         
 
     def forward(self, x):
-        x = self.init_conv(x)
-        x = self.residual_blocks(x)
-        logits = self.fc(x)
+        logits = self.layers(x)
         return logits
 
     def _residual_output_size(self, H, W, C):
         dummy_input = torch.zeros(1, C, H, W)
         dummy_output = self.residual_blocks(dummy_input)
-        return dummy_output.size(1) * dummy_output.size(2) * dummy_output.size(3)
+        return dummy_output.size(1) * dummy_output.size(2) * dummy_output.size(3)  # 1x1xfinal_out_channels
     
 
 class FMPModel(nn.Module):
@@ -171,7 +181,7 @@ class FMPModel(nn.Module):
             self.layers.append(nn.FractionalMaxPool2d(kernel_size=2, output_size=downsampled_dim))
 
         final_out_channels = num_filters * num_pairs
-        self.layers.append(nn.AdaptiveMaxPool2d(output_size=(1, 1)))  # reduce to 1x1xfinal_out_channels
+        self.layers.append(nn.AdaptiveAvgPool2d(output_size=(1, 1)))  # reduce to 1x1xfinal_out_channels
         self.layers.append(nn.Flatten())
         self.layers.append(nn.Linear(in_features=final_out_channels, out_features=n_classes))
 
