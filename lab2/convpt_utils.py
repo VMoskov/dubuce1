@@ -153,6 +153,33 @@ def draw_conv_filters(epoch, step, conv_layer, save_dir):
     cv2.imwrite(f'{save_dir}/conv1_epoch_{epoch:02d}_step_{step:06d}_input_000.png', canvas)
 
 
+def multiclass_hinge_loss(logits, target, delta=1.0):
+    """
+    Args:
+        logits: torch.Tensor with shape (B, C), where B is batch size, and C is number of classes.
+        target: torch.LongTensor with shape (B, ) representing ground truth labels.
+        delta: Hyperparameter.
+    Returns:
+        Loss as scalar torch.Tensor.
+    """
+    batch_size = logits.size(0)
+    num_classes = logits.size(1)
+
+    # Create a mask for the target class
+    target_mask = torch.zeros_like(logits)
+    target_mask[torch.arange(batch_size), target] = 1  # Set the target class to 1
+
+    correct_class_logits = torch.sum(logits * target_mask, dim=1, keepdim=True)
+
+    margins = logits - correct_class_logits + delta
+    margins *= (1 - target_mask)  # zero out the target class margin
+    hinge_loss = torch.clamp(margins, min=0)  # Apply ReLU to the margins
+
+    loss = torch.sum(hinge_loss, dim=1)  # Sum over classes
+    loss = torch.mean(loss)  # Average over batch
+    return loss
+
+
 def train(model, criterion, optimizer, scheduler, trainloader, valloader, config, SAVE_DIR):
     plot_data = {}
     plot_data['train_loss'] = []
