@@ -26,9 +26,7 @@ config['max_epochs'] = 50
 config['batch_size'] = 64
 config['save_dir'] = SAVE_DIR
 config['weight_decay'] = 1e-4
-# config['weight_decay'] = 1e-3
-# config['weight_decay'] = 1e-2
-# config['weight_decay'] = 1e-1
+config['lr'] = 1e-3
 
 np.random.seed(int(time.time() * 1e6) % 2**31)
 
@@ -68,6 +66,7 @@ valloader = DataLoader(valset, batch_size=config['batch_size'], shuffle=False)
 testloader = DataLoader(testset, batch_size=config['batch_size'], shuffle=False)
 
 weight_decay = config['weight_decay']
+lr = config['lr']
 
 
 if __name__ == '__main__':
@@ -79,7 +78,7 @@ if __name__ == '__main__':
     # model = SimpleModel(input_size=(64, 64, 3), n_classes=10)
     # model = FMPModel(input_size=(64, 64, 3), n_classes=10)
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=config['weight_decay'])
+    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9)
 
     model, losses = train(model, criterion, optimizer, scheduler, trainloader, valloader, config, SAVE_DIR)

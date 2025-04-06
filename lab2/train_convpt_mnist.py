@@ -25,8 +25,8 @@ config['max_epochs'] = 8
 config['batch_size'] = 50
 config['save_dir'] = SAVE_DIR
 # config['weight_decay'] = 1e-3
-# config['weight_decay'] = 1e-2
-config['weight_decay'] = 1e-4
+config['weight_decay'] = 1e-2
+# config['weight_decay'] = 1e-4
 
 np.random.seed(int(time.time() * 1e6) % 2**31)
 
