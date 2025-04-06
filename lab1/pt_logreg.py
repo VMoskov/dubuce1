@@ -17,6 +17,7 @@ class PTLogreg(nn.Module):
         super(PTLogreg, self).__init__()
         self.W = nn.Parameter(torch.randn(D, C))
         self.b = nn.Parameter(torch.randn(C))
+        self.weight_decay = 0.01
 
     def forward(self, X):
         # unaprijedni prolaz modela: izračunati vjerojatnosti
@@ -24,6 +25,10 @@ class PTLogreg(nn.Module):
         X = torch.tensor(X, dtype=torch.float32)
         logits = torch.mm(X, self.W) + self.b
         return torch.softmax(logits, dim=1)
+    
+    def _regularization(self):
+        l2_reg = 0.5 * self.weight_decay * torch.norm(self.W, p=2)
+        return l2_reg
 
     def get_loss(self, X, Yoh_):
         # formulacija gubitka
@@ -32,7 +37,7 @@ class PTLogreg(nn.Module):
         Yoh_ = torch.tensor(Yoh_, dtype=torch.float32)
         probs = self.forward(X)
         log_probs = torch.log(probs)
-        loss = torch.mean(-torch.sum(Yoh_ * log_probs, dim=1))
+        loss = torch.mean(-torch.sum(Yoh_ * log_probs, dim=1)) + self._regularization()
         return loss
 
 
