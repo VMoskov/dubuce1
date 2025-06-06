@@ -1,0 +1,75 @@
+Config: {'seed': 99129, 'embedding_build_type': 'random', 'model_type': 'baseline', 'embedding_dim': 100, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 32, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.001}
+Using device: mps
+Model type: baseline, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6608, Validation Accuracy: 0.6678, Validation F1: 0.6178, Best F1: 0.6178 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5141, Validation Accuracy: 0.7177, Validation F1: 0.6815, Best F1: 0.6815 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.3629, Validation Accuracy: 0.7501, Validation F1: 0.7322, Best F1: 0.7322 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.2456, Validation Accuracy: 0.7232, Validation F1: 0.6719, Best F1: 0.7322 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.1637, Validation Accuracy: 0.7414, Validation F1: 0.7080, Best F1: 0.7322 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.1151, Validation Accuracy: 0.7177, Validation F1: 0.6578, Best F1: 0.7322 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.0795, Validation Accuracy: 0.7232, Validation F1: 0.6769, Best F1: 0.7322 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.0467, Validation Accuracy: 0.7293, Validation F1: 0.6838, Best F1: 0.7322 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.0333, Validation Accuracy: 0.7392, Validation F1: 0.7052, Best F1: 0.7322 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.0164, Validation Accuracy: 0.7381, Validation F1: 0.7159, Best F1: 0.7322 at Epoch 3
+Test Accuracy: 0.7454, Test F1: 0.7161
+======================================================================================================================================================
+Config: {'seed': 155163, 'embedding_build_type': 'random', 'model_type': 'baseline', 'embedding_dim': 100, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 32, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.001}
+Using device: mps
+Model type: baseline, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6489, Validation Accuracy: 0.6650, Validation F1: 0.6049, Best F1: 0.6049 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4964, Validation Accuracy: 0.7479, Validation F1: 0.7391, Best F1: 0.7391 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.3450, Validation Accuracy: 0.7655, Validation F1: 0.7678, Best F1: 0.7678 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.2384, Validation Accuracy: 0.7847, Validation F1: 0.7841, Best F1: 0.7841 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.1674, Validation Accuracy: 0.7853, Validation F1: 0.7739, Best F1: 0.7841 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.1166, Validation Accuracy: 0.7699, Validation F1: 0.7513, Best F1: 0.7841 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.0794, Validation Accuracy: 0.7798, Validation F1: 0.7764, Best F1: 0.7841 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.0520, Validation Accuracy: 0.7672, Validation F1: 0.7768, Best F1: 0.7841 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.0323, Validation Accuracy: 0.7748, Validation F1: 0.7691, Best F1: 0.7841 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.0266, Validation Accuracy: 0.7672, Validation F1: 0.7482, Best F1: 0.7841 at Epoch 4
+Test Accuracy: 0.7534, Test F1: 0.7282
+======================================================================================================================================================
+Config: {'seed': 638198, 'embedding_build_type': 'random', 'model_type': 'baseline', 'embedding_dim': 100, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 32, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.001}
+Using device: mps
+Model type: baseline, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6522, Validation Accuracy: 0.6903, Validation F1: 0.6887, Best F1: 0.6887 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4918, Validation Accuracy: 0.7403, Validation F1: 0.7504, Best F1: 0.7504 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.3490, Validation Accuracy: 0.7512, Validation F1: 0.7702, Best F1: 0.7702 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.2496, Validation Accuracy: 0.7600, Validation F1: 0.7814, Best F1: 0.7814 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.1670, Validation Accuracy: 0.7677, Validation F1: 0.7692, Best F1: 0.7814 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.1165, Validation Accuracy: 0.7606, Validation F1: 0.7551, Best F1: 0.7814 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.0718, Validation Accuracy: 0.7732, Validation F1: 0.7807, Best F1: 0.7814 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.0478, Validation Accuracy: 0.7672, Validation F1: 0.7837, Best F1: 0.7837 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.0316, Validation Accuracy: 0.7633, Validation F1: 0.7723, Best F1: 0.7837 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.0226, Validation Accuracy: 0.7606, Validation F1: 0.7720, Best F1: 0.7837 at Epoch 8
+Test Accuracy: 0.7500, Test F1: 0.7615
+======================================================================================================================================================
+Config: {'seed': 403802, 'embedding_build_type': 'random', 'model_type': 'baseline', 'embedding_dim': 100, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 32, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.001}
+Using device: mps
+Model type: baseline, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6491, Validation Accuracy: 0.6815, Validation F1: 0.6938, Best F1: 0.6938 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5043, Validation Accuracy: 0.6958, Validation F1: 0.7459, Best F1: 0.7459 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.3588, Validation Accuracy: 0.7194, Validation F1: 0.7431, Best F1: 0.7459 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.2485, Validation Accuracy: 0.7370, Validation F1: 0.7613, Best F1: 0.7613 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.1718, Validation Accuracy: 0.7474, Validation F1: 0.7693, Best F1: 0.7693 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.1148, Validation Accuracy: 0.7545, Validation F1: 0.7629, Best F1: 0.7693 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.0784, Validation Accuracy: 0.7556, Validation F1: 0.7738, Best F1: 0.7738 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.0503, Validation Accuracy: 0.7534, Validation F1: 0.7580, Best F1: 0.7738 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.0329, Validation Accuracy: 0.7523, Validation F1: 0.7721, Best F1: 0.7738 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.0202, Validation Accuracy: 0.7463, Validation F1: 0.7715, Best F1: 0.7738 at Epoch 7
+Test Accuracy: 0.7500, Test F1: 0.7700
+======================================================================================================================================================
+Config: {'seed': 802638, 'embedding_build_type': 'random', 'model_type': 'baseline', 'embedding_dim': 100, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 32, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.001}
+Using device: mps
+Model type: baseline, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6528, Validation Accuracy: 0.7013, Validation F1: 0.6804, Best F1: 0.6804 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5036, Validation Accuracy: 0.7392, Validation F1: 0.7389, Best F1: 0.7389 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.3569, Validation Accuracy: 0.7661, Validation F1: 0.7804, Best F1: 0.7804 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.2458, Validation Accuracy: 0.7683, Validation F1: 0.7877, Best F1: 0.7877 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.1703, Validation Accuracy: 0.7683, Validation F1: 0.7858, Best F1: 0.7877 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.1153, Validation Accuracy: 0.7683, Validation F1: 0.7825, Best F1: 0.7877 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.0758, Validation Accuracy: 0.7639, Validation F1: 0.7603, Best F1: 0.7877 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.0428, Validation Accuracy: 0.7540, Validation F1: 0.7751, Best F1: 0.7877 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.0283, Validation Accuracy: 0.7650, Validation F1: 0.7669, Best F1: 0.7877 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.0216, Validation Accuracy: 0.7567, Validation F1: 0.7604, Best F1: 0.7877 at Epoch 4
+Test Accuracy: 0.7661, Test F1: 0.7692
+======================================================================================================================================================
