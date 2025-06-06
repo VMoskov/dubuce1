@@ -1,0 +1,1 @@
+python train.py --embedding_build_type=pretrained --model_type=baseline --embedding_dim=300 --hidden_dim=150 --num_layers=2 --train_batch_size=10 --test_batch_size=32 --num_epochs=10 --num_epochs=10 --learning_rate=1e-4 --dropout=0.5 --bidirectional
