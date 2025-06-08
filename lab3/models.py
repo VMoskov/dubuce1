@@ -7,7 +7,7 @@ import torch.nn.utils.rnn as rnn_utils
 
 
 class Rearrange(nn.Module):
-    def __init__(self, pattern=None):
+    def __init__(self, pattern):
         super(Rearrange, self).__init__()
         self.pattern = pattern
 
@@ -52,18 +52,38 @@ class EmbeddingLayer(nn.Module):
                         pass
 
         embedding_matrix = nn.Embedding.from_pretrained(
-            embedding_matrix, freeze=pretrained, padding_idx=vocab.stoi[PAD]
+            embedding_matrix, freeze=False, padding_idx=vocab.stoi[PAD]
         )
         return embedding_matrix
+    
+
+class Attention(nn.Module):
+    '''
+    Bahdanau Attention mechanism.
+    '''
+    def __init__(self, rnn_hidden_size):
+        super(Attention, self).__init__()
+        self.rnn_hidden_size = rnn_hidden_size
+        self.attention_dim = rnn_hidden_size // 2
+        self.W1 = nn.Linear(rnn_hidden_size, self.attention_dim, bias=False)
+        self.w2 = nn.Linear(self.attention_dim, 1, bias=False)
+
+    def forward(self, hidden_states):
+        a = self.w2(torch.tanh(self.W1(hidden_states)))
+        a = einops.rearrange(a, 'b l 1 -> b l')  # (batch_size, seq_length)
+        scores = torch.softmax(a, dim=1)  # (batch_size, seq_length)
+        out = torch.sum(scores.unsqueeze(-1) * hidden_states, dim=1)
+        return out
 
 
 class BaselineModel(nn.Module):
-    def __init__(self, embedding_layer):
+    def __init__(self, embedding_head):
         super(BaselineModel, self).__init__()
 
-        embedding_dim = embedding_layer.embedding_dim
+        self.embedding_head = embedding_head
+        embedding_dim = embedding_head.embedding_dim
         self.layers = nn.Sequential(
-            embedding_layer,
+            self.embedding_head,
             Rearrange('b l d -> b d l'),  # rearranging to (batch_size, seq_length, embedding_dim)
             nn.AdaptiveAvgPool1d(output_size=1),
             nn.Flatten(),
@@ -82,38 +102,48 @@ class BaselineModel(nn.Module):
 
 # --- RNN Models ---
 class RNNBase(nn.Module):
-    def __init__(self, embedding_layer, hidden_size=150, num_layers=2, bidirectional=False):
+    def __init__(self, embedding_head, hidden_size=150, num_layers=2, bidirectional=False, attention=False):
         super(RNNBase, self).__init__()
-        self.embedding_layer = embedding_layer
-        self.embedding_dim = embedding_layer.embedding_dim
+        self.embedding_head = embedding_head
+        self.embedding_dim = embedding_head.embedding_dim
+
         self.hidden_size = hidden_size
         self.num_layers = num_layers
 
         self.bidirectional = bidirectional
+        rnn_output_size = self.hidden_size * 2 if self.bidirectional else self.hidden_size
+
+        self.attention_head = Attention(rnn_output_size) if attention else None
 
         self.time_first = Rearrange('b l d -> l b d')
+        self.batch_first = Rearrange('l b d -> b l d')
 
         self.rnn_module = None
 
-        decoder_input_size = self.hidden_size * 2 if self.bidirectional else self.hidden_size
-
         self.decoder = nn.Sequential(
-            nn.Linear(decoder_input_size, 150),
+            nn.Linear(rnn_output_size, 150),
             nn.ReLU(),
             nn.Linear(150, 1)
         )
 
     def forward(self, x, lengths):
-        embeddings = self.embedding_layer(x)
+        embeddings = self.embedding_head(x)
         embeddings = self.time_first(embeddings)  # rearranging to (seq_length, batch_size, embedding_dim)
 
         packed_embeddings = rnn_utils.pack_padded_sequence(
             embeddings, lengths=lengths, batch_first=False, enforce_sorted=False
-            )
+        )
         
         outputs, hidden = self.rnn_module(packed_embeddings)
-        last_hidden_state = self._extract_hidden_state(hidden)
-        logits = self.decoder(last_hidden_state)
+
+        if self.attention_head is not None:
+            rnn_outputs, _ = rnn_utils.pad_packed_sequence(outputs, batch_first=False)  # pad outputs
+            rnn_outputs = self.batch_first(rnn_outputs)  # rearranging to (batch_size, seq_length, hidden_size)
+            context = self.attention_head(rnn_outputs)  # get context vector from attention
+            logits = self.decoder(context)
+        else:
+            last_hidden_state = self._extract_hidden_state(hidden)
+            logits = self.decoder(last_hidden_state)
         return logits
 
     def _extract_hidden_state(self, hidden):
@@ -121,8 +151,8 @@ class RNNBase(nn.Module):
 
 
 class VanilaRNN(RNNBase):
-    def __init__(self, embedding_layer, hidden_size=150, num_layers=2, dropout=0.0, bidirectional=False):
-        super(VanilaRNN, self).__init__(embedding_layer, hidden_size, num_layers, bidirectional)
+    def __init__(self, embedding_head, hidden_size=150, num_layers=2, dropout=0.0, bidirectional=False, attention=False):
+        super(VanilaRNN, self).__init__(embedding_head, hidden_size, num_layers, bidirectional, attention)
     
         self.rnn_module = nn.RNN(input_size=self.embedding_dim,
                                 hidden_size=hidden_size,
@@ -142,8 +172,8 @@ class VanilaRNN(RNNBase):
 
 
 class GRU(RNNBase):
-    def __init__(self, embedding_layer, hidden_size=150, num_layers=2, dropout=0.0, bidirectional=False):
-        super(GRU, self).__init__(embedding_layer, hidden_size, num_layers, bidirectional)
+    def __init__(self, embedding_head, hidden_size=150, num_layers=2, dropout=0.0, bidirectional=False, attention=False):
+        super(GRU, self).__init__(embedding_head, hidden_size, num_layers, bidirectional, attention)
 
         self.rnn_module = nn.GRU(input_size=self.embedding_dim,
                                  hidden_size=hidden_size,
@@ -163,8 +193,8 @@ class GRU(RNNBase):
 
 
 class LSTM(RNNBase):
-    def __init__(self, embedding_layer, hidden_size=150, num_layers=2, dropout=0.0, bidirectional=False):
-        super(LSTM, self).__init__(embedding_layer, hidden_size, num_layers, bidirectional)
+    def __init__(self, embedding_head, hidden_size=150, num_layers=2, dropout=0.0, bidirectional=False, attention=False):
+        super(LSTM, self).__init__(embedding_head, hidden_size, num_layers, bidirectional, attention)
 
         self.rnn_module = nn.LSTM(input_size=self.embedding_dim,
                                   hidden_size=hidden_size,

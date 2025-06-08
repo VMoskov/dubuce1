@@ -7,6 +7,7 @@ import random
 from argparse import ArgumentParser
 
 
+# default configuration
 config = {
     'seed': random.randint(0, 1000000),
     'embedding_build_type': 'pretrained',
@@ -50,7 +51,7 @@ class Trainer:
             epoch_loss += loss.item()
 
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=0.25)
+            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=0.5)
             self.optimizer.step()
 
         return epoch_loss / len(train_loader)
@@ -96,12 +97,13 @@ class Trainer:
     
     @staticmethod
     def get_device():
-        if torch.cuda.is_available():
-            return torch.device('cuda')
-        elif torch.backends.mps.is_available():
-            return torch.device('mps')
-        else:
-            return torch.device('cpu')
+        # if torch.cuda.is_available():
+        #     return torch.device('cuda')
+        # elif torch.backends.mps.is_available():
+        #     return torch.device('mps')
+        # else:
+        #     return torch.device('cpu')
+        return torch.device('cpu')
         
     @staticmethod
     def build_model(embedding_layer, config):
@@ -110,19 +112,25 @@ class Trainer:
         num_layers = config['num_layers']
         dropout = config['dropout']
         bidirectional = config['bidirectional']
+        attention = config['attention']
         if model_type == 'baseline':
             return BaselineModel(embedding_layer)
         elif model_type == 'vanilla_rnn':
-            return VanilaRNN(embedding_layer, hidden_size=hidden_dim, num_layers=num_layers, dropout=dropout, bidirectional=bidirectional)
+            return VanilaRNN(embedding_layer, hidden_size=hidden_dim, num_layers=num_layers, dropout=dropout, bidirectional=bidirectional, attention=attention)
         elif model_type == 'gru':
-            return GRU(embedding_layer, hidden_size=hidden_dim, num_layers=num_layers, dropout=dropout, bidirectional=bidirectional)
+            return GRU(embedding_layer, hidden_size=hidden_dim, num_layers=num_layers, dropout=dropout, bidirectional=bidirectional, attention=attention)
         elif model_type == 'lstm':
-            return LSTM(embedding_layer, hidden_size=hidden_dim, num_layers=num_layers, dropout=dropout, bidirectional=bidirectional)
+            return LSTM(embedding_layer, hidden_size=hidden_dim, num_layers=num_layers, dropout=dropout, bidirectional=bidirectional, attention=attention)
+        else:
+            raise ValueError(f'Unknown model type: {model_type}')
         
 
 def parse_args():
     parser = ArgumentParser(description='Train a sentiment analysis model on SST dataset')
     parser.add_argument('--embedding_build_type', type=str, default=config['embedding_build_type'], choices=['random', 'pretrained'], help='Type of embedding to build')
+    parser.add_argument('--vocab_size', type=int, default=-1, help='Size of the vocabulary (default: -1 for no limit)')
+    parser.add_argument('--batch_size_train', type=int, default=10, help='Batch size for training (default: 10)')
+    parser.add_argument('--batch_size_test', type=int, default=32, help='Batch size for testing (default: 32)')
     parser.add_argument('--model_type', type=str, default=config['model_type'], choices=['baseline', 'vanilla_rnn', 'gru', 'lstm'], help='Type of model to use')
     parser.add_argument('--embedding_dim', type=int, default=config['embedding_dim'], help='Dimension of the embedding layer')
     parser.add_argument('--hidden_dim', type=int, default=config['hidden_dim'], help='Dimension of the hidden layer')
@@ -133,6 +141,7 @@ def parse_args():
     parser.add_argument('--learning_rate', type=float, default=config['learning_rate'], help='Learning rate for the optimizer')
     parser.add_argument('--dropout', type=float, default=0.0, help='Dropout rate for the RNN layers')
     parser.add_argument('--bidirectional', action='store_true', help='Use bidirectional RNNs')
+    parser.add_argument('--attention', action='store_true', help='Use attention mechanism in the model')
     args = parser.parse_args()
     return args
 
@@ -140,6 +149,9 @@ def parse_args():
 def build_config(args):
     config['seed'] = random.randint(0, 1000000)
     config['embedding_build_type'] = args.embedding_build_type
+    config['vocab_size'] = args.vocab_size if args.vocab_size > 0 else -1
+    config['batch_size_train'] = args.train_batch_size
+    config['batch_size_test'] = args.test_batch_size
     config['model_type'] = args.model_type
     config['embedding_dim'] = args.embedding_dim
     config['hidden_dim'] = args.hidden_dim
@@ -150,6 +162,7 @@ def build_config(args):
     config['learning_rate'] = args.learning_rate
     config['dropout'] = args.dropout
     config['bidirectional'] = args.bidirectional
+    config['attention'] = args.attention
     return config
 
 
@@ -165,16 +178,16 @@ if __name__ == '__main__':
 
     frequencies = get_frequencies('train')
 
-    x_vocab = Vocab(frequencies, max_size=-1, min_freq=1)
-    y_vocab = Vocab({'positive': 1, 'negative': 0}, max_size=-1, min_freq=1, vocab_type='label')
+    x_vocab = Vocab(frequencies, max_size=config['vocab_size'], min_freq=1)
+    y_vocab = Vocab({'positive': 1, 'negative': 0}, max_size=config['vocab_size'], min_freq=1, vocab_type='label')
 
     trainset = NLPDataset('train', x_vocab, y_vocab)
     valset = NLPDataset('val', x_vocab, y_vocab)
     testset = NLPDataset('test', x_vocab, y_vocab)
 
-    train_loader = DataLoader(trainset, batch_size=10, shuffle=True, collate_fn=pad_collate_fn)
-    val_loader = DataLoader(valset, batch_size=32, shuffle=False, collate_fn=pad_collate_fn)
-    test_loader = DataLoader(testset, batch_size=32, shuffle=False, collate_fn=pad_collate_fn)
+    train_loader = DataLoader(trainset, batch_size=config['batch_size_train'], shuffle=True, collate_fn=pad_collate_fn)
+    val_loader = DataLoader(valset, batch_size=config['batch_size_test'], shuffle=False, collate_fn=pad_collate_fn)
+    test_loader = DataLoader(testset, batch_size=config['batch_size_test'], shuffle=False, collate_fn=pad_collate_fn)
 
     embedding_layer = EmbeddingLayer(x_vocab, embedding_dim=config['embedding_dim'], build_type=config['embedding_build_type'])
     model = Trainer.build_model(embedding_layer, config=config)
