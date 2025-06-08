@@ -9,7 +9,7 @@ import csv
 if __name__ == '__main__':
     start = time.time()
 
-    --- BENCHMARKING BASELINE MODEL ---
+    # --- BENCHMARKING BASELINE MODEL ---
     print('Benchmarking baseline model...')
     for i in range(5):
         model = 'baseline'
