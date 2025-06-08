@@ -16,7 +16,7 @@ class SimpleMetricEmbedding(nn.Module):
     def __init__(self, input_channels, emb_size=32):
         super().__init__()
         self.emb_size = emb_size
-        # YOUR CODE HERE
+        
         self.layers = nn.Sequential(
             _BNReluConv(num_maps_in=input_channels, num_maps_out=self.emb_size, k=3),
             nn.MaxPool2d(kernel_size=3, stride=2),
