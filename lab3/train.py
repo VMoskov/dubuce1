@@ -29,6 +29,8 @@ class Trainer:
         self.optimizer = optimizer
         self.device = device
 
+        print(f'Using device: {self.device}')
+
         self.model.to(self.device)
         self.criterion.to(self.device)
 
@@ -173,7 +175,6 @@ if __name__ == '__main__':
     print(f'Config: {config}')
 
     device = Trainer.get_device()
-    print(f'Using device: {device}')
 
     frequencies = get_frequencies('train')
 
