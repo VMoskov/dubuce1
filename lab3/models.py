@@ -68,10 +68,17 @@ class Attention(nn.Module):
         self.W1 = nn.Linear(rnn_hidden_size, self.attention_dim, bias=False)
         self.w2 = nn.Linear(self.attention_dim, 1, bias=False)
 
-    def forward(self, hidden_states):
+    def forward(self, hidden_states, lengths):
         a = self.w2(torch.tanh(self.W1(hidden_states)))
         a = einops.rearrange(a, 'b l 1 -> b l')  # (batch_size, seq_length)
-        scores = torch.softmax(a, dim=1)  # (batch_size, seq_length)
+
+        max_length = hidden_states.size(1)
+        indices = torch.arange(max_length, device=lengths.device).expand(len(lengths), max_length)
+        mask = indices < lengths.unsqueeze(1)
+
+        a = a.masked_fill(~mask, float('-inf'))  # apply mask to attention scores
+
+        scores = torch.softmax(a, dim=1)
         out = torch.sum(scores.unsqueeze(-1) * hidden_states, dim=1)
         return out
 
@@ -139,7 +146,7 @@ class RNNBase(nn.Module):
         if self.attention_head is not None:
             rnn_outputs, _ = rnn_utils.pad_packed_sequence(outputs, batch_first=False)  # pad outputs
             rnn_outputs = self.batch_first(rnn_outputs)  # rearranging to (batch_size, seq_length, hidden_size)
-            context = self.attention_head(rnn_outputs)  # get context vector from attention
+            context = self.attention_head(rnn_outputs, lengths)  # get context vector from attention
             logits = self.decoder(context)
         else:
             last_hidden_state = self._extract_hidden_state(hidden)
@@ -199,7 +206,7 @@ class LSTM(RNNBase):
         self.rnn_module = nn.LSTM(input_size=self.embedding_dim,
                                   hidden_size=hidden_size,
                                   num_layers=num_layers,
-                                  batch_first=True,
+                                  batch_first=False,
                                   dropout=dropout if num_layers > 1 else 0.0,
                                   bidirectional=bidirectional)
 
