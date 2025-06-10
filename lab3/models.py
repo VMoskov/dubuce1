@@ -74,7 +74,7 @@ class Attention(nn.Module):
 
         max_length = hidden_states.size(1)
         indices = torch.arange(max_length, device=lengths.device).expand(len(lengths), max_length)
-        mask = indices < lengths.unsqueeze(1)
+        mask = (indices < lengths.unsqueeze(1)).to(hidden_states.device)
 
         a = a.masked_fill(~mask, float('-inf'))  # apply mask to attention scores
 
