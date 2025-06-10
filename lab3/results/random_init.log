@@ -1,0 +1,28 @@
+Config: {'seed': 574704, 'embedding_build_type': 'random', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6849, Validation Accuracy: 0.5805, Validation F1: 0.4753, Best F1: 0.4753 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.6230, Validation Accuracy: 0.6947, Validation F1: 0.7155, Best F1: 0.7155 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.5202, Validation Accuracy: 0.7227, Validation F1: 0.7329, Best F1: 0.7329 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4338, Validation Accuracy: 0.7287, Validation F1: 0.7495, Best F1: 0.7495 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3543, Validation Accuracy: 0.7468, Validation F1: 0.7618, Best F1: 0.7618 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.2758, Validation Accuracy: 0.7452, Validation F1: 0.7668, Best F1: 0.7668 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.2134, Validation Accuracy: 0.7540, Validation F1: 0.7764, Best F1: 0.7764 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.1658, Validation Accuracy: 0.7633, Validation F1: 0.7747, Best F1: 0.7764 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.1264, Validation Accuracy: 0.7694, Validation F1: 0.7761, Best F1: 0.7764 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.0846, Validation Accuracy: 0.7770, Validation F1: 0.7845, Best F1: 0.7845 at Epoch 10
+Test Accuracy: 0.7615, Test F1: 0.7652
+Config: {'seed': 823894, 'embedding_build_type': 'random', 'model_type': 'baseline', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: baseline, Embedding build type: random
+Epoch 1/10, Epoch Loss: 0.6862, Validation Accuracy: 0.6310, Validation F1: 0.6156, Best F1: 0.6156 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.6454, Validation Accuracy: 0.6590, Validation F1: 0.6915, Best F1: 0.6915 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.5881, Validation Accuracy: 0.6738, Validation F1: 0.7111, Best F1: 0.7111 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.5400, Validation Accuracy: 0.6793, Validation F1: 0.7211, Best F1: 0.7211 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4936, Validation Accuracy: 0.6760, Validation F1: 0.7243, Best F1: 0.7243 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4562, Validation Accuracy: 0.6689, Validation F1: 0.7268, Best F1: 0.7268 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.4197, Validation Accuracy: 0.7018, Validation F1: 0.7408, Best F1: 0.7408 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3820, Validation Accuracy: 0.7221, Validation F1: 0.7400, Best F1: 0.7408 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3485, Validation Accuracy: 0.7111, Validation F1: 0.7486, Best F1: 0.7486 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3121, Validation Accuracy: 0.7100, Validation F1: 0.7507, Best F1: 0.7507 at Epoch 10
+Test Accuracy: 0.7190, Test F1: 0.7523

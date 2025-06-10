@@ -1,0 +1,41 @@
+config,test_accuracy,test_f1
+gru hidden_size=200 num_layers=1 dropout=0.25 bidirectional=False attention=True,0.8257,0.8203
+gru hidden_size=200 num_layers=3 dropout=0.5 bidirectional=False attention=True,0.8005,0.8137
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.0 num_layers=2 hidden_size=200 attention=False,0.805,0.8124
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.25 num_layers=1 hidden_size=200 attention=True,0.8188,0.8101
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.5 num_layers=3 hidden_size=200 attention=True,0.8108,0.8092
+gru hidden_size=150 num_layers=2 dropout=0.5 bidirectional=False attention=True,0.8016,0.8088
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.0 num_layers=1 hidden_size=200 attention=True,0.8119,0.8084
+gru hidden_size=200 num_layers=2 dropout=0.0 bidirectional=True attention=False,0.8039,0.8063
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.5 num_layers=3 hidden_size=200 attention=False,0.8028,0.8059
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.25 num_layers=1 hidden_size=200 attention=False,0.8016,0.8045
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.0 num_layers=2 hidden_size=150 attention=True,0.7936,0.8026
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.5 num_layers=3 hidden_size=100 attention=True,0.7947,0.8013
+lstm hidden_size=150 num_layers=3 dropout=0.25 bidirectional=True attention=True,0.7787,0.7992
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.5 num_layers=3 hidden_size=100 attention=False,0.7993,0.7991
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.25 num_layers=3 hidden_size=200 attention=True,0.8028,0.7976
+gru hidden_size=100 num_layers=2 dropout=0.25 bidirectional=True attention=False,0.805,0.7971
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.0 num_layers=2 hidden_size=200 attention=True,0.7901,0.7969
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.25 num_layers=2 hidden_size=150 attention=True,0.8062,0.7931
+gru vocab_size=3000 train_batch_size=20 test_batch_size=30 dropout=0.0 num_layers=3 hidden_size=200 attention=False,0.7936,0.7921
+gru hidden_size=200 num_layers=2 dropout=0.5 bidirectional=True attention=True,0.7649,0.7889
+gru hidden_size=100 num_layers=2 dropout=0.5 bidirectional=False attention=True,0.781,0.788
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.25 num_layers=2 hidden_size=150 attention=False,0.7856,0.7843
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.0 num_layers=1 hidden_size=200 attention=False,0.7947,0.7841
+lstm hidden_size=150 num_layers=3 dropout=0.25 bidirectional=True attention=False,0.7534,0.7835
+lstm hidden_size=150 num_layers=1 dropout=0.0 bidirectional=True attention=False,0.7913,0.7818
+gru vocab_size=3000 train_batch_size=20 test_batch_size=30 dropout=0.0 num_layers=3 hidden_size=200 attention=True,0.7993,0.7799
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.25 num_layers=3 hidden_size=200 attention=False,0.7913,0.7775
+gru hidden_size=200 num_layers=2 dropout=0.0 bidirectional=True attention=True,0.742,0.7734
+gru vocab_size=3000 train_batch_size=32 test_batch_size=48 dropout=0.0 num_layers=2 hidden_size=100 attention=False,0.7936,0.7727
+gru vocab_size=3000 train_batch_size=10 test_batch_size=15 dropout=0.0 num_layers=2 hidden_size=150 attention=False,0.7798,0.7635
+gru hidden_size=200 num_layers=2 dropout=0.5 bidirectional=True attention=False,0.7856,0.763
+gru hidden_size=100 num_layers=2 dropout=0.25 bidirectional=True attention=True,0.7328,0.7615
+gru vocab_size=3000 train_batch_size=32 test_batch_size=48 dropout=0.0 num_layers=2 hidden_size=100 attention=True,0.781,0.7591
+lstm hidden_size=100 num_layers=3 dropout=0.5 bidirectional=True attention=False,0.7752,0.7407
+gru hidden_size=200 num_layers=3 dropout=0.5 bidirectional=False attention=False,0.7615,0.732
+lstm hidden_size=150 num_layers=1 dropout=0.0 bidirectional=True attention=True,0.7718,0.7248
+gru hidden_size=100 num_layers=2 dropout=0.5 bidirectional=False attention=False,0.7706,0.7245
+lstm hidden_size=100 num_layers=3 dropout=0.5 bidirectional=True attention=True,0.7317,0.6559
+gru hidden_size=150 num_layers=2 dropout=0.5 bidirectional=False attention=False,0.7144,0.6365
+gru hidden_size=200 num_layers=1 dropout=0.25 bidirectional=False attention=False,0.6927,0.5732

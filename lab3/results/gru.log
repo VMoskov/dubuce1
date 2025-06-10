@@ -1,0 +1,864 @@
+Config: hidden_size=100 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 175807, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6438, Validation Accuracy: 0.6842, Validation F1: 0.5931, Best F1: 0.5931 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4904, Validation Accuracy: 0.6886, Validation F1: 0.5959, Best F1: 0.5959 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4474, Validation Accuracy: 0.6853, Validation F1: 0.5973, Best F1: 0.5973 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4268, Validation Accuracy: 0.6760, Validation F1: 0.5597, Best F1: 0.5973 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4142, Validation Accuracy: 0.6776, Validation F1: 0.5596, Best F1: 0.5973 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4023, Validation Accuracy: 0.7029, Validation F1: 0.6225, Best F1: 0.6225 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3891, Validation Accuracy: 0.7090, Validation F1: 0.6350, Best F1: 0.6350 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3722, Validation Accuracy: 0.7100, Validation F1: 0.6343, Best F1: 0.6350 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3603, Validation Accuracy: 0.7331, Validation F1: 0.6819, Best F1: 0.6819 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3466, Validation Accuracy: 0.7205, Validation F1: 0.6482, Best F1: 0.6819 at Epoch 9
+Test Accuracy: 0.7190, Test F1: 0.6402
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 593814, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6115, Validation Accuracy: 0.7441, Validation F1: 0.7755, Best F1: 0.7755 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4545, Validation Accuracy: 0.7468, Validation F1: 0.7761, Best F1: 0.7761 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4213, Validation Accuracy: 0.7359, Validation F1: 0.7749, Best F1: 0.7761 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4023, Validation Accuracy: 0.7364, Validation F1: 0.7734, Best F1: 0.7761 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3840, Validation Accuracy: 0.7523, Validation F1: 0.7779, Best F1: 0.7779 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3647, Validation Accuracy: 0.7106, Validation F1: 0.7636, Best F1: 0.7779 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3495, Validation Accuracy: 0.7392, Validation F1: 0.7666, Best F1: 0.7779 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3301, Validation Accuracy: 0.7342, Validation F1: 0.7695, Best F1: 0.7779 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3155, Validation Accuracy: 0.7024, Validation F1: 0.7593, Best F1: 0.7779 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.2986, Validation Accuracy: 0.6925, Validation F1: 0.7546, Best F1: 0.7779 at Epoch 5
+Test Accuracy: 0.6892, Test F1: 0.7479
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 818948, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6426, Validation Accuracy: 0.6980, Validation F1: 0.6828, Best F1: 0.6828 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4943, Validation Accuracy: 0.6985, Validation F1: 0.6048, Best F1: 0.6828 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4508, Validation Accuracy: 0.7578, Validation F1: 0.7342, Best F1: 0.7342 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4280, Validation Accuracy: 0.7304, Validation F1: 0.6602, Best F1: 0.7342 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4126, Validation Accuracy: 0.7721, Validation F1: 0.7465, Best F1: 0.7465 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3990, Validation Accuracy: 0.7748, Validation F1: 0.7521, Best F1: 0.7521 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3858, Validation Accuracy: 0.7902, Validation F1: 0.7802, Best F1: 0.7802 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3751, Validation Accuracy: 0.7688, Validation F1: 0.7306, Best F1: 0.7802 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3623, Validation Accuracy: 0.8023, Validation F1: 0.8048, Best F1: 0.8048 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3480, Validation Accuracy: 0.8040, Validation F1: 0.8011, Best F1: 0.8048 at Epoch 9
+Test Accuracy: 0.8085, Test F1: 0.8033
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 600315, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6109, Validation Accuracy: 0.7320, Validation F1: 0.7189, Best F1: 0.7189 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4572, Validation Accuracy: 0.7370, Validation F1: 0.6908, Best F1: 0.7189 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4234, Validation Accuracy: 0.7364, Validation F1: 0.6883, Best F1: 0.7189 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4024, Validation Accuracy: 0.7490, Validation F1: 0.7163, Best F1: 0.7189 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3889, Validation Accuracy: 0.7293, Validation F1: 0.6698, Best F1: 0.7189 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3685, Validation Accuracy: 0.7100, Validation F1: 0.6318, Best F1: 0.7189 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3518, Validation Accuracy: 0.7073, Validation F1: 0.6228, Best F1: 0.7189 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3349, Validation Accuracy: 0.7133, Validation F1: 0.6444, Best F1: 0.7189 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3167, Validation Accuracy: 0.7051, Validation F1: 0.6258, Best F1: 0.7189 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3074, Validation Accuracy: 0.6864, Validation F1: 0.5798, Best F1: 0.7189 at Epoch 1
+Test Accuracy: 0.7064, Test F1: 0.6086
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 929820, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6360, Validation Accuracy: 0.7523, Validation F1: 0.7751, Best F1: 0.7751 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4891, Validation Accuracy: 0.7869, Validation F1: 0.7847, Best F1: 0.7847 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4488, Validation Accuracy: 0.7556, Validation F1: 0.7900, Best F1: 0.7900 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4306, Validation Accuracy: 0.7595, Validation F1: 0.7946, Best F1: 0.7946 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4159, Validation Accuracy: 0.7974, Validation F1: 0.8083, Best F1: 0.8083 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3997, Validation Accuracy: 0.7946, Validation F1: 0.8113, Best F1: 0.8113 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3879, Validation Accuracy: 0.7957, Validation F1: 0.8098, Best F1: 0.8113 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3721, Validation Accuracy: 0.7902, Validation F1: 0.8100, Best F1: 0.8113 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3583, Validation Accuracy: 0.8072, Validation F1: 0.8064, Best F1: 0.8113 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3481, Validation Accuracy: 0.8094, Validation F1: 0.8088, Best F1: 0.8113 at Epoch 6
+Test Accuracy: 0.8050, Test F1: 0.8019
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 651236, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6081, Validation Accuracy: 0.7403, Validation F1: 0.7787, Best F1: 0.7787 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4611, Validation Accuracy: 0.7699, Validation F1: 0.7900, Best F1: 0.7900 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4280, Validation Accuracy: 0.7880, Validation F1: 0.7953, Best F1: 0.7953 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4063, Validation Accuracy: 0.7814, Validation F1: 0.7645, Best F1: 0.7953 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3874, Validation Accuracy: 0.7908, Validation F1: 0.7946, Best F1: 0.7953 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3740, Validation Accuracy: 0.7655, Validation F1: 0.7420, Best F1: 0.7953 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3560, Validation Accuracy: 0.7809, Validation F1: 0.7809, Best F1: 0.7953 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3354, Validation Accuracy: 0.7781, Validation F1: 0.7858, Best F1: 0.7953 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3178, Validation Accuracy: 0.7622, Validation F1: 0.7666, Best F1: 0.7953 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3027, Validation Accuracy: 0.7589, Validation F1: 0.7360, Best F1: 0.7953 at Epoch 3
+Test Accuracy: 0.7695, Test F1: 0.7465
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 67450, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5995, Validation Accuracy: 0.7441, Validation F1: 0.7467, Best F1: 0.7467 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4833, Validation Accuracy: 0.7397, Validation F1: 0.7715, Best F1: 0.7715 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4530, Validation Accuracy: 0.7496, Validation F1: 0.7718, Best F1: 0.7718 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4293, Validation Accuracy: 0.7397, Validation F1: 0.7762, Best F1: 0.7762 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4120, Validation Accuracy: 0.7419, Validation F1: 0.7783, Best F1: 0.7783 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3995, Validation Accuracy: 0.7452, Validation F1: 0.7834, Best F1: 0.7834 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3868, Validation Accuracy: 0.7661, Validation F1: 0.7885, Best F1: 0.7885 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3660, Validation Accuracy: 0.7732, Validation F1: 0.7984, Best F1: 0.7984 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3503, Validation Accuracy: 0.7683, Validation F1: 0.7969, Best F1: 0.7984 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3385, Validation Accuracy: 0.7814, Validation F1: 0.8010, Best F1: 0.8010 at Epoch 10
+Test Accuracy: 0.7718, Test F1: 0.7890
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 930956, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5685, Validation Accuracy: 0.7457, Validation F1: 0.7749, Best F1: 0.7749 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4453, Validation Accuracy: 0.7738, Validation F1: 0.7904, Best F1: 0.7904 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4190, Validation Accuracy: 0.7770, Validation F1: 0.7980, Best F1: 0.7980 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4004, Validation Accuracy: 0.7864, Validation F1: 0.8038, Best F1: 0.8038 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3799, Validation Accuracy: 0.7759, Validation F1: 0.7853, Best F1: 0.8038 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3617, Validation Accuracy: 0.7847, Validation F1: 0.7994, Best F1: 0.8038 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3384, Validation Accuracy: 0.7716, Validation F1: 0.7992, Best F1: 0.8038 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3211, Validation Accuracy: 0.7672, Validation F1: 0.7901, Best F1: 0.8038 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3019, Validation Accuracy: 0.7864, Validation F1: 0.7892, Best F1: 0.8038 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2812, Validation Accuracy: 0.7919, Validation F1: 0.8121, Best F1: 0.8121 at Epoch 10
+Test Accuracy: 0.7798, Test F1: 0.8017
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 773558, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6029, Validation Accuracy: 0.7595, Validation F1: 0.7339, Best F1: 0.7339 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4902, Validation Accuracy: 0.7694, Validation F1: 0.7509, Best F1: 0.7509 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4601, Validation Accuracy: 0.7875, Validation F1: 0.7785, Best F1: 0.7785 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4382, Validation Accuracy: 0.7946, Validation F1: 0.8032, Best F1: 0.8032 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4190, Validation Accuracy: 0.7919, Validation F1: 0.8010, Best F1: 0.8032 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4006, Validation Accuracy: 0.7968, Validation F1: 0.8004, Best F1: 0.8032 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3909, Validation Accuracy: 0.7842, Validation F1: 0.8052, Best F1: 0.8052 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3827, Validation Accuracy: 0.7941, Validation F1: 0.8090, Best F1: 0.8090 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3627, Validation Accuracy: 0.7908, Validation F1: 0.8107, Best F1: 0.8107 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3520, Validation Accuracy: 0.7825, Validation F1: 0.8063, Best F1: 0.8107 at Epoch 9
+Test Accuracy: 0.7798, Test F1: 0.7992
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 489567, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5814, Validation Accuracy: 0.7732, Validation F1: 0.7919, Best F1: 0.7919 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4589, Validation Accuracy: 0.7858, Validation F1: 0.7992, Best F1: 0.7992 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4302, Validation Accuracy: 0.7847, Validation F1: 0.7661, Best F1: 0.7992 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4147, Validation Accuracy: 0.7908, Validation F1: 0.7731, Best F1: 0.7992 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3977, Validation Accuracy: 0.7941, Validation F1: 0.7813, Best F1: 0.7992 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3791, Validation Accuracy: 0.7979, Validation F1: 0.7953, Best F1: 0.7992 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3599, Validation Accuracy: 0.7985, Validation F1: 0.8105, Best F1: 0.8105 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3493, Validation Accuracy: 0.7831, Validation F1: 0.8002, Best F1: 0.8105 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3199, Validation Accuracy: 0.8094, Validation F1: 0.7974, Best F1: 0.8105 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3051, Validation Accuracy: 0.8029, Validation F1: 0.7952, Best F1: 0.8105 at Epoch 7
+Test Accuracy: 0.8142, Test F1: 0.8071
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 964958, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6179, Validation Accuracy: 0.7628, Validation F1: 0.7775, Best F1: 0.7775 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4931, Validation Accuracy: 0.7716, Validation F1: 0.7871, Best F1: 0.7871 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4635, Validation Accuracy: 0.7748, Validation F1: 0.7940, Best F1: 0.7940 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4452, Validation Accuracy: 0.7792, Validation F1: 0.7789, Best F1: 0.7940 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4200, Validation Accuracy: 0.7716, Validation F1: 0.7990, Best F1: 0.7990 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4065, Validation Accuracy: 0.7825, Validation F1: 0.7994, Best F1: 0.7994 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3933, Validation Accuracy: 0.7952, Validation F1: 0.8002, Best F1: 0.8002 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3794, Validation Accuracy: 0.7946, Validation F1: 0.8119, Best F1: 0.8119 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3742, Validation Accuracy: 0.7946, Validation F1: 0.8088, Best F1: 0.8119 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3635, Validation Accuracy: 0.7891, Validation F1: 0.8047, Best F1: 0.8119 at Epoch 8
+Test Accuracy: 0.7970, Test F1: 0.8074
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 462827, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5904, Validation Accuracy: 0.7128, Validation F1: 0.6293, Best F1: 0.6293 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4611, Validation Accuracy: 0.7952, Validation F1: 0.7865, Best F1: 0.7865 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4336, Validation Accuracy: 0.7968, Validation F1: 0.7944, Best F1: 0.7944 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4174, Validation Accuracy: 0.7957, Validation F1: 0.7872, Best F1: 0.7944 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3919, Validation Accuracy: 0.7941, Validation F1: 0.8036, Best F1: 0.8036 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3805, Validation Accuracy: 0.7825, Validation F1: 0.8053, Best F1: 0.8053 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3628, Validation Accuracy: 0.8012, Validation F1: 0.8070, Best F1: 0.8070 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3480, Validation Accuracy: 0.7968, Validation F1: 0.7784, Best F1: 0.8070 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3333, Validation Accuracy: 0.7957, Validation F1: 0.8084, Best F1: 0.8084 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3257, Validation Accuracy: 0.7941, Validation F1: 0.8070, Best F1: 0.8084 at Epoch 9
+Test Accuracy: 0.7890, Test F1: 0.8026
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 366898, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5875, Validation Accuracy: 0.7128, Validation F1: 0.7595, Best F1: 0.7595 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4878, Validation Accuracy: 0.7199, Validation F1: 0.7619, Best F1: 0.7619 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4576, Validation Accuracy: 0.6969, Validation F1: 0.7536, Best F1: 0.7619 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4327, Validation Accuracy: 0.6853, Validation F1: 0.7531, Best F1: 0.7619 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4193, Validation Accuracy: 0.7155, Validation F1: 0.7648, Best F1: 0.7648 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3982, Validation Accuracy: 0.6925, Validation F1: 0.7559, Best F1: 0.7648 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3794, Validation Accuracy: 0.7177, Validation F1: 0.7636, Best F1: 0.7648 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3639, Validation Accuracy: 0.7161, Validation F1: 0.7678, Best F1: 0.7678 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3497, Validation Accuracy: 0.7441, Validation F1: 0.7672, Best F1: 0.7678 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3382, Validation Accuracy: 0.6716, Validation F1: 0.7490, Best F1: 0.7678 at Epoch 8
+Test Accuracy: 0.6697, Test F1: 0.7419
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 45671, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5578, Validation Accuracy: 0.7523, Validation F1: 0.7748, Best F1: 0.7748 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4570, Validation Accuracy: 0.6996, Validation F1: 0.7602, Best F1: 0.7748 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4277, Validation Accuracy: 0.7276, Validation F1: 0.7689, Best F1: 0.7748 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4043, Validation Accuracy: 0.6908, Validation F1: 0.7562, Best F1: 0.7748 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3847, Validation Accuracy: 0.7512, Validation F1: 0.7808, Best F1: 0.7808 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3646, Validation Accuracy: 0.7183, Validation F1: 0.7665, Best F1: 0.7808 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3518, Validation Accuracy: 0.7139, Validation F1: 0.7661, Best F1: 0.7808 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3314, Validation Accuracy: 0.7441, Validation F1: 0.7781, Best F1: 0.7808 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3095, Validation Accuracy: 0.7364, Validation F1: 0.7765, Best F1: 0.7808 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.2888, Validation Accuracy: 0.7293, Validation F1: 0.7706, Best F1: 0.7808 at Epoch 5
+Test Accuracy: 0.7282, Test F1: 0.7637
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 930397, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5923, Validation Accuracy: 0.7490, Validation F1: 0.7275, Best F1: 0.7275 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4974, Validation Accuracy: 0.7551, Validation F1: 0.7264, Best F1: 0.7275 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4626, Validation Accuracy: 0.7792, Validation F1: 0.7703, Best F1: 0.7703 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4418, Validation Accuracy: 0.7820, Validation F1: 0.7714, Best F1: 0.7714 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4258, Validation Accuracy: 0.7831, Validation F1: 0.7933, Best F1: 0.7933 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4119, Validation Accuracy: 0.7617, Validation F1: 0.7200, Best F1: 0.7933 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3966, Validation Accuracy: 0.7803, Validation F1: 0.7630, Best F1: 0.7933 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3797, Validation Accuracy: 0.7847, Validation F1: 0.7760, Best F1: 0.7933 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3692, Validation Accuracy: 0.7825, Validation F1: 0.7695, Best F1: 0.7933 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3602, Validation Accuracy: 0.7836, Validation F1: 0.7635, Best F1: 0.7933 at Epoch 5
+Test Accuracy: 0.8005, Test F1: 0.7814
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 459578, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5673, Validation Accuracy: 0.7858, Validation F1: 0.7838, Best F1: 0.7838 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4579, Validation Accuracy: 0.7996, Validation F1: 0.8011, Best F1: 0.8011 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4284, Validation Accuracy: 0.7820, Validation F1: 0.7898, Best F1: 0.8011 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4147, Validation Accuracy: 0.7754, Validation F1: 0.7940, Best F1: 0.8011 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3920, Validation Accuracy: 0.7677, Validation F1: 0.7938, Best F1: 0.8011 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3773, Validation Accuracy: 0.7842, Validation F1: 0.8018, Best F1: 0.8018 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3634, Validation Accuracy: 0.7716, Validation F1: 0.7955, Best F1: 0.8018 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3409, Validation Accuracy: 0.7880, Validation F1: 0.7787, Best F1: 0.8018 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3336, Validation Accuracy: 0.7842, Validation F1: 0.8002, Best F1: 0.8018 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3058, Validation Accuracy: 0.7699, Validation F1: 0.7961, Best F1: 0.8018 at Epoch 6
+Test Accuracy: 0.7592, Test F1: 0.7840
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 369087, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6170, Validation Accuracy: 0.7370, Validation F1: 0.7004, Best F1: 0.7004 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5017, Validation Accuracy: 0.7326, Validation F1: 0.6807, Best F1: 0.7004 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4752, Validation Accuracy: 0.6941, Validation F1: 0.5919, Best F1: 0.7004 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4481, Validation Accuracy: 0.7348, Validation F1: 0.6853, Best F1: 0.7004 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4309, Validation Accuracy: 0.7408, Validation F1: 0.6887, Best F1: 0.7004 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4187, Validation Accuracy: 0.7677, Validation F1: 0.7510, Best F1: 0.7510 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.4030, Validation Accuracy: 0.7562, Validation F1: 0.7186, Best F1: 0.7510 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3854, Validation Accuracy: 0.7661, Validation F1: 0.7479, Best F1: 0.7510 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3794, Validation Accuracy: 0.7507, Validation F1: 0.7123, Best F1: 0.7510 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3617, Validation Accuracy: 0.7584, Validation F1: 0.7215, Best F1: 0.7510 at Epoch 6
+Test Accuracy: 0.7603, Test F1: 0.7239
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 771712, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5860, Validation Accuracy: 0.7210, Validation F1: 0.6631, Best F1: 0.6631 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4639, Validation Accuracy: 0.7150, Validation F1: 0.6332, Best F1: 0.6631 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4370, Validation Accuracy: 0.7194, Validation F1: 0.6596, Best F1: 0.6631 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4184, Validation Accuracy: 0.7095, Validation F1: 0.6379, Best F1: 0.6631 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3994, Validation Accuracy: 0.7265, Validation F1: 0.6820, Best F1: 0.6820 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3853, Validation Accuracy: 0.7216, Validation F1: 0.6645, Best F1: 0.6820 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3708, Validation Accuracy: 0.7073, Validation F1: 0.6311, Best F1: 0.6820 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3547, Validation Accuracy: 0.7172, Validation F1: 0.6587, Best F1: 0.6820 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3382, Validation Accuracy: 0.6958, Validation F1: 0.6020, Best F1: 0.6820 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3237, Validation Accuracy: 0.7029, Validation F1: 0.6187, Best F1: 0.6820 at Epoch 5
+Test Accuracy: 0.7236, Test F1: 0.6512
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 597575, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6102, Validation Accuracy: 0.7238, Validation F1: 0.6631, Best F1: 0.6631 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4767, Validation Accuracy: 0.7814, Validation F1: 0.7774, Best F1: 0.7774 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4467, Validation Accuracy: 0.7705, Validation F1: 0.7885, Best F1: 0.7885 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4246, Validation Accuracy: 0.7754, Validation F1: 0.7895, Best F1: 0.7895 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4117, Validation Accuracy: 0.7847, Validation F1: 0.7825, Best F1: 0.7895 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3935, Validation Accuracy: 0.7792, Validation F1: 0.7970, Best F1: 0.7970 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3812, Validation Accuracy: 0.7831, Validation F1: 0.7887, Best F1: 0.7970 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3619, Validation Accuracy: 0.7869, Validation F1: 0.7830, Best F1: 0.7970 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3477, Validation Accuracy: 0.7847, Validation F1: 0.7837, Best F1: 0.7970 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3345, Validation Accuracy: 0.7886, Validation F1: 0.7879, Best F1: 0.7970 at Epoch 6
+Test Accuracy: 0.7798, Test F1: 0.7798
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 916418, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5824, Validation Accuracy: 0.7595, Validation F1: 0.7861, Best F1: 0.7861 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4506, Validation Accuracy: 0.7699, Validation F1: 0.7889, Best F1: 0.7889 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4228, Validation Accuracy: 0.7227, Validation F1: 0.7732, Best F1: 0.7889 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.3957, Validation Accuracy: 0.7639, Validation F1: 0.7917, Best F1: 0.7917 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3822, Validation Accuracy: 0.7633, Validation F1: 0.7811, Best F1: 0.7917 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3624, Validation Accuracy: 0.7611, Validation F1: 0.7902, Best F1: 0.7917 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3442, Validation Accuracy: 0.7430, Validation F1: 0.7817, Best F1: 0.7917 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3220, Validation Accuracy: 0.7485, Validation F1: 0.7868, Best F1: 0.7917 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.2977, Validation Accuracy: 0.7403, Validation F1: 0.7801, Best F1: 0.7917 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2812, Validation Accuracy: 0.7287, Validation F1: 0.7721, Best F1: 0.7917 at Epoch 4
+Test Accuracy: 0.7133, Test F1: 0.7559
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 635747, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6104, Validation Accuracy: 0.7694, Validation F1: 0.7705, Best F1: 0.7705 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4753, Validation Accuracy: 0.7809, Validation F1: 0.7986, Best F1: 0.7986 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4475, Validation Accuracy: 0.7847, Validation F1: 0.8006, Best F1: 0.8006 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4215, Validation Accuracy: 0.7814, Validation F1: 0.7992, Best F1: 0.8006 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4063, Validation Accuracy: 0.7853, Validation F1: 0.8000, Best F1: 0.8006 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3924, Validation Accuracy: 0.7814, Validation F1: 0.7905, Best F1: 0.8006 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3754, Validation Accuracy: 0.7781, Validation F1: 0.7960, Best F1: 0.8006 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3627, Validation Accuracy: 0.7666, Validation F1: 0.7920, Best F1: 0.8006 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3495, Validation Accuracy: 0.7721, Validation F1: 0.7977, Best F1: 0.8006 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3345, Validation Accuracy: 0.7578, Validation F1: 0.7899, Best F1: 0.8006 at Epoch 3
+Test Accuracy: 0.7431, Test F1: 0.7751
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 197502, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5879, Validation Accuracy: 0.7765, Validation F1: 0.7767, Best F1: 0.7767 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4556, Validation Accuracy: 0.7919, Validation F1: 0.7828, Best F1: 0.7828 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4219, Validation Accuracy: 0.7946, Validation F1: 0.7755, Best F1: 0.7828 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4041, Validation Accuracy: 0.7963, Validation F1: 0.7951, Best F1: 0.7951 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3826, Validation Accuracy: 0.7875, Validation F1: 0.7896, Best F1: 0.7951 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3619, Validation Accuracy: 0.7919, Validation F1: 0.8041, Best F1: 0.8041 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3445, Validation Accuracy: 0.7941, Validation F1: 0.7945, Best F1: 0.8041 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3207, Validation Accuracy: 0.7996, Validation F1: 0.8084, Best F1: 0.8084 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3032, Validation Accuracy: 0.7924, Validation F1: 0.7852, Best F1: 0.8084 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.2783, Validation Accuracy: 0.7974, Validation F1: 0.8120, Best F1: 0.8120 at Epoch 10
+Test Accuracy: 0.7913, Test F1: 0.8051
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 156604, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6035, Validation Accuracy: 0.7485, Validation F1: 0.7152, Best F1: 0.7152 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4763, Validation Accuracy: 0.7595, Validation F1: 0.7474, Best F1: 0.7474 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4481, Validation Accuracy: 0.7600, Validation F1: 0.7264, Best F1: 0.7474 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4243, Validation Accuracy: 0.7666, Validation F1: 0.7454, Best F1: 0.7474 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4165, Validation Accuracy: 0.7611, Validation F1: 0.7339, Best F1: 0.7474 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3979, Validation Accuracy: 0.7551, Validation F1: 0.7123, Best F1: 0.7474 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3825, Validation Accuracy: 0.7897, Validation F1: 0.7764, Best F1: 0.7764 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3644, Validation Accuracy: 0.7661, Validation F1: 0.7287, Best F1: 0.7764 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3496, Validation Accuracy: 0.7452, Validation F1: 0.6907, Best F1: 0.7764 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3327, Validation Accuracy: 0.7567, Validation F1: 0.7194, Best F1: 0.7764 at Epoch 7
+Test Accuracy: 0.7683, Test F1: 0.7314
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 391654, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5835, Validation Accuracy: 0.7688, Validation F1: 0.7864, Best F1: 0.7864 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4581, Validation Accuracy: 0.7781, Validation F1: 0.7531, Best F1: 0.7864 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4240, Validation Accuracy: 0.7864, Validation F1: 0.7708, Best F1: 0.7864 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4051, Validation Accuracy: 0.7908, Validation F1: 0.7908, Best F1: 0.7908 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3889, Validation Accuracy: 0.7891, Validation F1: 0.7778, Best F1: 0.7908 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3694, Validation Accuracy: 0.7864, Validation F1: 0.7705, Best F1: 0.7908 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3506, Validation Accuracy: 0.7743, Validation F1: 0.7390, Best F1: 0.7908 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3327, Validation Accuracy: 0.7847, Validation F1: 0.7680, Best F1: 0.7908 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3080, Validation Accuracy: 0.7875, Validation F1: 0.7844, Best F1: 0.7908 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2961, Validation Accuracy: 0.7721, Validation F1: 0.7901, Best F1: 0.7908 at Epoch 4
+Test Accuracy: 0.7695, Test F1: 0.7864
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 874029, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5812, Validation Accuracy: 0.6864, Validation F1: 0.5942, Best F1: 0.5942 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4770, Validation Accuracy: 0.7177, Validation F1: 0.6592, Best F1: 0.6592 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4478, Validation Accuracy: 0.7188, Validation F1: 0.6439, Best F1: 0.6592 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4260, Validation Accuracy: 0.7392, Validation F1: 0.6831, Best F1: 0.6831 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4051, Validation Accuracy: 0.7232, Validation F1: 0.6466, Best F1: 0.6831 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3867, Validation Accuracy: 0.7754, Validation F1: 0.7461, Best F1: 0.7461 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3716, Validation Accuracy: 0.7562, Validation F1: 0.7090, Best F1: 0.7461 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3527, Validation Accuracy: 0.7606, Validation F1: 0.7194, Best F1: 0.7461 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3299, Validation Accuracy: 0.7743, Validation F1: 0.7439, Best F1: 0.7461 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3153, Validation Accuracy: 0.7578, Validation F1: 0.7108, Best F1: 0.7461 at Epoch 6
+Test Accuracy: 0.7626, Test F1: 0.7072
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 693846, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5465, Validation Accuracy: 0.7803, Validation F1: 0.7622, Best F1: 0.7622 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4453, Validation Accuracy: 0.7897, Validation F1: 0.8027, Best F1: 0.8027 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4184, Validation Accuracy: 0.7831, Validation F1: 0.8030, Best F1: 0.8030 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4001, Validation Accuracy: 0.8012, Validation F1: 0.7991, Best F1: 0.8030 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3777, Validation Accuracy: 0.7897, Validation F1: 0.7584, Best F1: 0.8030 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3594, Validation Accuracy: 0.7952, Validation F1: 0.7762, Best F1: 0.8030 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3360, Validation Accuracy: 0.7996, Validation F1: 0.7985, Best F1: 0.8030 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3128, Validation Accuracy: 0.8001, Validation F1: 0.8114, Best F1: 0.8114 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.2924, Validation Accuracy: 0.7979, Validation F1: 0.7887, Best F1: 0.8114 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.2678, Validation Accuracy: 0.7930, Validation F1: 0.7722, Best F1: 0.8114 at Epoch 8
+Test Accuracy: 0.8154, Test F1: 0.7995
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 364515, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5941, Validation Accuracy: 0.7188, Validation F1: 0.6671, Best F1: 0.6671 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4834, Validation Accuracy: 0.7342, Validation F1: 0.6828, Best F1: 0.6828 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4507, Validation Accuracy: 0.7512, Validation F1: 0.7083, Best F1: 0.7083 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4332, Validation Accuracy: 0.7600, Validation F1: 0.7294, Best F1: 0.7294 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4129, Validation Accuracy: 0.7814, Validation F1: 0.7628, Best F1: 0.7628 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3948, Validation Accuracy: 0.7891, Validation F1: 0.7938, Best F1: 0.7938 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3813, Validation Accuracy: 0.7974, Validation F1: 0.8097, Best F1: 0.8097 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3586, Validation Accuracy: 0.7908, Validation F1: 0.7989, Best F1: 0.8097 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3466, Validation Accuracy: 0.7919, Validation F1: 0.8095, Best F1: 0.8097 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3352, Validation Accuracy: 0.7886, Validation F1: 0.7799, Best F1: 0.8097 at Epoch 7
+Test Accuracy: 0.7959, Test F1: 0.7850
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 62547, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5583, Validation Accuracy: 0.7836, Validation F1: 0.7891, Best F1: 0.7891 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4490, Validation Accuracy: 0.8007, Validation F1: 0.8002, Best F1: 0.8002 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4164, Validation Accuracy: 0.7935, Validation F1: 0.7899, Best F1: 0.8002 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4022, Validation Accuracy: 0.8001, Validation F1: 0.8060, Best F1: 0.8060 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3819, Validation Accuracy: 0.7985, Validation F1: 0.8017, Best F1: 0.8060 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3623, Validation Accuracy: 0.7864, Validation F1: 0.8046, Best F1: 0.8060 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3440, Validation Accuracy: 0.7880, Validation F1: 0.8074, Best F1: 0.8074 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3256, Validation Accuracy: 0.7897, Validation F1: 0.7966, Best F1: 0.8074 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3066, Validation Accuracy: 0.7935, Validation F1: 0.7976, Best F1: 0.8074 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.2925, Validation Accuracy: 0.7710, Validation F1: 0.7959, Best F1: 0.8074 at Epoch 7
+Test Accuracy: 0.7661, Test F1: 0.7906
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 460292, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5880, Validation Accuracy: 0.7694, Validation F1: 0.7532, Best F1: 0.7532 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4847, Validation Accuracy: 0.7864, Validation F1: 0.7956, Best F1: 0.7956 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4593, Validation Accuracy: 0.7853, Validation F1: 0.7797, Best F1: 0.7956 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4363, Validation Accuracy: 0.7946, Validation F1: 0.8074, Best F1: 0.8074 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4263, Validation Accuracy: 0.7985, Validation F1: 0.7897, Best F1: 0.8074 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4132, Validation Accuracy: 0.8045, Validation F1: 0.8084, Best F1: 0.8084 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3941, Validation Accuracy: 0.8122, Validation F1: 0.8068, Best F1: 0.8084 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3758, Validation Accuracy: 0.8094, Validation F1: 0.8121, Best F1: 0.8121 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3610, Validation Accuracy: 0.7474, Validation F1: 0.6871, Best F1: 0.8121 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3536, Validation Accuracy: 0.8040, Validation F1: 0.8013, Best F1: 0.8121 at Epoch 8
+Test Accuracy: 0.8154, Test F1: 0.8121
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 211728, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5663, Validation Accuracy: 0.7370, Validation F1: 0.7120, Best F1: 0.7120 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4524, Validation Accuracy: 0.7342, Validation F1: 0.6765, Best F1: 0.7120 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4214, Validation Accuracy: 0.7095, Validation F1: 0.6235, Best F1: 0.7120 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4042, Validation Accuracy: 0.7386, Validation F1: 0.6889, Best F1: 0.7120 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3845, Validation Accuracy: 0.7348, Validation F1: 0.6703, Best F1: 0.7120 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3729, Validation Accuracy: 0.7381, Validation F1: 0.6792, Best F1: 0.7120 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3460, Validation Accuracy: 0.7403, Validation F1: 0.6882, Best F1: 0.7120 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3287, Validation Accuracy: 0.7617, Validation F1: 0.7318, Best F1: 0.7318 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3275, Validation Accuracy: 0.7518, Validation F1: 0.7106, Best F1: 0.7318 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.2983, Validation Accuracy: 0.7424, Validation F1: 0.6964, Best F1: 0.7318 at Epoch 8
+Test Accuracy: 0.7706, Test F1: 0.7347
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 348238, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5795, Validation Accuracy: 0.7485, Validation F1: 0.7194, Best F1: 0.7194 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4914, Validation Accuracy: 0.7743, Validation F1: 0.7929, Best F1: 0.7929 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4505, Validation Accuracy: 0.7875, Validation F1: 0.7659, Best F1: 0.7929 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4255, Validation Accuracy: 0.7990, Validation F1: 0.8074, Best F1: 0.8074 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4056, Validation Accuracy: 0.8001, Validation F1: 0.8047, Best F1: 0.8074 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3881, Validation Accuracy: 0.8089, Validation F1: 0.8125, Best F1: 0.8125 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3686, Validation Accuracy: 0.7979, Validation F1: 0.8115, Best F1: 0.8125 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3478, Validation Accuracy: 0.8040, Validation F1: 0.7954, Best F1: 0.8125 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3351, Validation Accuracy: 0.8045, Validation F1: 0.8176, Best F1: 0.8176 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3100, Validation Accuracy: 0.7952, Validation F1: 0.7884, Best F1: 0.8176 at Epoch 9
+Test Accuracy: 0.7890, Test F1: 0.7810
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 29133, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5369, Validation Accuracy: 0.7721, Validation F1: 0.7685, Best F1: 0.7685 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4493, Validation Accuracy: 0.7677, Validation F1: 0.7297, Best F1: 0.7685 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4194, Validation Accuracy: 0.7825, Validation F1: 0.7637, Best F1: 0.7685 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.3937, Validation Accuracy: 0.7781, Validation F1: 0.7515, Best F1: 0.7685 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3705, Validation Accuracy: 0.8034, Validation F1: 0.7935, Best F1: 0.7935 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3479, Validation Accuracy: 0.7952, Validation F1: 0.7981, Best F1: 0.7981 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3266, Validation Accuracy: 0.7990, Validation F1: 0.8000, Best F1: 0.8000 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3046, Validation Accuracy: 0.7759, Validation F1: 0.7431, Best F1: 0.8000 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.2802, Validation Accuracy: 0.7880, Validation F1: 0.7655, Best F1: 0.8000 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.2780, Validation Accuracy: 0.7672, Validation F1: 0.7261, Best F1: 0.8000 at Epoch 7
+Test Accuracy: 0.7821, Test F1: 0.7480
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 776008, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5835, Validation Accuracy: 0.7551, Validation F1: 0.7454, Best F1: 0.7454 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4939, Validation Accuracy: 0.7705, Validation F1: 0.7512, Best F1: 0.7512 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4566, Validation Accuracy: 0.7776, Validation F1: 0.7553, Best F1: 0.7553 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4353, Validation Accuracy: 0.7699, Validation F1: 0.7409, Best F1: 0.7553 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4166, Validation Accuracy: 0.7644, Validation F1: 0.7276, Best F1: 0.7553 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3991, Validation Accuracy: 0.8012, Validation F1: 0.8004, Best F1: 0.8004 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3803, Validation Accuracy: 0.7952, Validation F1: 0.7906, Best F1: 0.8004 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3645, Validation Accuracy: 0.7930, Validation F1: 0.7907, Best F1: 0.8004 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3543, Validation Accuracy: 0.7935, Validation F1: 0.7762, Best F1: 0.8004 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3366, Validation Accuracy: 0.7716, Validation F1: 0.7393, Best F1: 0.8004 at Epoch 6
+Test Accuracy: 0.7867, Test F1: 0.7578
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 70807, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5485, Validation Accuracy: 0.7639, Validation F1: 0.7875, Best F1: 0.7875 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4521, Validation Accuracy: 0.7655, Validation F1: 0.7918, Best F1: 0.7918 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4268, Validation Accuracy: 0.7463, Validation F1: 0.7851, Best F1: 0.7918 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4032, Validation Accuracy: 0.7705, Validation F1: 0.7845, Best F1: 0.7918 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3817, Validation Accuracy: 0.7738, Validation F1: 0.7896, Best F1: 0.7918 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3652, Validation Accuracy: 0.7512, Validation F1: 0.7844, Best F1: 0.7918 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3430, Validation Accuracy: 0.7573, Validation F1: 0.7913, Best F1: 0.7918 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3252, Validation Accuracy: 0.7650, Validation F1: 0.7950, Best F1: 0.7950 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3047, Validation Accuracy: 0.7584, Validation F1: 0.7868, Best F1: 0.7950 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.2901, Validation Accuracy: 0.7732, Validation F1: 0.7938, Best F1: 0.7950 at Epoch 8
+Test Accuracy: 0.7615, Test F1: 0.7806
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 393278, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5852, Validation Accuracy: 0.7512, Validation F1: 0.7720, Best F1: 0.7720 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4956, Validation Accuracy: 0.7254, Validation F1: 0.7731, Best F1: 0.7731 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4617, Validation Accuracy: 0.7370, Validation F1: 0.7804, Best F1: 0.7804 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4352, Validation Accuracy: 0.7776, Validation F1: 0.7874, Best F1: 0.7874 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4187, Validation Accuracy: 0.7770, Validation F1: 0.7939, Best F1: 0.7939 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4027, Validation Accuracy: 0.7809, Validation F1: 0.7923, Best F1: 0.7939 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3893, Validation Accuracy: 0.7809, Validation F1: 0.7998, Best F1: 0.7998 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3778, Validation Accuracy: 0.7688, Validation F1: 0.8009, Best F1: 0.8009 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3593, Validation Accuracy: 0.7748, Validation F1: 0.8031, Best F1: 0.8031 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3524, Validation Accuracy: 0.7924, Validation F1: 0.7961, Best F1: 0.8031 at Epoch 9
+Test Accuracy: 0.7982, Test F1: 0.7977
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 406224, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5675, Validation Accuracy: 0.7908, Validation F1: 0.7887, Best F1: 0.7887 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4643, Validation Accuracy: 0.7913, Validation F1: 0.7894, Best F1: 0.7894 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4337, Validation Accuracy: 0.7957, Validation F1: 0.7860, Best F1: 0.7894 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4156, Validation Accuracy: 0.7908, Validation F1: 0.7889, Best F1: 0.7894 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3912, Validation Accuracy: 0.7875, Validation F1: 0.7743, Best F1: 0.7894 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3723, Validation Accuracy: 0.7683, Validation F1: 0.7329, Best F1: 0.7894 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3588, Validation Accuracy: 0.7820, Validation F1: 0.7699, Best F1: 0.7894 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3407, Validation Accuracy: 0.7831, Validation F1: 0.7622, Best F1: 0.7894 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3240, Validation Accuracy: 0.7452, Validation F1: 0.6894, Best F1: 0.7894 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3057, Validation Accuracy: 0.7529, Validation F1: 0.7082, Best F1: 0.7894 at Epoch 2
+Test Accuracy: 0.7661, Test F1: 0.7251
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 513672, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5967, Validation Accuracy: 0.7249, Validation F1: 0.6689, Best F1: 0.6689 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4706, Validation Accuracy: 0.7523, Validation F1: 0.7415, Best F1: 0.7415 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4479, Validation Accuracy: 0.7523, Validation F1: 0.7352, Best F1: 0.7415 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4231, Validation Accuracy: 0.7397, Validation F1: 0.6853, Best F1: 0.7415 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4130, Validation Accuracy: 0.7496, Validation F1: 0.7073, Best F1: 0.7415 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3999, Validation Accuracy: 0.7276, Validation F1: 0.6546, Best F1: 0.7415 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3763, Validation Accuracy: 0.7628, Validation F1: 0.7327, Best F1: 0.7415 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3553, Validation Accuracy: 0.7392, Validation F1: 0.6801, Best F1: 0.7415 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3411, Validation Accuracy: 0.7705, Validation F1: 0.7391, Best F1: 0.7415 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3262, Validation Accuracy: 0.7529, Validation F1: 0.7074, Best F1: 0.7415 at Epoch 2
+Test Accuracy: 0.7615, Test F1: 0.7135
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 222808, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5656, Validation Accuracy: 0.7721, Validation F1: 0.7888, Best F1: 0.7888 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4473, Validation Accuracy: 0.7781, Validation F1: 0.7955, Best F1: 0.7955 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4188, Validation Accuracy: 0.7688, Validation F1: 0.7943, Best F1: 0.7955 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.3935, Validation Accuracy: 0.7468, Validation F1: 0.7849, Best F1: 0.7955 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3773, Validation Accuracy: 0.7315, Validation F1: 0.7782, Best F1: 0.7955 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3587, Validation Accuracy: 0.7617, Validation F1: 0.7858, Best F1: 0.7955 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3322, Validation Accuracy: 0.7617, Validation F1: 0.7761, Best F1: 0.7955 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3163, Validation Accuracy: 0.7699, Validation F1: 0.7844, Best F1: 0.7955 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2990, Validation Accuracy: 0.7474, Validation F1: 0.7820, Best F1: 0.7955 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2795, Validation Accuracy: 0.7523, Validation F1: 0.7777, Best F1: 0.7955 at Epoch 2
+Test Accuracy: 0.7534, Test F1: 0.7744
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 873296, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5852, Validation Accuracy: 0.7370, Validation F1: 0.6851, Best F1: 0.6851 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4706, Validation Accuracy: 0.7611, Validation F1: 0.7273, Best F1: 0.7273 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4421, Validation Accuracy: 0.7639, Validation F1: 0.7372, Best F1: 0.7372 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4251, Validation Accuracy: 0.7770, Validation F1: 0.7580, Best F1: 0.7580 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4077, Validation Accuracy: 0.7759, Validation F1: 0.7563, Best F1: 0.7580 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3908, Validation Accuracy: 0.8051, Validation F1: 0.8031, Best F1: 0.8031 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3762, Validation Accuracy: 0.7853, Validation F1: 0.7640, Best F1: 0.8031 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3588, Validation Accuracy: 0.8023, Validation F1: 0.7921, Best F1: 0.8031 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3380, Validation Accuracy: 0.8083, Validation F1: 0.8158, Best F1: 0.8158 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3245, Validation Accuracy: 0.8155, Validation F1: 0.8197, Best F1: 0.8197 at Epoch 10
+Test Accuracy: 0.8200, Test F1: 0.8210
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 745075, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5738, Validation Accuracy: 0.7831, Validation F1: 0.7610, Best F1: 0.7610 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4521, Validation Accuracy: 0.7825, Validation F1: 0.8014, Best F1: 0.8014 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4207, Validation Accuracy: 0.8007, Validation F1: 0.7984, Best F1: 0.8014 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4009, Validation Accuracy: 0.8062, Validation F1: 0.8135, Best F1: 0.8135 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3759, Validation Accuracy: 0.7963, Validation F1: 0.7903, Best F1: 0.8135 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3566, Validation Accuracy: 0.7798, Validation F1: 0.7486, Best F1: 0.8135 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3353, Validation Accuracy: 0.7930, Validation F1: 0.8058, Best F1: 0.8135 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3157, Validation Accuracy: 0.7897, Validation F1: 0.7911, Best F1: 0.8135 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.2937, Validation Accuracy: 0.7611, Validation F1: 0.7224, Best F1: 0.8135 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2810, Validation Accuracy: 0.7858, Validation F1: 0.7789, Best F1: 0.8135 at Epoch 4
+Test Accuracy: 0.7901, Test F1: 0.7814
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 993063, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6098, Validation Accuracy: 0.7644, Validation F1: 0.7783, Best F1: 0.7783 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4753, Validation Accuracy: 0.7787, Validation F1: 0.7722, Best F1: 0.7783 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4464, Validation Accuracy: 0.7397, Validation F1: 0.6780, Best F1: 0.7783 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4219, Validation Accuracy: 0.7386, Validation F1: 0.6801, Best F1: 0.7783 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4101, Validation Accuracy: 0.7370, Validation F1: 0.6792, Best F1: 0.7783 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3928, Validation Accuracy: 0.7595, Validation F1: 0.7368, Best F1: 0.7783 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3757, Validation Accuracy: 0.7424, Validation F1: 0.6968, Best F1: 0.7783 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3547, Validation Accuracy: 0.7534, Validation F1: 0.7131, Best F1: 0.7783 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3378, Validation Accuracy: 0.7496, Validation F1: 0.7039, Best F1: 0.7783 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3200, Validation Accuracy: 0.7287, Validation F1: 0.6560, Best F1: 0.7783 at Epoch 1
+Test Accuracy: 0.7385, Test F1: 0.6647
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 844985, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5790, Validation Accuracy: 0.7842, Validation F1: 0.7788, Best F1: 0.7788 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4503, Validation Accuracy: 0.7666, Validation F1: 0.7885, Best F1: 0.7885 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4177, Validation Accuracy: 0.7831, Validation F1: 0.7902, Best F1: 0.7902 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4023, Validation Accuracy: 0.7781, Validation F1: 0.7984, Best F1: 0.7984 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3735, Validation Accuracy: 0.7864, Validation F1: 0.7964, Best F1: 0.7984 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3549, Validation Accuracy: 0.7836, Validation F1: 0.7754, Best F1: 0.7984 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3387, Validation Accuracy: 0.7814, Validation F1: 0.7957, Best F1: 0.7984 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3096, Validation Accuracy: 0.7930, Validation F1: 0.8006, Best F1: 0.8006 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.2931, Validation Accuracy: 0.7897, Validation F1: 0.7979, Best F1: 0.8006 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.2777, Validation Accuracy: 0.7875, Validation F1: 0.7875, Best F1: 0.8006 at Epoch 8
+Test Accuracy: 0.8016, Test F1: 0.8023
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 27363, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5691, Validation Accuracy: 0.7540, Validation F1: 0.7767, Best F1: 0.7767 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4709, Validation Accuracy: 0.7611, Validation F1: 0.7875, Best F1: 0.7875 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4415, Validation Accuracy: 0.7298, Validation F1: 0.7774, Best F1: 0.7875 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4224, Validation Accuracy: 0.7545, Validation F1: 0.7868, Best F1: 0.7875 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4015, Validation Accuracy: 0.7512, Validation F1: 0.7870, Best F1: 0.7875 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3751, Validation Accuracy: 0.7496, Validation F1: 0.7869, Best F1: 0.7875 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3622, Validation Accuracy: 0.7803, Validation F1: 0.8022, Best F1: 0.8022 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3367, Validation Accuracy: 0.7935, Validation F1: 0.8078, Best F1: 0.8078 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3225, Validation Accuracy: 0.7589, Validation F1: 0.7924, Best F1: 0.8078 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3089, Validation Accuracy: 0.7688, Validation F1: 0.8021, Best F1: 0.8078 at Epoch 8
+Test Accuracy: 0.7523, Test F1: 0.7844
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 929962, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5404, Validation Accuracy: 0.7617, Validation F1: 0.7174, Best F1: 0.7174 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4524, Validation Accuracy: 0.7935, Validation F1: 0.7998, Best F1: 0.7998 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4212, Validation Accuracy: 0.8018, Validation F1: 0.7959, Best F1: 0.7998 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.3963, Validation Accuracy: 0.8089, Validation F1: 0.8086, Best F1: 0.8086 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3719, Validation Accuracy: 0.7996, Validation F1: 0.7842, Best F1: 0.8086 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3497, Validation Accuracy: 0.8040, Validation F1: 0.8132, Best F1: 0.8132 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3280, Validation Accuracy: 0.7957, Validation F1: 0.8040, Best F1: 0.8132 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3051, Validation Accuracy: 0.7996, Validation F1: 0.7894, Best F1: 0.8132 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.2886, Validation Accuracy: 0.7919, Validation F1: 0.8013, Best F1: 0.8132 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.2626, Validation Accuracy: 0.7908, Validation F1: 0.8081, Best F1: 0.8132 at Epoch 6
+Test Accuracy: 0.7959, Test F1: 0.8106
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 692450, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5701, Validation Accuracy: 0.7551, Validation F1: 0.7383, Best F1: 0.7383 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4804, Validation Accuracy: 0.7600, Validation F1: 0.7297, Best F1: 0.7383 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4499, Validation Accuracy: 0.7831, Validation F1: 0.7767, Best F1: 0.7767 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4248, Validation Accuracy: 0.7639, Validation F1: 0.7941, Best F1: 0.7941 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3976, Validation Accuracy: 0.7902, Validation F1: 0.7753, Best F1: 0.7941 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3842, Validation Accuracy: 0.7985, Validation F1: 0.8026, Best F1: 0.8026 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3660, Validation Accuracy: 0.7880, Validation F1: 0.7672, Best F1: 0.8026 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3454, Validation Accuracy: 0.7985, Validation F1: 0.7906, Best F1: 0.8026 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3318, Validation Accuracy: 0.8116, Validation F1: 0.8043, Best F1: 0.8043 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3151, Validation Accuracy: 0.8067, Validation F1: 0.7989, Best F1: 0.8043 at Epoch 9
+Test Accuracy: 0.8131, Test F1: 0.8048
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 232544, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5535, Validation Accuracy: 0.7798, Validation F1: 0.7930, Best F1: 0.7930 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4484, Validation Accuracy: 0.7952, Validation F1: 0.8038, Best F1: 0.8038 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4165, Validation Accuracy: 0.8007, Validation F1: 0.8076, Best F1: 0.8076 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3967, Validation Accuracy: 0.7919, Validation F1: 0.7850, Best F1: 0.8076 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3763, Validation Accuracy: 0.7985, Validation F1: 0.8030, Best F1: 0.8076 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3551, Validation Accuracy: 0.8040, Validation F1: 0.7984, Best F1: 0.8076 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3327, Validation Accuracy: 0.7853, Validation F1: 0.7881, Best F1: 0.8076 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3157, Validation Accuracy: 0.7842, Validation F1: 0.8020, Best F1: 0.8076 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.2967, Validation Accuracy: 0.7886, Validation F1: 0.7739, Best F1: 0.8076 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.2727, Validation Accuracy: 0.7963, Validation F1: 0.7991, Best F1: 0.8076 at Epoch 3
+Test Accuracy: 0.7913, Test F1: 0.7941
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 195937, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5832, Validation Accuracy: 0.7084, Validation F1: 0.7552, Best F1: 0.7552 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4826, Validation Accuracy: 0.7271, Validation F1: 0.7672, Best F1: 0.7672 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4539, Validation Accuracy: 0.7100, Validation F1: 0.7617, Best F1: 0.7672 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4320, Validation Accuracy: 0.7331, Validation F1: 0.7735, Best F1: 0.7735 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4161, Validation Accuracy: 0.7304, Validation F1: 0.7722, Best F1: 0.7735 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3996, Validation Accuracy: 0.7441, Validation F1: 0.7808, Best F1: 0.7808 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3830, Validation Accuracy: 0.7397, Validation F1: 0.7795, Best F1: 0.7808 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3639, Validation Accuracy: 0.7441, Validation F1: 0.7804, Best F1: 0.7808 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3439, Validation Accuracy: 0.7501, Validation F1: 0.7811, Best F1: 0.7811 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3341, Validation Accuracy: 0.7584, Validation F1: 0.7897, Best F1: 0.7897 at Epoch 10
+Test Accuracy: 0.7500, Test F1: 0.7794
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 100097, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5554, Validation Accuracy: 0.7567, Validation F1: 0.7125, Best F1: 0.7125 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4565, Validation Accuracy: 0.7946, Validation F1: 0.7936, Best F1: 0.7936 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4217, Validation Accuracy: 0.8001, Validation F1: 0.7932, Best F1: 0.7936 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4099, Validation Accuracy: 0.7644, Validation F1: 0.7205, Best F1: 0.7936 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3875, Validation Accuracy: 0.7831, Validation F1: 0.7566, Best F1: 0.7936 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3667, Validation Accuracy: 0.8034, Validation F1: 0.7987, Best F1: 0.7987 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3409, Validation Accuracy: 0.7979, Validation F1: 0.7895, Best F1: 0.7987 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3204, Validation Accuracy: 0.7732, Validation F1: 0.7371, Best F1: 0.7987 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3126, Validation Accuracy: 0.7979, Validation F1: 0.7928, Best F1: 0.7987 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.2874, Validation Accuracy: 0.8029, Validation F1: 0.8041, Best F1: 0.8041 at Epoch 10
+Test Accuracy: 0.8211, Test F1: 0.8199
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 488968, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5659, Validation Accuracy: 0.7353, Validation F1: 0.7028, Best F1: 0.7028 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4755, Validation Accuracy: 0.7479, Validation F1: 0.7200, Best F1: 0.7200 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4422, Validation Accuracy: 0.6870, Validation F1: 0.5986, Best F1: 0.7200 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4221, Validation Accuracy: 0.7068, Validation F1: 0.6411, Best F1: 0.7200 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3980, Validation Accuracy: 0.6980, Validation F1: 0.5991, Best F1: 0.7200 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3787, Validation Accuracy: 0.7062, Validation F1: 0.6287, Best F1: 0.7200 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3606, Validation Accuracy: 0.6628, Validation F1: 0.5196, Best F1: 0.7200 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3337, Validation Accuracy: 0.7348, Validation F1: 0.6898, Best F1: 0.7200 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3171, Validation Accuracy: 0.7106, Validation F1: 0.6398, Best F1: 0.7200 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3095, Validation Accuracy: 0.7095, Validation F1: 0.6384, Best F1: 0.7200 at Epoch 2
+Test Accuracy: 0.7339, Test F1: 0.6676
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 580981, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5397, Validation Accuracy: 0.7573, Validation F1: 0.7582, Best F1: 0.7582 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4466, Validation Accuracy: 0.7479, Validation F1: 0.7075, Best F1: 0.7582 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4170, Validation Accuracy: 0.7507, Validation F1: 0.7225, Best F1: 0.7582 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.3933, Validation Accuracy: 0.7177, Validation F1: 0.6426, Best F1: 0.7582 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3724, Validation Accuracy: 0.7194, Validation F1: 0.6409, Best F1: 0.7582 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3436, Validation Accuracy: 0.7161, Validation F1: 0.6427, Best F1: 0.7582 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3239, Validation Accuracy: 0.7079, Validation F1: 0.6151, Best F1: 0.7582 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3010, Validation Accuracy: 0.7485, Validation F1: 0.7159, Best F1: 0.7582 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.2786, Validation Accuracy: 0.7364, Validation F1: 0.6809, Best F1: 0.7582 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.2638, Validation Accuracy: 0.7424, Validation F1: 0.6953, Best F1: 0.7582 at Epoch 1
+Test Accuracy: 0.7489, Test F1: 0.7037
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 703246, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5767, Validation Accuracy: 0.7232, Validation F1: 0.6830, Best F1: 0.6830 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4829, Validation Accuracy: 0.7271, Validation F1: 0.6724, Best F1: 0.6830 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4498, Validation Accuracy: 0.7490, Validation F1: 0.7131, Best F1: 0.7131 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4266, Validation Accuracy: 0.7529, Validation F1: 0.7249, Best F1: 0.7249 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4018, Validation Accuracy: 0.7150, Validation F1: 0.6378, Best F1: 0.7249 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3788, Validation Accuracy: 0.7392, Validation F1: 0.6840, Best F1: 0.7249 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3628, Validation Accuracy: 0.7166, Validation F1: 0.6407, Best F1: 0.7249 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3447, Validation Accuracy: 0.6941, Validation F1: 0.5865, Best F1: 0.7249 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3333, Validation Accuracy: 0.7529, Validation F1: 0.7126, Best F1: 0.7249 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3208, Validation Accuracy: 0.7595, Validation F1: 0.7339, Best F1: 0.7339 at Epoch 10
+Test Accuracy: 0.7729, Test F1: 0.7474
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 373438, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5410, Validation Accuracy: 0.7727, Validation F1: 0.7524, Best F1: 0.7524 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4524, Validation Accuracy: 0.7875, Validation F1: 0.7927, Best F1: 0.7927 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4199, Validation Accuracy: 0.7858, Validation F1: 0.7928, Best F1: 0.7928 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3991, Validation Accuracy: 0.7166, Validation F1: 0.7721, Best F1: 0.7928 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3750, Validation Accuracy: 0.7935, Validation F1: 0.8054, Best F1: 0.8054 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3540, Validation Accuracy: 0.7831, Validation F1: 0.7942, Best F1: 0.8054 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3312, Validation Accuracy: 0.7897, Validation F1: 0.8099, Best F1: 0.8099 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3072, Validation Accuracy: 0.7814, Validation F1: 0.7728, Best F1: 0.8099 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.2962, Validation Accuracy: 0.7836, Validation F1: 0.8028, Best F1: 0.8099 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.2747, Validation Accuracy: 0.7727, Validation F1: 0.7850, Best F1: 0.8099 at Epoch 7
+Test Accuracy: 0.7706, Test F1: 0.7783
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 23270, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5833, Validation Accuracy: 0.7738, Validation F1: 0.7711, Best F1: 0.7711 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4993, Validation Accuracy: 0.7655, Validation F1: 0.7683, Best F1: 0.7711 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4633, Validation Accuracy: 0.7716, Validation F1: 0.7967, Best F1: 0.7967 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4405, Validation Accuracy: 0.7820, Validation F1: 0.7786, Best F1: 0.7967 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4215, Validation Accuracy: 0.7485, Validation F1: 0.7901, Best F1: 0.7967 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4055, Validation Accuracy: 0.7919, Validation F1: 0.8102, Best F1: 0.8102 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3935, Validation Accuracy: 0.7979, Validation F1: 0.8145, Best F1: 0.8145 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3775, Validation Accuracy: 0.8007, Validation F1: 0.8090, Best F1: 0.8145 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3566, Validation Accuracy: 0.8040, Validation F1: 0.8059, Best F1: 0.8145 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3474, Validation Accuracy: 0.8089, Validation F1: 0.8079, Best F1: 0.8145 at Epoch 7
+Test Accuracy: 0.8142, Test F1: 0.8121
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 271229, 'embedding_build_type': 'pretrained', 'model_type': 'gru', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: gru, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5478, Validation Accuracy: 0.7617, Validation F1: 0.7774, Best F1: 0.7774 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4513, Validation Accuracy: 0.7738, Validation F1: 0.7801, Best F1: 0.7801 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4267, Validation Accuracy: 0.7792, Validation F1: 0.7891, Best F1: 0.7891 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4004, Validation Accuracy: 0.7600, Validation F1: 0.7574, Best F1: 0.7891 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3832, Validation Accuracy: 0.7677, Validation F1: 0.7763, Best F1: 0.7891 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3663, Validation Accuracy: 0.7721, Validation F1: 0.7914, Best F1: 0.7914 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3477, Validation Accuracy: 0.7765, Validation F1: 0.7903, Best F1: 0.7914 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3240, Validation Accuracy: 0.7776, Validation F1: 0.7838, Best F1: 0.7914 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3259, Validation Accuracy: 0.7710, Validation F1: 0.7947, Best F1: 0.7947 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.2935, Validation Accuracy: 0.7880, Validation F1: 0.7962, Best F1: 0.7962 at Epoch 10
+Test Accuracy: 0.7901, Test F1: 0.7987
+======================================================================================================================================================

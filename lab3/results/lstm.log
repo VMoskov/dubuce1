@@ -1,0 +1,864 @@
+Config: hidden_size=100 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 698149, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6373, Validation Accuracy: 0.7666, Validation F1: 0.7822, Best F1: 0.7822 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4942, Validation Accuracy: 0.7430, Validation F1: 0.7821, Best F1: 0.7822 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4495, Validation Accuracy: 0.7677, Validation F1: 0.7867, Best F1: 0.7867 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4274, Validation Accuracy: 0.7457, Validation F1: 0.7863, Best F1: 0.7867 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4127, Validation Accuracy: 0.7820, Validation F1: 0.7901, Best F1: 0.7901 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4014, Validation Accuracy: 0.7759, Validation F1: 0.7827, Best F1: 0.7901 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3888, Validation Accuracy: 0.7754, Validation F1: 0.7946, Best F1: 0.7946 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3742, Validation Accuracy: 0.7798, Validation F1: 0.7904, Best F1: 0.7946 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3603, Validation Accuracy: 0.7886, Validation F1: 0.7970, Best F1: 0.7970 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3479, Validation Accuracy: 0.7776, Validation F1: 0.7945, Best F1: 0.7970 at Epoch 9
+Test Accuracy: 0.7741, Test F1: 0.7898
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 821027, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6111, Validation Accuracy: 0.7512, Validation F1: 0.7718, Best F1: 0.7718 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4804, Validation Accuracy: 0.7721, Validation F1: 0.7486, Best F1: 0.7718 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4359, Validation Accuracy: 0.7831, Validation F1: 0.7980, Best F1: 0.7980 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4116, Validation Accuracy: 0.7869, Validation F1: 0.7657, Best F1: 0.7980 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3899, Validation Accuracy: 0.7847, Validation F1: 0.7607, Best F1: 0.7980 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3750, Validation Accuracy: 0.7979, Validation F1: 0.8107, Best F1: 0.8107 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3576, Validation Accuracy: 0.8012, Validation F1: 0.8015, Best F1: 0.8107 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3414, Validation Accuracy: 0.7996, Validation F1: 0.8047, Best F1: 0.8107 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3272, Validation Accuracy: 0.7990, Validation F1: 0.8063, Best F1: 0.8107 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3006, Validation Accuracy: 0.7963, Validation F1: 0.7924, Best F1: 0.8107 at Epoch 6
+Test Accuracy: 0.8073, Test F1: 0.8028
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 458495, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6351, Validation Accuracy: 0.7584, Validation F1: 0.7708, Best F1: 0.7708 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4978, Validation Accuracy: 0.7787, Validation F1: 0.7724, Best F1: 0.7724 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4484, Validation Accuracy: 0.7946, Validation F1: 0.7843, Best F1: 0.7843 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4363, Validation Accuracy: 0.7957, Validation F1: 0.7933, Best F1: 0.7933 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4162, Validation Accuracy: 0.8012, Validation F1: 0.7943, Best F1: 0.7943 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4033, Validation Accuracy: 0.7963, Validation F1: 0.7857, Best F1: 0.7943 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3859, Validation Accuracy: 0.8040, Validation F1: 0.8022, Best F1: 0.8022 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3750, Validation Accuracy: 0.7886, Validation F1: 0.7985, Best F1: 0.8022 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3597, Validation Accuracy: 0.7952, Validation F1: 0.7996, Best F1: 0.8022 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3514, Validation Accuracy: 0.7968, Validation F1: 0.7891, Best F1: 0.8022 at Epoch 7
+Test Accuracy: 0.8108, Test F1: 0.8024
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 678418, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6115, Validation Accuracy: 0.7716, Validation F1: 0.7761, Best F1: 0.7761 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4749, Validation Accuracy: 0.7721, Validation F1: 0.7522, Best F1: 0.7761 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4344, Validation Accuracy: 0.7770, Validation F1: 0.7592, Best F1: 0.7761 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4071, Validation Accuracy: 0.7710, Validation F1: 0.7471, Best F1: 0.7761 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3838, Validation Accuracy: 0.7864, Validation F1: 0.7786, Best F1: 0.7786 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3663, Validation Accuracy: 0.7869, Validation F1: 0.7699, Best F1: 0.7786 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3483, Validation Accuracy: 0.7941, Validation F1: 0.7788, Best F1: 0.7788 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3321, Validation Accuracy: 0.7776, Validation F1: 0.7502, Best F1: 0.7788 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3117, Validation Accuracy: 0.7946, Validation F1: 0.7848, Best F1: 0.7848 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.2975, Validation Accuracy: 0.7869, Validation F1: 0.7590, Best F1: 0.7848 at Epoch 9
+Test Accuracy: 0.7970, Test F1: 0.7698
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 433148, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6256, Validation Accuracy: 0.7051, Validation F1: 0.6394, Best F1: 0.6394 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4992, Validation Accuracy: 0.7534, Validation F1: 0.7244, Best F1: 0.7244 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4562, Validation Accuracy: 0.7633, Validation F1: 0.7513, Best F1: 0.7513 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4325, Validation Accuracy: 0.7430, Validation F1: 0.7068, Best F1: 0.7513 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4124, Validation Accuracy: 0.7485, Validation F1: 0.7261, Best F1: 0.7513 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4003, Validation Accuracy: 0.7446, Validation F1: 0.7138, Best F1: 0.7513 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3874, Validation Accuracy: 0.7062, Validation F1: 0.6256, Best F1: 0.7513 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3750, Validation Accuracy: 0.7122, Validation F1: 0.6361, Best F1: 0.7513 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3611, Validation Accuracy: 0.7227, Validation F1: 0.6653, Best F1: 0.7513 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3493, Validation Accuracy: 0.7287, Validation F1: 0.6829, Best F1: 0.7513 at Epoch 3
+Test Accuracy: 0.7374, Test F1: 0.6918
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 281168, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6189, Validation Accuracy: 0.7650, Validation F1: 0.7834, Best F1: 0.7834 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4731, Validation Accuracy: 0.7957, Validation F1: 0.7884, Best F1: 0.7884 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4297, Validation Accuracy: 0.7930, Validation F1: 0.7804, Best F1: 0.7884 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4115, Validation Accuracy: 0.8018, Validation F1: 0.7989, Best F1: 0.7989 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3899, Validation Accuracy: 0.8029, Validation F1: 0.8035, Best F1: 0.8035 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3709, Validation Accuracy: 0.7957, Validation F1: 0.7857, Best F1: 0.8035 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3571, Validation Accuracy: 0.8029, Validation F1: 0.8041, Best F1: 0.8041 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3331, Validation Accuracy: 0.7968, Validation F1: 0.7969, Best F1: 0.8041 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3250, Validation Accuracy: 0.7792, Validation F1: 0.7578, Best F1: 0.8041 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3002, Validation Accuracy: 0.7825, Validation F1: 0.7640, Best F1: 0.8041 at Epoch 7
+Test Accuracy: 0.7993, Test F1: 0.7810
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 293140, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6020, Validation Accuracy: 0.7595, Validation F1: 0.7617, Best F1: 0.7617 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4971, Validation Accuracy: 0.7628, Validation F1: 0.7426, Best F1: 0.7617 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4641, Validation Accuracy: 0.7842, Validation F1: 0.7776, Best F1: 0.7776 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4391, Validation Accuracy: 0.7952, Validation F1: 0.8042, Best F1: 0.8042 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4207, Validation Accuracy: 0.7941, Validation F1: 0.8044, Best F1: 0.8044 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4015, Validation Accuracy: 0.7908, Validation F1: 0.8025, Best F1: 0.8044 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3862, Validation Accuracy: 0.7831, Validation F1: 0.7681, Best F1: 0.8044 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3708, Validation Accuracy: 0.7974, Validation F1: 0.7993, Best F1: 0.8044 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3587, Validation Accuracy: 0.7836, Validation F1: 0.7771, Best F1: 0.8044 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3412, Validation Accuracy: 0.7820, Validation F1: 0.7946, Best F1: 0.8044 at Epoch 5
+Test Accuracy: 0.7729, Test F1: 0.7810
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 565633, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5774, Validation Accuracy: 0.7792, Validation F1: 0.7906, Best F1: 0.7906 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4581, Validation Accuracy: 0.7908, Validation F1: 0.8029, Best F1: 0.8029 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4219, Validation Accuracy: 0.7902, Validation F1: 0.7983, Best F1: 0.8029 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.3976, Validation Accuracy: 0.7957, Validation F1: 0.8050, Best F1: 0.8050 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3783, Validation Accuracy: 0.8056, Validation F1: 0.7956, Best F1: 0.8050 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3629, Validation Accuracy: 0.8018, Validation F1: 0.7959, Best F1: 0.8050 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3428, Validation Accuracy: 0.7985, Validation F1: 0.7955, Best F1: 0.8050 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3243, Validation Accuracy: 0.7985, Validation F1: 0.7980, Best F1: 0.8050 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3023, Validation Accuracy: 0.7930, Validation F1: 0.7832, Best F1: 0.8050 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2926, Validation Accuracy: 0.8127, Validation F1: 0.8175, Best F1: 0.8175 at Epoch 10
+Test Accuracy: 0.8016, Test F1: 0.8058
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 649241, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6069, Validation Accuracy: 0.7551, Validation F1: 0.7428, Best F1: 0.7428 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4941, Validation Accuracy: 0.7446, Validation F1: 0.6990, Best F1: 0.7428 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4569, Validation Accuracy: 0.7644, Validation F1: 0.7324, Best F1: 0.7428 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4372, Validation Accuracy: 0.7886, Validation F1: 0.7821, Best F1: 0.7821 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4145, Validation Accuracy: 0.7792, Validation F1: 0.7692, Best F1: 0.7821 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3982, Validation Accuracy: 0.7897, Validation F1: 0.7938, Best F1: 0.7938 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3825, Validation Accuracy: 0.7545, Validation F1: 0.7038, Best F1: 0.7938 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3637, Validation Accuracy: 0.7913, Validation F1: 0.7806, Best F1: 0.7938 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3513, Validation Accuracy: 0.7825, Validation F1: 0.7790, Best F1: 0.7938 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3406, Validation Accuracy: 0.7924, Validation F1: 0.7807, Best F1: 0.7938 at Epoch 6
+Test Accuracy: 0.8005, Test F1: 0.7857
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 838669, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5899, Validation Accuracy: 0.6936, Validation F1: 0.6189, Best F1: 0.6189 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4620, Validation Accuracy: 0.6870, Validation F1: 0.5784, Best F1: 0.6189 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4297, Validation Accuracy: 0.7205, Validation F1: 0.6631, Best F1: 0.6631 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4049, Validation Accuracy: 0.7260, Validation F1: 0.6649, Best F1: 0.6649 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3823, Validation Accuracy: 0.7150, Validation F1: 0.6398, Best F1: 0.6649 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3690, Validation Accuracy: 0.7567, Validation F1: 0.7464, Best F1: 0.7464 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3476, Validation Accuracy: 0.7249, Validation F1: 0.6552, Best F1: 0.7464 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3353, Validation Accuracy: 0.7199, Validation F1: 0.6458, Best F1: 0.7464 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3148, Validation Accuracy: 0.7128, Validation F1: 0.6335, Best F1: 0.7464 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.2942, Validation Accuracy: 0.7095, Validation F1: 0.6235, Best F1: 0.7464 at Epoch 6
+Test Accuracy: 0.7339, Test F1: 0.6657
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 372859, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6157, Validation Accuracy: 0.7144, Validation F1: 0.7660, Best F1: 0.7660 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5068, Validation Accuracy: 0.7639, Validation F1: 0.7848, Best F1: 0.7848 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4651, Validation Accuracy: 0.7556, Validation F1: 0.7822, Best F1: 0.7848 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4536, Validation Accuracy: 0.7814, Validation F1: 0.7967, Best F1: 0.7967 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4236, Validation Accuracy: 0.7770, Validation F1: 0.7777, Best F1: 0.7967 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4107, Validation Accuracy: 0.7820, Validation F1: 0.8004, Best F1: 0.8004 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3970, Validation Accuracy: 0.7935, Validation F1: 0.8040, Best F1: 0.8040 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3763, Validation Accuracy: 0.7891, Validation F1: 0.8010, Best F1: 0.8040 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3636, Validation Accuracy: 0.7902, Validation F1: 0.8096, Best F1: 0.8096 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3476, Validation Accuracy: 0.7963, Validation F1: 0.7945, Best F1: 0.8096 at Epoch 9
+Test Accuracy: 0.8039, Test F1: 0.8028
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 755081, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5882, Validation Accuracy: 0.7128, Validation F1: 0.6240, Best F1: 0.6240 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4669, Validation Accuracy: 0.7869, Validation F1: 0.7896, Best F1: 0.7896 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4316, Validation Accuracy: 0.7825, Validation F1: 0.7864, Best F1: 0.7896 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4086, Validation Accuracy: 0.7644, Validation F1: 0.7317, Best F1: 0.7896 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3884, Validation Accuracy: 0.7677, Validation F1: 0.7614, Best F1: 0.7896 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3702, Validation Accuracy: 0.7595, Validation F1: 0.7249, Best F1: 0.7896 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3521, Validation Accuracy: 0.7430, Validation F1: 0.6973, Best F1: 0.7896 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3394, Validation Accuracy: 0.7013, Validation F1: 0.6000, Best F1: 0.7896 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3304, Validation Accuracy: 0.7375, Validation F1: 0.6892, Best F1: 0.7896 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3016, Validation Accuracy: 0.7282, Validation F1: 0.6617, Best F1: 0.7896 at Epoch 2
+Test Accuracy: 0.7592, Test F1: 0.7017
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 273947, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6096, Validation Accuracy: 0.7496, Validation F1: 0.7666, Best F1: 0.7666 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5125, Validation Accuracy: 0.7518, Validation F1: 0.7804, Best F1: 0.7804 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4745, Validation Accuracy: 0.7540, Validation F1: 0.7810, Best F1: 0.7810 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4405, Validation Accuracy: 0.7611, Validation F1: 0.7918, Best F1: 0.7918 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4182, Validation Accuracy: 0.7353, Validation F1: 0.7801, Best F1: 0.7918 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4021, Validation Accuracy: 0.7688, Validation F1: 0.7919, Best F1: 0.7919 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3842, Validation Accuracy: 0.7584, Validation F1: 0.7909, Best F1: 0.7919 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3694, Validation Accuracy: 0.7534, Validation F1: 0.7847, Best F1: 0.7919 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3520, Validation Accuracy: 0.7743, Validation F1: 0.7976, Best F1: 0.7976 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3420, Validation Accuracy: 0.7787, Validation F1: 0.7869, Best F1: 0.7976 at Epoch 9
+Test Accuracy: 0.7798, Test F1: 0.7848
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 278362, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5812, Validation Accuracy: 0.7551, Validation F1: 0.7829, Best F1: 0.7829 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4575, Validation Accuracy: 0.7710, Validation F1: 0.7935, Best F1: 0.7935 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4229, Validation Accuracy: 0.7781, Validation F1: 0.7924, Best F1: 0.7935 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4018, Validation Accuracy: 0.7770, Validation F1: 0.7968, Best F1: 0.7968 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3794, Validation Accuracy: 0.7759, Validation F1: 0.7982, Best F1: 0.7982 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3663, Validation Accuracy: 0.7776, Validation F1: 0.7828, Best F1: 0.7982 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3416, Validation Accuracy: 0.7738, Validation F1: 0.7827, Best F1: 0.7982 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3326, Validation Accuracy: 0.7770, Validation F1: 0.7949, Best F1: 0.7982 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3099, Validation Accuracy: 0.7776, Validation F1: 0.7945, Best F1: 0.7982 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3131, Validation Accuracy: 0.7842, Validation F1: 0.7965, Best F1: 0.7982 at Epoch 5
+Test Accuracy: 0.7913, Test F1: 0.7996
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 26169, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6166, Validation Accuracy: 0.7320, Validation F1: 0.7665, Best F1: 0.7665 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5110, Validation Accuracy: 0.7111, Validation F1: 0.7611, Best F1: 0.7665 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4784, Validation Accuracy: 0.7419, Validation F1: 0.7749, Best F1: 0.7749 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4481, Validation Accuracy: 0.7166, Validation F1: 0.7650, Best F1: 0.7749 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4286, Validation Accuracy: 0.7188, Validation F1: 0.7675, Best F1: 0.7749 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4096, Validation Accuracy: 0.6963, Validation F1: 0.7605, Best F1: 0.7749 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3933, Validation Accuracy: 0.7606, Validation F1: 0.7842, Best F1: 0.7842 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3821, Validation Accuracy: 0.7315, Validation F1: 0.7750, Best F1: 0.7842 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3612, Validation Accuracy: 0.7348, Validation F1: 0.7777, Best F1: 0.7842 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3469, Validation Accuracy: 0.7392, Validation F1: 0.7788, Best F1: 0.7842 at Epoch 7
+Test Accuracy: 0.7351, Test F1: 0.7729
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 747555, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5776, Validation Accuracy: 0.7457, Validation F1: 0.7813, Best F1: 0.7813 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4667, Validation Accuracy: 0.7710, Validation F1: 0.7916, Best F1: 0.7916 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4285, Validation Accuracy: 0.7661, Validation F1: 0.7950, Best F1: 0.7950 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4044, Validation Accuracy: 0.7798, Validation F1: 0.7984, Best F1: 0.7984 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3845, Validation Accuracy: 0.7869, Validation F1: 0.8014, Best F1: 0.8014 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3656, Validation Accuracy: 0.7886, Validation F1: 0.8047, Best F1: 0.8047 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3508, Validation Accuracy: 0.7902, Validation F1: 0.8053, Best F1: 0.8053 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3431, Validation Accuracy: 0.7787, Validation F1: 0.7858, Best F1: 0.8053 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3244, Validation Accuracy: 0.7727, Validation F1: 0.7984, Best F1: 0.8053 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3075, Validation Accuracy: 0.7869, Validation F1: 0.7923, Best F1: 0.8053 at Epoch 7
+Test Accuracy: 0.7729, Test F1: 0.7745
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 322002, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6200, Validation Accuracy: 0.7518, Validation F1: 0.7601, Best F1: 0.7601 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5074, Validation Accuracy: 0.7611, Validation F1: 0.7472, Best F1: 0.7601 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4717, Validation Accuracy: 0.7639, Validation F1: 0.7909, Best F1: 0.7909 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4518, Validation Accuracy: 0.7754, Validation F1: 0.7931, Best F1: 0.7931 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4324, Validation Accuracy: 0.7721, Validation F1: 0.7959, Best F1: 0.7959 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4105, Validation Accuracy: 0.7814, Validation F1: 0.7940, Best F1: 0.7959 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3955, Validation Accuracy: 0.7798, Validation F1: 0.7988, Best F1: 0.7988 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3775, Validation Accuracy: 0.7688, Validation F1: 0.7994, Best F1: 0.7994 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3678, Validation Accuracy: 0.7655, Validation F1: 0.7964, Best F1: 0.7994 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3549, Validation Accuracy: 0.7644, Validation F1: 0.7948, Best F1: 0.7994 at Epoch 8
+Test Accuracy: 0.7569, Test F1: 0.7854
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 208843, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5875, Validation Accuracy: 0.7315, Validation F1: 0.6707, Best F1: 0.6707 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4691, Validation Accuracy: 0.7798, Validation F1: 0.7953, Best F1: 0.7953 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4414, Validation Accuracy: 0.7957, Validation F1: 0.8052, Best F1: 0.8052 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4129, Validation Accuracy: 0.7985, Validation F1: 0.8076, Best F1: 0.8076 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3889, Validation Accuracy: 0.7990, Validation F1: 0.7944, Best F1: 0.8076 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3776, Validation Accuracy: 0.8040, Validation F1: 0.8075, Best F1: 0.8076 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3662, Validation Accuracy: 0.7908, Validation F1: 0.8055, Best F1: 0.8076 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3426, Validation Accuracy: 0.7974, Validation F1: 0.7781, Best F1: 0.8076 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3227, Validation Accuracy: 0.8034, Validation F1: 0.8069, Best F1: 0.8076 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3166, Validation Accuracy: 0.8144, Validation F1: 0.8093, Best F1: 0.8093 at Epoch 10
+Test Accuracy: 0.8142, Test F1: 0.8094
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 382642, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6209, Validation Accuracy: 0.7304, Validation F1: 0.6945, Best F1: 0.6945 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4948, Validation Accuracy: 0.7792, Validation F1: 0.7941, Best F1: 0.7941 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4544, Validation Accuracy: 0.7946, Validation F1: 0.7927, Best F1: 0.7941 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4291, Validation Accuracy: 0.8040, Validation F1: 0.8020, Best F1: 0.8020 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4132, Validation Accuracy: 0.7985, Validation F1: 0.8011, Best F1: 0.8020 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3945, Validation Accuracy: 0.7853, Validation F1: 0.7646, Best F1: 0.8020 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3820, Validation Accuracy: 0.7974, Validation F1: 0.8055, Best F1: 0.8055 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3585, Validation Accuracy: 0.8078, Validation F1: 0.8027, Best F1: 0.8055 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3537, Validation Accuracy: 0.8067, Validation F1: 0.8114, Best F1: 0.8114 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3342, Validation Accuracy: 0.7930, Validation F1: 0.8008, Best F1: 0.8114 at Epoch 9
+Test Accuracy: 0.7913, Test F1: 0.7978
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 66230, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5848, Validation Accuracy: 0.7820, Validation F1: 0.7733, Best F1: 0.7733 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4612, Validation Accuracy: 0.7891, Validation F1: 0.7835, Best F1: 0.7835 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4271, Validation Accuracy: 0.7941, Validation F1: 0.7897, Best F1: 0.7897 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4099, Validation Accuracy: 0.7985, Validation F1: 0.7918, Best F1: 0.7918 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3839, Validation Accuracy: 0.8056, Validation F1: 0.8109, Best F1: 0.8109 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3674, Validation Accuracy: 0.8078, Validation F1: 0.8034, Best F1: 0.8109 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3413, Validation Accuracy: 0.7979, Validation F1: 0.7907, Best F1: 0.8109 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3263, Validation Accuracy: 0.8012, Validation F1: 0.8070, Best F1: 0.8109 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3070, Validation Accuracy: 0.7990, Validation F1: 0.8074, Best F1: 0.8109 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.2828, Validation Accuracy: 0.7919, Validation F1: 0.7930, Best F1: 0.8109 at Epoch 5
+Test Accuracy: 0.8085, Test F1: 0.8096
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 313154, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6225, Validation Accuracy: 0.7051, Validation F1: 0.7644, Best F1: 0.7644 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4855, Validation Accuracy: 0.7227, Validation F1: 0.7701, Best F1: 0.7701 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4514, Validation Accuracy: 0.7457, Validation F1: 0.7758, Best F1: 0.7758 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4291, Validation Accuracy: 0.7457, Validation F1: 0.7805, Best F1: 0.7805 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4087, Validation Accuracy: 0.7370, Validation F1: 0.7756, Best F1: 0.7805 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3925, Validation Accuracy: 0.7435, Validation F1: 0.7758, Best F1: 0.7805 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3771, Validation Accuracy: 0.7485, Validation F1: 0.7796, Best F1: 0.7805 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3654, Validation Accuracy: 0.7348, Validation F1: 0.7765, Best F1: 0.7805 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3503, Validation Accuracy: 0.7309, Validation F1: 0.7781, Best F1: 0.7805 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3342, Validation Accuracy: 0.7496, Validation F1: 0.7829, Best F1: 0.7829 at Epoch 10
+Test Accuracy: 0.7443, Test F1: 0.7754
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 350340, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5803, Validation Accuracy: 0.7359, Validation F1: 0.7069, Best F1: 0.7069 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4746, Validation Accuracy: 0.7622, Validation F1: 0.7339, Best F1: 0.7339 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4393, Validation Accuracy: 0.7727, Validation F1: 0.7715, Best F1: 0.7715 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4082, Validation Accuracy: 0.7666, Validation F1: 0.7764, Best F1: 0.7764 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3891, Validation Accuracy: 0.7683, Validation F1: 0.7369, Best F1: 0.7764 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3668, Validation Accuracy: 0.7672, Validation F1: 0.7392, Best F1: 0.7764 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3532, Validation Accuracy: 0.7556, Validation F1: 0.7214, Best F1: 0.7764 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3235, Validation Accuracy: 0.7644, Validation F1: 0.7383, Best F1: 0.7764 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3180, Validation Accuracy: 0.7847, Validation F1: 0.7773, Best F1: 0.7773 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.2888, Validation Accuracy: 0.7935, Validation F1: 0.7842, Best F1: 0.7842 at Epoch 10
+Test Accuracy: 0.7959, Test F1: 0.7813
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 996840, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6147, Validation Accuracy: 0.7315, Validation F1: 0.7251, Best F1: 0.7251 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4907, Validation Accuracy: 0.7600, Validation F1: 0.7535, Best F1: 0.7535 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4526, Validation Accuracy: 0.7095, Validation F1: 0.6202, Best F1: 0.7535 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4326, Validation Accuracy: 0.7628, Validation F1: 0.7456, Best F1: 0.7535 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4125, Validation Accuracy: 0.7716, Validation F1: 0.7506, Best F1: 0.7535 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3970, Validation Accuracy: 0.7743, Validation F1: 0.7617, Best F1: 0.7617 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3828, Validation Accuracy: 0.7842, Validation F1: 0.7748, Best F1: 0.7748 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3667, Validation Accuracy: 0.7858, Validation F1: 0.7735, Best F1: 0.7748 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3600, Validation Accuracy: 0.7677, Validation F1: 0.7328, Best F1: 0.7748 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3286, Validation Accuracy: 0.7792, Validation F1: 0.7543, Best F1: 0.7748 at Epoch 7
+Test Accuracy: 0.7867, Test F1: 0.7584
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 242907, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5809, Validation Accuracy: 0.7534, Validation F1: 0.7363, Best F1: 0.7363 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4681, Validation Accuracy: 0.7315, Validation F1: 0.6742, Best F1: 0.7363 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4314, Validation Accuracy: 0.7315, Validation F1: 0.6680, Best F1: 0.7363 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4038, Validation Accuracy: 0.7441, Validation F1: 0.7054, Best F1: 0.7363 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3847, Validation Accuracy: 0.7419, Validation F1: 0.7084, Best F1: 0.7363 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3673, Validation Accuracy: 0.7199, Validation F1: 0.6448, Best F1: 0.7363 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3443, Validation Accuracy: 0.7348, Validation F1: 0.6890, Best F1: 0.7363 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3248, Validation Accuracy: 0.7221, Validation F1: 0.6506, Best F1: 0.7363 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3077, Validation Accuracy: 0.7265, Validation F1: 0.6745, Best F1: 0.7363 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.2869, Validation Accuracy: 0.7172, Validation F1: 0.6541, Best F1: 0.7363 at Epoch 1
+Test Accuracy: 0.7282, Test F1: 0.6722
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 119799, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5907, Validation Accuracy: 0.7699, Validation F1: 0.7821, Best F1: 0.7821 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4815, Validation Accuracy: 0.7732, Validation F1: 0.7786, Best F1: 0.7821 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4521, Validation Accuracy: 0.7672, Validation F1: 0.7893, Best F1: 0.7893 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4248, Validation Accuracy: 0.7661, Validation F1: 0.7954, Best F1: 0.7954 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4095, Validation Accuracy: 0.7759, Validation F1: 0.7992, Best F1: 0.7992 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3937, Validation Accuracy: 0.7803, Validation F1: 0.7845, Best F1: 0.7992 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3708, Validation Accuracy: 0.7820, Validation F1: 0.7959, Best F1: 0.7992 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3585, Validation Accuracy: 0.7721, Validation F1: 0.7981, Best F1: 0.7992 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3348, Validation Accuracy: 0.7919, Validation F1: 0.7952, Best F1: 0.7992 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3218, Validation Accuracy: 0.7930, Validation F1: 0.8023, Best F1: 0.8023 at Epoch 10
+Test Accuracy: 0.7856, Test F1: 0.7897
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 210810, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5646, Validation Accuracy: 0.7573, Validation F1: 0.7686, Best F1: 0.7686 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4499, Validation Accuracy: 0.7457, Validation F1: 0.7819, Best F1: 0.7819 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4131, Validation Accuracy: 0.7748, Validation F1: 0.7936, Best F1: 0.7936 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3946, Validation Accuracy: 0.7721, Validation F1: 0.7986, Best F1: 0.7986 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3749, Validation Accuracy: 0.7512, Validation F1: 0.7906, Best F1: 0.7986 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3503, Validation Accuracy: 0.7787, Validation F1: 0.7957, Best F1: 0.7986 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3254, Validation Accuracy: 0.7567, Validation F1: 0.7903, Best F1: 0.7986 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3149, Validation Accuracy: 0.7617, Validation F1: 0.7935, Best F1: 0.7986 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.2879, Validation Accuracy: 0.7688, Validation F1: 0.7949, Best F1: 0.7986 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2764, Validation Accuracy: 0.7743, Validation F1: 0.8029, Best F1: 0.8029 at Epoch 10
+Test Accuracy: 0.7557, Test F1: 0.7842
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 236846, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6001, Validation Accuracy: 0.7661, Validation F1: 0.7844, Best F1: 0.7844 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4880, Validation Accuracy: 0.7803, Validation F1: 0.7897, Best F1: 0.7897 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4521, Validation Accuracy: 0.7754, Validation F1: 0.7944, Best F1: 0.7944 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4289, Validation Accuracy: 0.7705, Validation F1: 0.7935, Best F1: 0.7944 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4040, Validation Accuracy: 0.7655, Validation F1: 0.7960, Best F1: 0.7960 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3907, Validation Accuracy: 0.7803, Validation F1: 0.8020, Best F1: 0.8020 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3762, Validation Accuracy: 0.7732, Validation F1: 0.7994, Best F1: 0.8020 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3551, Validation Accuracy: 0.7809, Validation F1: 0.7998, Best F1: 0.8020 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3376, Validation Accuracy: 0.7743, Validation F1: 0.7956, Best F1: 0.8020 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3225, Validation Accuracy: 0.7776, Validation F1: 0.8020, Best F1: 0.8020 at Epoch 6
+Test Accuracy: 0.7775, Test F1: 0.8000
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 823767, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5718, Validation Accuracy: 0.7205, Validation F1: 0.6662, Best F1: 0.6662 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4542, Validation Accuracy: 0.7392, Validation F1: 0.6893, Best F1: 0.6893 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4223, Validation Accuracy: 0.7765, Validation F1: 0.7665, Best F1: 0.7665 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3992, Validation Accuracy: 0.7666, Validation F1: 0.7253, Best F1: 0.7665 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3780, Validation Accuracy: 0.8012, Validation F1: 0.8107, Best F1: 0.8107 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3517, Validation Accuracy: 0.8029, Validation F1: 0.7936, Best F1: 0.8107 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3392, Validation Accuracy: 0.7738, Validation F1: 0.8051, Best F1: 0.8107 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3152, Validation Accuracy: 0.8040, Validation F1: 0.8073, Best F1: 0.8107 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3014, Validation Accuracy: 0.7968, Validation F1: 0.7944, Best F1: 0.8107 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.2889, Validation Accuracy: 0.7913, Validation F1: 0.8113, Best F1: 0.8113 at Epoch 10
+Test Accuracy: 0.7741, Test F1: 0.7924
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 317136, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6099, Validation Accuracy: 0.7584, Validation F1: 0.7606, Best F1: 0.7606 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4990, Validation Accuracy: 0.7781, Validation F1: 0.7883, Best F1: 0.7883 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4624, Validation Accuracy: 0.7842, Validation F1: 0.7952, Best F1: 0.7952 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4363, Validation Accuracy: 0.7924, Validation F1: 0.7830, Best F1: 0.7952 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4141, Validation Accuracy: 0.7924, Validation F1: 0.7789, Best F1: 0.7952 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3957, Validation Accuracy: 0.7930, Validation F1: 0.7722, Best F1: 0.7952 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3814, Validation Accuracy: 0.8056, Validation F1: 0.7977, Best F1: 0.7977 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3620, Validation Accuracy: 0.8111, Validation F1: 0.8114, Best F1: 0.8114 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3472, Validation Accuracy: 0.8045, Validation F1: 0.8092, Best F1: 0.8114 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3310, Validation Accuracy: 0.8056, Validation F1: 0.8080, Best F1: 0.8114 at Epoch 8
+Test Accuracy: 0.8028, Test F1: 0.8028
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 43791, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5800, Validation Accuracy: 0.7529, Validation F1: 0.7781, Best F1: 0.7781 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4536, Validation Accuracy: 0.7633, Validation F1: 0.7766, Best F1: 0.7781 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4240, Validation Accuracy: 0.7617, Validation F1: 0.7858, Best F1: 0.7858 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4013, Validation Accuracy: 0.7331, Validation F1: 0.7773, Best F1: 0.7858 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3806, Validation Accuracy: 0.7446, Validation F1: 0.7744, Best F1: 0.7858 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3615, Validation Accuracy: 0.7238, Validation F1: 0.7711, Best F1: 0.7858 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3408, Validation Accuracy: 0.7446, Validation F1: 0.7803, Best F1: 0.7858 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3250, Validation Accuracy: 0.7364, Validation F1: 0.7727, Best F1: 0.7858 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3096, Validation Accuracy: 0.7403, Validation F1: 0.7770, Best F1: 0.7858 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.2922, Validation Accuracy: 0.7424, Validation F1: 0.7659, Best F1: 0.7858 at Epoch 3
+Test Accuracy: 0.7213, Test F1: 0.7445
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 695649, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5949, Validation Accuracy: 0.7446, Validation F1: 0.7660, Best F1: 0.7660 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4886, Validation Accuracy: 0.7518, Validation F1: 0.7776, Best F1: 0.7776 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4563, Validation Accuracy: 0.7545, Validation F1: 0.7825, Best F1: 0.7825 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4256, Validation Accuracy: 0.7595, Validation F1: 0.7832, Best F1: 0.7832 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4092, Validation Accuracy: 0.7501, Validation F1: 0.7869, Best F1: 0.7869 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3932, Validation Accuracy: 0.7501, Validation F1: 0.7814, Best F1: 0.7869 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3681, Validation Accuracy: 0.7617, Validation F1: 0.7897, Best F1: 0.7897 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3539, Validation Accuracy: 0.7122, Validation F1: 0.7694, Best F1: 0.7897 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3366, Validation Accuracy: 0.7694, Validation F1: 0.7853, Best F1: 0.7897 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3193, Validation Accuracy: 0.7545, Validation F1: 0.7823, Best F1: 0.7897 at Epoch 7
+Test Accuracy: 0.7362, Test F1: 0.7639
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 555173, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5576, Validation Accuracy: 0.7781, Validation F1: 0.7978, Best F1: 0.7978 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4460, Validation Accuracy: 0.7985, Validation F1: 0.7935, Best F1: 0.7978 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4167, Validation Accuracy: 0.7853, Validation F1: 0.7994, Best F1: 0.7994 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3961, Validation Accuracy: 0.7990, Validation F1: 0.8034, Best F1: 0.8034 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3759, Validation Accuracy: 0.7935, Validation F1: 0.7799, Best F1: 0.8034 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3585, Validation Accuracy: 0.7974, Validation F1: 0.8015, Best F1: 0.8034 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3457, Validation Accuracy: 0.7919, Validation F1: 0.7833, Best F1: 0.8034 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3257, Validation Accuracy: 0.7996, Validation F1: 0.7862, Best F1: 0.8034 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3336, Validation Accuracy: 0.7957, Validation F1: 0.8104, Best F1: 0.8104 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3156, Validation Accuracy: 0.7853, Validation F1: 0.7926, Best F1: 0.8104 at Epoch 9
+Test Accuracy: 0.7913, Test F1: 0.7960
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 688466, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6050, Validation Accuracy: 0.7424, Validation F1: 0.7755, Best F1: 0.7755 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5050, Validation Accuracy: 0.7666, Validation F1: 0.7801, Best F1: 0.7801 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4646, Validation Accuracy: 0.7770, Validation F1: 0.7861, Best F1: 0.7861 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4401, Validation Accuracy: 0.7847, Validation F1: 0.7837, Best F1: 0.7861 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4160, Validation Accuracy: 0.7913, Validation F1: 0.7970, Best F1: 0.7970 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3966, Validation Accuracy: 0.7930, Validation F1: 0.8064, Best F1: 0.8064 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3755, Validation Accuracy: 0.7963, Validation F1: 0.8069, Best F1: 0.8069 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3639, Validation Accuracy: 0.7864, Validation F1: 0.8032, Best F1: 0.8069 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3460, Validation Accuracy: 0.7963, Validation F1: 0.8140, Best F1: 0.8140 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3201, Validation Accuracy: 0.8007, Validation F1: 0.8153, Best F1: 0.8153 at Epoch 10
+Test Accuracy: 0.7913, Test F1: 0.8026
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 373933, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5589, Validation Accuracy: 0.7869, Validation F1: 0.7921, Best F1: 0.7921 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4446, Validation Accuracy: 0.7957, Validation F1: 0.7898, Best F1: 0.7921 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4174, Validation Accuracy: 0.7836, Validation F1: 0.8042, Best F1: 0.8042 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3980, Validation Accuracy: 0.7968, Validation F1: 0.7983, Best F1: 0.8042 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3699, Validation Accuracy: 0.8007, Validation F1: 0.8110, Best F1: 0.8110 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3653, Validation Accuracy: 0.7869, Validation F1: 0.7734, Best F1: 0.8110 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3320, Validation Accuracy: 0.8105, Validation F1: 0.8164, Best F1: 0.8164 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3197, Validation Accuracy: 0.8078, Validation F1: 0.8171, Best F1: 0.8171 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3068, Validation Accuracy: 0.8018, Validation F1: 0.7984, Best F1: 0.8171 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.2995, Validation Accuracy: 0.7990, Validation F1: 0.7930, Best F1: 0.8171 at Epoch 8
+Test Accuracy: 0.8131, Test F1: 0.8062
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 999883, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6129, Validation Accuracy: 0.7600, Validation F1: 0.7587, Best F1: 0.7587 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5055, Validation Accuracy: 0.7683, Validation F1: 0.7809, Best F1: 0.7809 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4649, Validation Accuracy: 0.7902, Validation F1: 0.7815, Best F1: 0.7815 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4444, Validation Accuracy: 0.7364, Validation F1: 0.6783, Best F1: 0.7815 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4203, Validation Accuracy: 0.7935, Validation F1: 0.8017, Best F1: 0.8017 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4013, Validation Accuracy: 0.7864, Validation F1: 0.7990, Best F1: 0.8017 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3844, Validation Accuracy: 0.7990, Validation F1: 0.8061, Best F1: 0.8061 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3669, Validation Accuracy: 0.8045, Validation F1: 0.8134, Best F1: 0.8134 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3595, Validation Accuracy: 0.7941, Validation F1: 0.7887, Best F1: 0.8134 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3441, Validation Accuracy: 0.7968, Validation F1: 0.7866, Best F1: 0.8134 at Epoch 8
+Test Accuracy: 0.8119, Test F1: 0.8000
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 187942, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5751, Validation Accuracy: 0.7304, Validation F1: 0.6842, Best F1: 0.6842 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4582, Validation Accuracy: 0.7216, Validation F1: 0.6520, Best F1: 0.6842 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4270, Validation Accuracy: 0.7111, Validation F1: 0.6301, Best F1: 0.6842 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4074, Validation Accuracy: 0.7331, Validation F1: 0.6966, Best F1: 0.6966 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3845, Validation Accuracy: 0.7320, Validation F1: 0.6781, Best F1: 0.6966 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3632, Validation Accuracy: 0.7507, Validation F1: 0.7187, Best F1: 0.7187 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3453, Validation Accuracy: 0.7068, Validation F1: 0.6164, Best F1: 0.7187 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3289, Validation Accuracy: 0.7501, Validation F1: 0.7144, Best F1: 0.7187 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3142, Validation Accuracy: 0.7397, Validation F1: 0.6806, Best F1: 0.7187 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3033, Validation Accuracy: 0.7787, Validation F1: 0.7608, Best F1: 0.7608 at Epoch 10
+Test Accuracy: 0.7959, Test F1: 0.7797
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 778263, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6031, Validation Accuracy: 0.7759, Validation F1: 0.7927, Best F1: 0.7927 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4772, Validation Accuracy: 0.7661, Validation F1: 0.7287, Best F1: 0.7927 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4532, Validation Accuracy: 0.7897, Validation F1: 0.7787, Best F1: 0.7927 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4319, Validation Accuracy: 0.7875, Validation F1: 0.7722, Best F1: 0.7927 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4120, Validation Accuracy: 0.7814, Validation F1: 0.7549, Best F1: 0.7927 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3941, Validation Accuracy: 0.7814, Validation F1: 0.7573, Best F1: 0.7927 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3770, Validation Accuracy: 0.7897, Validation F1: 0.8037, Best F1: 0.8037 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3543, Validation Accuracy: 0.7847, Validation F1: 0.7718, Best F1: 0.8037 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3403, Validation Accuracy: 0.7842, Validation F1: 0.7673, Best F1: 0.8037 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3239, Validation Accuracy: 0.7836, Validation F1: 0.7782, Best F1: 0.8037 at Epoch 7
+Test Accuracy: 0.8073, Test F1: 0.8019
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 380862, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5795, Validation Accuracy: 0.6919, Validation F1: 0.5829, Best F1: 0.5829 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4660, Validation Accuracy: 0.7463, Validation F1: 0.6920, Best F1: 0.6920 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4296, Validation Accuracy: 0.7672, Validation F1: 0.7316, Best F1: 0.7316 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4016, Validation Accuracy: 0.7968, Validation F1: 0.7891, Best F1: 0.7891 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3896, Validation Accuracy: 0.7902, Validation F1: 0.7794, Best F1: 0.7891 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3618, Validation Accuracy: 0.7853, Validation F1: 0.7892, Best F1: 0.7892 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3396, Validation Accuracy: 0.7875, Validation F1: 0.7807, Best F1: 0.7892 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3105, Validation Accuracy: 0.7831, Validation F1: 0.7656, Best F1: 0.7892 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.2962, Validation Accuracy: 0.7913, Validation F1: 0.7751, Best F1: 0.7892 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.2713, Validation Accuracy: 0.7847, Validation F1: 0.7726, Best F1: 0.7892 at Epoch 6
+Test Accuracy: 0.7901, Test F1: 0.7787
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 138209, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6089, Validation Accuracy: 0.7727, Validation F1: 0.7894, Best F1: 0.7894 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4916, Validation Accuracy: 0.7886, Validation F1: 0.8060, Best F1: 0.8060 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4477, Validation Accuracy: 0.7930, Validation F1: 0.7918, Best F1: 0.8060 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4278, Validation Accuracy: 0.7957, Validation F1: 0.7891, Best F1: 0.8060 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4060, Validation Accuracy: 0.7809, Validation F1: 0.8034, Best F1: 0.8060 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3892, Validation Accuracy: 0.7919, Validation F1: 0.7788, Best F1: 0.8060 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3669, Validation Accuracy: 0.7979, Validation F1: 0.7815, Best F1: 0.8060 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3527, Validation Accuracy: 0.7974, Validation F1: 0.7885, Best F1: 0.8060 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3365, Validation Accuracy: 0.7128, Validation F1: 0.6174, Best F1: 0.8060 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3277, Validation Accuracy: 0.7644, Validation F1: 0.7310, Best F1: 0.8060 at Epoch 2
+Test Accuracy: 0.7821, Test F1: 0.7507
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 331926, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5854, Validation Accuracy: 0.7540, Validation F1: 0.7245, Best F1: 0.7245 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4721, Validation Accuracy: 0.7710, Validation F1: 0.7959, Best F1: 0.7959 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4318, Validation Accuracy: 0.7743, Validation F1: 0.7944, Best F1: 0.7959 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4045, Validation Accuracy: 0.7688, Validation F1: 0.7510, Best F1: 0.7959 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3911, Validation Accuracy: 0.7727, Validation F1: 0.7963, Best F1: 0.7963 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3673, Validation Accuracy: 0.7858, Validation F1: 0.7819, Best F1: 0.7963 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3472, Validation Accuracy: 0.7825, Validation F1: 0.8014, Best F1: 0.8014 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3239, Validation Accuracy: 0.7820, Validation F1: 0.7990, Best F1: 0.8014 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3074, Validation Accuracy: 0.7858, Validation F1: 0.8022, Best F1: 0.8022 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.2895, Validation Accuracy: 0.7858, Validation F1: 0.7943, Best F1: 0.8022 at Epoch 9
+Test Accuracy: 0.7947, Test F1: 0.8018
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 647451, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6077, Validation Accuracy: 0.7446, Validation F1: 0.7538, Best F1: 0.7538 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4824, Validation Accuracy: 0.7468, Validation F1: 0.7156, Best F1: 0.7538 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4487, Validation Accuracy: 0.7562, Validation F1: 0.7360, Best F1: 0.7538 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4306, Validation Accuracy: 0.7408, Validation F1: 0.7005, Best F1: 0.7538 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4084, Validation Accuracy: 0.7419, Validation F1: 0.7048, Best F1: 0.7538 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3886, Validation Accuracy: 0.7249, Validation F1: 0.6676, Best F1: 0.7538 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3772, Validation Accuracy: 0.7271, Validation F1: 0.6667, Best F1: 0.7538 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3554, Validation Accuracy: 0.7392, Validation F1: 0.6937, Best F1: 0.7538 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3400, Validation Accuracy: 0.7326, Validation F1: 0.6712, Best F1: 0.7538 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3240, Validation Accuracy: 0.7419, Validation F1: 0.7033, Best F1: 0.7538 at Epoch 1
+Test Accuracy: 0.7569, Test F1: 0.7143
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 577627, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5800, Validation Accuracy: 0.6716, Validation F1: 0.5622, Best F1: 0.5622 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4648, Validation Accuracy: 0.6930, Validation F1: 0.6315, Best F1: 0.6315 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4326, Validation Accuracy: 0.6952, Validation F1: 0.6154, Best F1: 0.6315 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4073, Validation Accuracy: 0.7046, Validation F1: 0.6525, Best F1: 0.6525 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3873, Validation Accuracy: 0.7133, Validation F1: 0.6459, Best F1: 0.6525 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3658, Validation Accuracy: 0.7079, Validation F1: 0.6326, Best F1: 0.6525 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3465, Validation Accuracy: 0.7309, Validation F1: 0.6797, Best F1: 0.6797 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3211, Validation Accuracy: 0.7353, Validation F1: 0.6922, Best F1: 0.6922 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3082, Validation Accuracy: 0.7446, Validation F1: 0.7063, Best F1: 0.7063 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.2805, Validation Accuracy: 0.7161, Validation F1: 0.6402, Best F1: 0.7063 at Epoch 9
+Test Accuracy: 0.7351, Test F1: 0.6676
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 428472, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5814, Validation Accuracy: 0.7326, Validation F1: 0.6880, Best F1: 0.6880 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4830, Validation Accuracy: 0.7567, Validation F1: 0.7254, Best F1: 0.7254 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4428, Validation Accuracy: 0.7803, Validation F1: 0.7674, Best F1: 0.7674 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4240, Validation Accuracy: 0.7781, Validation F1: 0.7572, Best F1: 0.7674 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4041, Validation Accuracy: 0.6936, Validation F1: 0.5830, Best F1: 0.7674 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3789, Validation Accuracy: 0.7716, Validation F1: 0.7390, Best F1: 0.7674 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3611, Validation Accuracy: 0.7765, Validation F1: 0.7585, Best F1: 0.7674 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3420, Validation Accuracy: 0.8023, Validation F1: 0.8075, Best F1: 0.8075 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3239, Validation Accuracy: 0.7952, Validation F1: 0.7894, Best F1: 0.8075 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3095, Validation Accuracy: 0.8034, Validation F1: 0.8096, Best F1: 0.8096 at Epoch 10
+Test Accuracy: 0.7936, Test F1: 0.7982
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 691859, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5504, Validation Accuracy: 0.7057, Validation F1: 0.6133, Best F1: 0.6133 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4527, Validation Accuracy: 0.7249, Validation F1: 0.6528, Best F1: 0.6528 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4212, Validation Accuracy: 0.7287, Validation F1: 0.6612, Best F1: 0.6612 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3954, Validation Accuracy: 0.7551, Validation F1: 0.7342, Best F1: 0.7342 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3744, Validation Accuracy: 0.7403, Validation F1: 0.7012, Best F1: 0.7342 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3555, Validation Accuracy: 0.7435, Validation F1: 0.7027, Best F1: 0.7342 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3447, Validation Accuracy: 0.7463, Validation F1: 0.7279, Best F1: 0.7342 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3202, Validation Accuracy: 0.7490, Validation F1: 0.7174, Best F1: 0.7342 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3005, Validation Accuracy: 0.7309, Validation F1: 0.6707, Best F1: 0.7342 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2795, Validation Accuracy: 0.7276, Validation F1: 0.6720, Best F1: 0.7342 at Epoch 4
+Test Accuracy: 0.7317, Test F1: 0.6786
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 778357, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5878, Validation Accuracy: 0.6787, Validation F1: 0.5739, Best F1: 0.5739 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4934, Validation Accuracy: 0.7150, Validation F1: 0.6514, Best F1: 0.6514 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4545, Validation Accuracy: 0.7024, Validation F1: 0.6156, Best F1: 0.6514 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4260, Validation Accuracy: 0.7139, Validation F1: 0.6344, Best F1: 0.6514 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4099, Validation Accuracy: 0.7353, Validation F1: 0.6898, Best F1: 0.6898 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3892, Validation Accuracy: 0.7337, Validation F1: 0.6917, Best F1: 0.6917 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3707, Validation Accuracy: 0.7474, Validation F1: 0.7103, Best F1: 0.7103 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3571, Validation Accuracy: 0.7068, Validation F1: 0.6191, Best F1: 0.7103 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3424, Validation Accuracy: 0.7375, Validation F1: 0.6859, Best F1: 0.7103 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3184, Validation Accuracy: 0.7556, Validation F1: 0.7160, Best F1: 0.7160 at Epoch 10
+Test Accuracy: 0.7615, Test F1: 0.7204
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 105505, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5651, Validation Accuracy: 0.6804, Validation F1: 0.5663, Best F1: 0.5663 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4597, Validation Accuracy: 0.6755, Validation F1: 0.5580, Best F1: 0.5663 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4207, Validation Accuracy: 0.6969, Validation F1: 0.6046, Best F1: 0.6046 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3918, Validation Accuracy: 0.7265, Validation F1: 0.6828, Best F1: 0.6828 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3769, Validation Accuracy: 0.7221, Validation F1: 0.6599, Best F1: 0.6828 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3594, Validation Accuracy: 0.7133, Validation F1: 0.6430, Best F1: 0.6828 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3319, Validation Accuracy: 0.7199, Validation F1: 0.6559, Best F1: 0.6828 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3098, Validation Accuracy: 0.7117, Validation F1: 0.6445, Best F1: 0.6828 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.2869, Validation Accuracy: 0.6985, Validation F1: 0.6211, Best F1: 0.6828 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2916, Validation Accuracy: 0.7062, Validation F1: 0.6240, Best F1: 0.6828 at Epoch 4
+Test Accuracy: 0.7076, Test F1: 0.6211
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 999883, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5989, Validation Accuracy: 0.7584, Validation F1: 0.7694, Best F1: 0.7694 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4927, Validation Accuracy: 0.7699, Validation F1: 0.7739, Best F1: 0.7739 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4542, Validation Accuracy: 0.7699, Validation F1: 0.7812, Best F1: 0.7812 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4302, Validation Accuracy: 0.7738, Validation F1: 0.7970, Best F1: 0.7970 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4112, Validation Accuracy: 0.7831, Validation F1: 0.7971, Best F1: 0.7971 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3876, Validation Accuracy: 0.7803, Validation F1: 0.7849, Best F1: 0.7971 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3748, Validation Accuracy: 0.7814, Validation F1: 0.8045, Best F1: 0.8045 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3578, Validation Accuracy: 0.7836, Validation F1: 0.8004, Best F1: 0.8045 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3432, Validation Accuracy: 0.7886, Validation F1: 0.8010, Best F1: 0.8045 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3267, Validation Accuracy: 0.7913, Validation F1: 0.7955, Best F1: 0.8045 at Epoch 7
+Test Accuracy: 0.7982, Test F1: 0.7972
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 76793, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5671, Validation Accuracy: 0.7847, Validation F1: 0.7849, Best F1: 0.7849 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4584, Validation Accuracy: 0.7787, Validation F1: 0.7582, Best F1: 0.7849 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4250, Validation Accuracy: 0.7798, Validation F1: 0.7675, Best F1: 0.7849 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.3995, Validation Accuracy: 0.7496, Validation F1: 0.6944, Best F1: 0.7849 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3775, Validation Accuracy: 0.7836, Validation F1: 0.7723, Best F1: 0.7849 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3570, Validation Accuracy: 0.7825, Validation F1: 0.7568, Best F1: 0.7849 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3365, Validation Accuracy: 0.7935, Validation F1: 0.7847, Best F1: 0.7849 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3177, Validation Accuracy: 0.7897, Validation F1: 0.7675, Best F1: 0.7849 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3139, Validation Accuracy: 0.7677, Validation F1: 0.7262, Best F1: 0.7849 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3013, Validation Accuracy: 0.7836, Validation F1: 0.7680, Best F1: 0.7849 at Epoch 1
+Test Accuracy: 0.8142, Test F1: 0.8029
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 926555, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5930, Validation Accuracy: 0.7672, Validation F1: 0.7735, Best F1: 0.7735 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4890, Validation Accuracy: 0.7633, Validation F1: 0.7880, Best F1: 0.7880 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4537, Validation Accuracy: 0.7930, Validation F1: 0.7916, Best F1: 0.7916 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4325, Validation Accuracy: 0.7924, Validation F1: 0.7864, Best F1: 0.7916 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4058, Validation Accuracy: 0.7985, Validation F1: 0.8055, Best F1: 0.8055 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3834, Validation Accuracy: 0.7847, Validation F1: 0.7994, Best F1: 0.8055 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3650, Validation Accuracy: 0.8001, Validation F1: 0.8084, Best F1: 0.8084 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3562, Validation Accuracy: 0.7957, Validation F1: 0.8075, Best F1: 0.8084 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3365, Validation Accuracy: 0.8045, Validation F1: 0.8124, Best F1: 0.8124 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3218, Validation Accuracy: 0.7831, Validation F1: 0.7762, Best F1: 0.8124 at Epoch 9
+Test Accuracy: 0.8039, Test F1: 0.7937
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 805029, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5490, Validation Accuracy: 0.7886, Validation F1: 0.7776, Best F1: 0.7776 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4448, Validation Accuracy: 0.8018, Validation F1: 0.7978, Best F1: 0.7978 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4169, Validation Accuracy: 0.7930, Validation F1: 0.7730, Best F1: 0.7978 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.3964, Validation Accuracy: 0.7924, Validation F1: 0.8071, Best F1: 0.8071 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3690, Validation Accuracy: 0.8078, Validation F1: 0.8087, Best F1: 0.8087 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3503, Validation Accuracy: 0.8051, Validation F1: 0.8084, Best F1: 0.8087 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3364, Validation Accuracy: 0.7902, Validation F1: 0.7968, Best F1: 0.8087 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3156, Validation Accuracy: 0.7754, Validation F1: 0.7593, Best F1: 0.8087 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.2926, Validation Accuracy: 0.7858, Validation F1: 0.7956, Best F1: 0.8087 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.2868, Validation Accuracy: 0.7748, Validation F1: 0.7933, Best F1: 0.8087 at Epoch 5
+Test Accuracy: 0.7752, Test F1: 0.7910
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 216358, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5943, Validation Accuracy: 0.7633, Validation F1: 0.7569, Best F1: 0.7569 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4921, Validation Accuracy: 0.7551, Validation F1: 0.7886, Best F1: 0.7886 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4541, Validation Accuracy: 0.7781, Validation F1: 0.7943, Best F1: 0.7943 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4286, Validation Accuracy: 0.7886, Validation F1: 0.7888, Best F1: 0.7943 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4069, Validation Accuracy: 0.7831, Validation F1: 0.7873, Best F1: 0.7943 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3909, Validation Accuracy: 0.7847, Validation F1: 0.8063, Best F1: 0.8063 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3745, Validation Accuracy: 0.7809, Validation F1: 0.7992, Best F1: 0.8063 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3505, Validation Accuracy: 0.7820, Validation F1: 0.7965, Best F1: 0.8063 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3466, Validation Accuracy: 0.7765, Validation F1: 0.7950, Best F1: 0.8063 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3249, Validation Accuracy: 0.7457, Validation F1: 0.7879, Best F1: 0.8063 at Epoch 6
+Test Accuracy: 0.7328, Test F1: 0.7731
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 115088, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5513, Validation Accuracy: 0.7694, Validation F1: 0.7837, Best F1: 0.7837 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4500, Validation Accuracy: 0.7617, Validation F1: 0.7804, Best F1: 0.7837 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4157, Validation Accuracy: 0.7688, Validation F1: 0.7915, Best F1: 0.7915 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.3907, Validation Accuracy: 0.7095, Validation F1: 0.7654, Best F1: 0.7915 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3693, Validation Accuracy: 0.7194, Validation F1: 0.7718, Best F1: 0.7915 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3513, Validation Accuracy: 0.7573, Validation F1: 0.7829, Best F1: 0.7915 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3370, Validation Accuracy: 0.7150, Validation F1: 0.7680, Best F1: 0.7915 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3159, Validation Accuracy: 0.7435, Validation F1: 0.7788, Best F1: 0.7915 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3194, Validation Accuracy: 0.7018, Validation F1: 0.7632, Best F1: 0.7915 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.2960, Validation Accuracy: 0.7463, Validation F1: 0.7804, Best F1: 0.7915 at Epoch 3
+Test Accuracy: 0.7317, Test F1: 0.7646
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 396449, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6079, Validation Accuracy: 0.7474, Validation F1: 0.7771, Best F1: 0.7771 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4944, Validation Accuracy: 0.7611, Validation F1: 0.7811, Best F1: 0.7811 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4599, Validation Accuracy: 0.7765, Validation F1: 0.7827, Best F1: 0.7827 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4384, Validation Accuracy: 0.7825, Validation F1: 0.7937, Best F1: 0.7937 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4143, Validation Accuracy: 0.7908, Validation F1: 0.8100, Best F1: 0.8100 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3927, Validation Accuracy: 0.7930, Validation F1: 0.7965, Best F1: 0.8100 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3791, Validation Accuracy: 0.7919, Validation F1: 0.8019, Best F1: 0.8100 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3624, Validation Accuracy: 0.7957, Validation F1: 0.8075, Best F1: 0.8100 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3488, Validation Accuracy: 0.8072, Validation F1: 0.8138, Best F1: 0.8138 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3350, Validation Accuracy: 0.7842, Validation F1: 0.7849, Best F1: 0.8138 at Epoch 9
+Test Accuracy: 0.7913, Test F1: 0.7908
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 662311, 'embedding_build_type': 'pretrained', 'model_type': 'lstm', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: lstm, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5536, Validation Accuracy: 0.7046, Validation F1: 0.6586, Best F1: 0.6586 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4636, Validation Accuracy: 0.6738, Validation F1: 0.5593, Best F1: 0.6586 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4240, Validation Accuracy: 0.6755, Validation F1: 0.5560, Best F1: 0.6586 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4069, Validation Accuracy: 0.7018, Validation F1: 0.6232, Best F1: 0.6586 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3872, Validation Accuracy: 0.6930, Validation F1: 0.6010, Best F1: 0.6586 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3631, Validation Accuracy: 0.7051, Validation F1: 0.6237, Best F1: 0.6586 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3466, Validation Accuracy: 0.6963, Validation F1: 0.6030, Best F1: 0.6586 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3395, Validation Accuracy: 0.6892, Validation F1: 0.5904, Best F1: 0.6586 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3237, Validation Accuracy: 0.6875, Validation F1: 0.5850, Best F1: 0.6586 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3038, Validation Accuracy: 0.6936, Validation F1: 0.6003, Best F1: 0.6586 at Epoch 1
+Test Accuracy: 0.7018, Test F1: 0.6073
+======================================================================================================================================================

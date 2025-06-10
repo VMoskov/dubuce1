@@ -1,0 +1,864 @@
+Config: hidden_size=100 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 750223, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6479, Validation Accuracy: 0.6667, Validation F1: 0.5977, Best F1: 0.5977 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5064, Validation Accuracy: 0.6744, Validation F1: 0.5930, Best F1: 0.5977 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4725, Validation Accuracy: 0.6623, Validation F1: 0.5508, Best F1: 0.5977 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4541, Validation Accuracy: 0.6617, Validation F1: 0.5410, Best F1: 0.5977 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4529, Validation Accuracy: 0.6661, Validation F1: 0.5651, Best F1: 0.5977 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4386, Validation Accuracy: 0.6683, Validation F1: 0.5704, Best F1: 0.5977 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.4380, Validation Accuracy: 0.6502, Validation F1: 0.5134, Best F1: 0.5977 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.4245, Validation Accuracy: 0.6469, Validation F1: 0.5027, Best F1: 0.5977 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.4205, Validation Accuracy: 0.6722, Validation F1: 0.5897, Best F1: 0.5977 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.4127, Validation Accuracy: 0.6782, Validation F1: 0.5953, Best F1: 0.5977 at Epoch 1
+Test Accuracy: 0.6743, Test F1: 0.5908
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 720262, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6143, Validation Accuracy: 0.7578, Validation F1: 0.7774, Best F1: 0.7774 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4790, Validation Accuracy: 0.7732, Validation F1: 0.7946, Best F1: 0.7946 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4487, Validation Accuracy: 0.7820, Validation F1: 0.7880, Best F1: 0.7946 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4277, Validation Accuracy: 0.7748, Validation F1: 0.7608, Best F1: 0.7946 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4109, Validation Accuracy: 0.7792, Validation F1: 0.7676, Best F1: 0.7946 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3987, Validation Accuracy: 0.7809, Validation F1: 0.7692, Best F1: 0.7946 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3843, Validation Accuracy: 0.7699, Validation F1: 0.7714, Best F1: 0.7946 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3685, Validation Accuracy: 0.7562, Validation F1: 0.7296, Best F1: 0.7946 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3559, Validation Accuracy: 0.7523, Validation F1: 0.7493, Best F1: 0.7946 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3400, Validation Accuracy: 0.7073, Validation F1: 0.6322, Best F1: 0.7946 at Epoch 2
+Test Accuracy: 0.7294, Test F1: 0.6657
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 266270, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6478, Validation Accuracy: 0.7161, Validation F1: 0.6692, Best F1: 0.6692 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5129, Validation Accuracy: 0.7381, Validation F1: 0.6948, Best F1: 0.6948 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4707, Validation Accuracy: 0.7490, Validation F1: 0.7281, Best F1: 0.7281 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4569, Validation Accuracy: 0.7529, Validation F1: 0.7318, Best F1: 0.7318 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4487, Validation Accuracy: 0.7238, Validation F1: 0.6635, Best F1: 0.7318 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4403, Validation Accuracy: 0.7540, Validation F1: 0.7298, Best F1: 0.7318 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4311, Validation Accuracy: 0.7529, Validation F1: 0.7503, Best F1: 0.7503 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.4250, Validation Accuracy: 0.7419, Validation F1: 0.7040, Best F1: 0.7503 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.4121, Validation Accuracy: 0.7348, Validation F1: 0.6820, Best F1: 0.7503 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.4046, Validation Accuracy: 0.7446, Validation F1: 0.7021, Best F1: 0.7503 at Epoch 7
+Test Accuracy: 0.7500, Test F1: 0.7046
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 176475, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6148, Validation Accuracy: 0.7392, Validation F1: 0.7607, Best F1: 0.7607 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4769, Validation Accuracy: 0.7721, Validation F1: 0.7614, Best F1: 0.7614 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4430, Validation Accuracy: 0.7880, Validation F1: 0.7865, Best F1: 0.7865 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4256, Validation Accuracy: 0.7727, Validation F1: 0.7791, Best F1: 0.7865 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4040, Validation Accuracy: 0.7655, Validation F1: 0.7608, Best F1: 0.7865 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3915, Validation Accuracy: 0.7545, Validation F1: 0.7211, Best F1: 0.7865 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3798, Validation Accuracy: 0.7545, Validation F1: 0.7218, Best F1: 0.7865 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3630, Validation Accuracy: 0.7518, Validation F1: 0.7458, Best F1: 0.7865 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3479, Validation Accuracy: 0.7441, Validation F1: 0.7313, Best F1: 0.7865 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3333, Validation Accuracy: 0.7479, Validation F1: 0.7298, Best F1: 0.7865 at Epoch 3
+Test Accuracy: 0.7477, Test F1: 0.7215
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 492629, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6507, Validation Accuracy: 0.7024, Validation F1: 0.6999, Best F1: 0.6999 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5144, Validation Accuracy: 0.7046, Validation F1: 0.6243, Best F1: 0.6999 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4741, Validation Accuracy: 0.7507, Validation F1: 0.7394, Best F1: 0.7394 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4587, Validation Accuracy: 0.7617, Validation F1: 0.7790, Best F1: 0.7790 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4503, Validation Accuracy: 0.7710, Validation F1: 0.7750, Best F1: 0.7790 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4366, Validation Accuracy: 0.7414, Validation F1: 0.6916, Best F1: 0.7790 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4336, Validation Accuracy: 0.7836, Validation F1: 0.7854, Best F1: 0.7854 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.4212, Validation Accuracy: 0.7820, Validation F1: 0.7808, Best F1: 0.7854 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.4096, Validation Accuracy: 0.7738, Validation F1: 0.7766, Best F1: 0.7854 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.4073, Validation Accuracy: 0.7507, Validation F1: 0.7811, Best F1: 0.7854 at Epoch 7
+Test Accuracy: 0.7523, Test F1: 0.7791
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 487484, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6270, Validation Accuracy: 0.7727, Validation F1: 0.7760, Best F1: 0.7760 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4798, Validation Accuracy: 0.7809, Validation F1: 0.7811, Best F1: 0.7811 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4491, Validation Accuracy: 0.7809, Validation F1: 0.7649, Best F1: 0.7811 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4297, Validation Accuracy: 0.7776, Validation F1: 0.7729, Best F1: 0.7811 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4169, Validation Accuracy: 0.7754, Validation F1: 0.7724, Best F1: 0.7811 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3999, Validation Accuracy: 0.7743, Validation F1: 0.7645, Best F1: 0.7811 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3868, Validation Accuracy: 0.7705, Validation F1: 0.7488, Best F1: 0.7811 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3709, Validation Accuracy: 0.7672, Validation F1: 0.7629, Best F1: 0.7811 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3566, Validation Accuracy: 0.7765, Validation F1: 0.7958, Best F1: 0.7958 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3391, Validation Accuracy: 0.7710, Validation F1: 0.7752, Best F1: 0.7958 at Epoch 9
+Test Accuracy: 0.7592, Test F1: 0.7646
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 977983, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6064, Validation Accuracy: 0.7617, Validation F1: 0.7491, Best F1: 0.7491 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4986, Validation Accuracy: 0.7534, Validation F1: 0.7785, Best F1: 0.7785 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4782, Validation Accuracy: 0.7584, Validation F1: 0.7317, Best F1: 0.7785 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4602, Validation Accuracy: 0.7650, Validation F1: 0.7452, Best F1: 0.7785 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4534, Validation Accuracy: 0.7485, Validation F1: 0.7145, Best F1: 0.7785 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.4455, Validation Accuracy: 0.7622, Validation F1: 0.7306, Best F1: 0.7785 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.4326, Validation Accuracy: 0.7320, Validation F1: 0.6772, Best F1: 0.7785 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.4224, Validation Accuracy: 0.7529, Validation F1: 0.7212, Best F1: 0.7785 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.4149, Validation Accuracy: 0.7232, Validation F1: 0.6590, Best F1: 0.7785 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.4035, Validation Accuracy: 0.7397, Validation F1: 0.6898, Best F1: 0.7785 at Epoch 2
+Test Accuracy: 0.7454, Test F1: 0.6959
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 636311, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5904, Validation Accuracy: 0.6546, Validation F1: 0.5260, Best F1: 0.5260 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4722, Validation Accuracy: 0.6458, Validation F1: 0.4852, Best F1: 0.5260 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4444, Validation Accuracy: 0.6656, Validation F1: 0.5472, Best F1: 0.5472 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4284, Validation Accuracy: 0.6804, Validation F1: 0.5958, Best F1: 0.5958 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4095, Validation Accuracy: 0.6875, Validation F1: 0.6322, Best F1: 0.6322 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3956, Validation Accuracy: 0.6771, Validation F1: 0.5847, Best F1: 0.6322 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3765, Validation Accuracy: 0.6826, Validation F1: 0.5997, Best F1: 0.6322 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3632, Validation Accuracy: 0.6535, Validation F1: 0.5142, Best F1: 0.6322 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3432, Validation Accuracy: 0.6617, Validation F1: 0.5457, Best F1: 0.6322 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3136, Validation Accuracy: 0.6474, Validation F1: 0.4992, Best F1: 0.6322 at Epoch 5
+Test Accuracy: 0.6663, Test F1: 0.5388
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 513399, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6368, Validation Accuracy: 0.7414, Validation F1: 0.7653, Best F1: 0.7653 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5196, Validation Accuracy: 0.7490, Validation F1: 0.7754, Best F1: 0.7754 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4817, Validation Accuracy: 0.7254, Validation F1: 0.7692, Best F1: 0.7754 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4667, Validation Accuracy: 0.7375, Validation F1: 0.7627, Best F1: 0.7754 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4513, Validation Accuracy: 0.7150, Validation F1: 0.7633, Best F1: 0.7754 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.4419, Validation Accuracy: 0.7326, Validation F1: 0.7684, Best F1: 0.7754 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.4361, Validation Accuracy: 0.7523, Validation F1: 0.7676, Best F1: 0.7754 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.4344, Validation Accuracy: 0.7446, Validation F1: 0.7657, Best F1: 0.7754 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.4177, Validation Accuracy: 0.7331, Validation F1: 0.7663, Best F1: 0.7754 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.4173, Validation Accuracy: 0.7386, Validation F1: 0.7720, Best F1: 0.7754 at Epoch 2
+Test Accuracy: 0.7259, Test F1: 0.7603
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 510493, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6091, Validation Accuracy: 0.7029, Validation F1: 0.6144, Best F1: 0.6144 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4751, Validation Accuracy: 0.7633, Validation F1: 0.7763, Best F1: 0.7763 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4538, Validation Accuracy: 0.7606, Validation F1: 0.7383, Best F1: 0.7763 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4357, Validation Accuracy: 0.7743, Validation F1: 0.7615, Best F1: 0.7763 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4151, Validation Accuracy: 0.7551, Validation F1: 0.7267, Best F1: 0.7763 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.4011, Validation Accuracy: 0.7633, Validation F1: 0.7408, Best F1: 0.7763 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3868, Validation Accuracy: 0.7606, Validation F1: 0.7511, Best F1: 0.7763 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3746, Validation Accuracy: 0.7748, Validation F1: 0.7757, Best F1: 0.7763 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3572, Validation Accuracy: 0.7485, Validation F1: 0.7190, Best F1: 0.7763 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3419, Validation Accuracy: 0.7463, Validation F1: 0.7138, Best F1: 0.7763 at Epoch 2
+Test Accuracy: 0.7592, Test F1: 0.7266
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 182807, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6582, Validation Accuracy: 0.6859, Validation F1: 0.7462, Best F1: 0.7462 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5338, Validation Accuracy: 0.7397, Validation F1: 0.7646, Best F1: 0.7646 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4928, Validation Accuracy: 0.7435, Validation F1: 0.7698, Best F1: 0.7698 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4711, Validation Accuracy: 0.7435, Validation F1: 0.7762, Best F1: 0.7762 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4647, Validation Accuracy: 0.7342, Validation F1: 0.7728, Best F1: 0.7762 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4554, Validation Accuracy: 0.7370, Validation F1: 0.7733, Best F1: 0.7762 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4442, Validation Accuracy: 0.7534, Validation F1: 0.7787, Best F1: 0.7787 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.4420, Validation Accuracy: 0.7463, Validation F1: 0.7762, Best F1: 0.7787 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.4266, Validation Accuracy: 0.7414, Validation F1: 0.7741, Best F1: 0.7787 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.4199, Validation Accuracy: 0.7479, Validation F1: 0.7794, Best F1: 0.7794 at Epoch 10
+Test Accuracy: 0.7546, Test F1: 0.7825
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 357065, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6073, Validation Accuracy: 0.7518, Validation F1: 0.7297, Best F1: 0.7297 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4868, Validation Accuracy: 0.7479, Validation F1: 0.7771, Best F1: 0.7771 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4584, Validation Accuracy: 0.7710, Validation F1: 0.7499, Best F1: 0.7771 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4407, Validation Accuracy: 0.7842, Validation F1: 0.7673, Best F1: 0.7771 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4241, Validation Accuracy: 0.7814, Validation F1: 0.7959, Best F1: 0.7959 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4115, Validation Accuracy: 0.7858, Validation F1: 0.7838, Best F1: 0.7959 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.4006, Validation Accuracy: 0.7770, Validation F1: 0.7675, Best F1: 0.7959 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3915, Validation Accuracy: 0.7781, Validation F1: 0.7951, Best F1: 0.7959 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3762, Validation Accuracy: 0.7798, Validation F1: 0.7748, Best F1: 0.7959 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3663, Validation Accuracy: 0.7776, Validation F1: 0.7596, Best F1: 0.7959 at Epoch 5
+Test Accuracy: 0.7661, Test F1: 0.7437
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 766545, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6037, Validation Accuracy: 0.7326, Validation F1: 0.7593, Best F1: 0.7593 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5046, Validation Accuracy: 0.7501, Validation F1: 0.7183, Best F1: 0.7593 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4777, Validation Accuracy: 0.7397, Validation F1: 0.6848, Best F1: 0.7593 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4654, Validation Accuracy: 0.7545, Validation F1: 0.7296, Best F1: 0.7593 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4470, Validation Accuracy: 0.7628, Validation F1: 0.7483, Best F1: 0.7593 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4431, Validation Accuracy: 0.7677, Validation F1: 0.7592, Best F1: 0.7593 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.4288, Validation Accuracy: 0.7342, Validation F1: 0.6778, Best F1: 0.7593 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.4192, Validation Accuracy: 0.7628, Validation F1: 0.7632, Best F1: 0.7632 at Epoch 8
+Epoch 9/10, Epoch Loss: 0.3990, Validation Accuracy: 0.7672, Validation F1: 0.7566, Best F1: 0.7632 at Epoch 8
+Epoch 10/10, Epoch Loss: 0.3982, Validation Accuracy: 0.7644, Validation F1: 0.7501, Best F1: 0.7632 at Epoch 8
+Test Accuracy: 0.7454, Test F1: 0.7252
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 474599, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5715, Validation Accuracy: 0.7831, Validation F1: 0.7875, Best F1: 0.7875 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4682, Validation Accuracy: 0.7732, Validation F1: 0.7980, Best F1: 0.7980 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4406, Validation Accuracy: 0.7639, Validation F1: 0.7921, Best F1: 0.7980 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4210, Validation Accuracy: 0.7781, Validation F1: 0.7898, Best F1: 0.7980 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4036, Validation Accuracy: 0.7820, Validation F1: 0.7815, Best F1: 0.7980 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3815, Validation Accuracy: 0.7716, Validation F1: 0.7734, Best F1: 0.7980 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3709, Validation Accuracy: 0.7897, Validation F1: 0.7883, Best F1: 0.7980 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3451, Validation Accuracy: 0.7814, Validation F1: 0.7715, Best F1: 0.7980 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3252, Validation Accuracy: 0.7710, Validation F1: 0.7613, Best F1: 0.7980 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2966, Validation Accuracy: 0.7738, Validation F1: 0.7654, Best F1: 0.7980 at Epoch 2
+Test Accuracy: 0.7672, Test F1: 0.7563
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 806663, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6293, Validation Accuracy: 0.7309, Validation F1: 0.7328, Best F1: 0.7328 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5284, Validation Accuracy: 0.7441, Validation F1: 0.7141, Best F1: 0.7328 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4929, Validation Accuracy: 0.7457, Validation F1: 0.7108, Best F1: 0.7328 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4755, Validation Accuracy: 0.7293, Validation F1: 0.6649, Best F1: 0.7328 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4662, Validation Accuracy: 0.7029, Validation F1: 0.6219, Best F1: 0.7328 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4468, Validation Accuracy: 0.7117, Validation F1: 0.6502, Best F1: 0.7328 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.4386, Validation Accuracy: 0.7293, Validation F1: 0.6909, Best F1: 0.7328 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.4232, Validation Accuracy: 0.7150, Validation F1: 0.6551, Best F1: 0.7328 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.4194, Validation Accuracy: 0.7348, Validation F1: 0.7031, Best F1: 0.7328 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.4120, Validation Accuracy: 0.7002, Validation F1: 0.6311, Best F1: 0.7328 at Epoch 1
+Test Accuracy: 0.7030, Test F1: 0.6347
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 73937, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5911, Validation Accuracy: 0.7562, Validation F1: 0.7771, Best F1: 0.7771 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4803, Validation Accuracy: 0.7551, Validation F1: 0.7833, Best F1: 0.7833 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4544, Validation Accuracy: 0.7485, Validation F1: 0.7284, Best F1: 0.7833 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4398, Validation Accuracy: 0.7628, Validation F1: 0.7857, Best F1: 0.7857 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4265, Validation Accuracy: 0.7617, Validation F1: 0.7891, Best F1: 0.7891 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4082, Validation Accuracy: 0.7688, Validation F1: 0.7649, Best F1: 0.7891 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3950, Validation Accuracy: 0.7595, Validation F1: 0.7702, Best F1: 0.7891 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3834, Validation Accuracy: 0.7337, Validation F1: 0.7726, Best F1: 0.7891 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3597, Validation Accuracy: 0.7694, Validation F1: 0.7853, Best F1: 0.7891 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3461, Validation Accuracy: 0.7743, Validation F1: 0.7806, Best F1: 0.7891 at Epoch 5
+Test Accuracy: 0.7764, Test F1: 0.7836
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 96674, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6502, Validation Accuracy: 0.7271, Validation F1: 0.7619, Best F1: 0.7619 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5294, Validation Accuracy: 0.7573, Validation F1: 0.7799, Best F1: 0.7799 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4985, Validation Accuracy: 0.7529, Validation F1: 0.7774, Best F1: 0.7799 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4798, Validation Accuracy: 0.7573, Validation F1: 0.7790, Best F1: 0.7799 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4681, Validation Accuracy: 0.7589, Validation F1: 0.7810, Best F1: 0.7810 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4637, Validation Accuracy: 0.7567, Validation F1: 0.7853, Best F1: 0.7853 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.4500, Validation Accuracy: 0.7584, Validation F1: 0.7789, Best F1: 0.7853 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.4451, Validation Accuracy: 0.7397, Validation F1: 0.7822, Best F1: 0.7853 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.4329, Validation Accuracy: 0.7243, Validation F1: 0.7704, Best F1: 0.7853 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.4321, Validation Accuracy: 0.7309, Validation F1: 0.7740, Best F1: 0.7853 at Epoch 6
+Test Accuracy: 0.7110, Test F1: 0.7582
+======================================================================================================================================================
+Config: hidden_size=100 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 908124, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 100, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6341, Validation Accuracy: 0.6864, Validation F1: 0.6004, Best F1: 0.6004 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4891, Validation Accuracy: 0.6760, Validation F1: 0.5655, Best F1: 0.6004 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4634, Validation Accuracy: 0.6760, Validation F1: 0.5897, Best F1: 0.6004 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4467, Validation Accuracy: 0.6711, Validation F1: 0.5527, Best F1: 0.6004 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4249, Validation Accuracy: 0.6744, Validation F1: 0.5725, Best F1: 0.6004 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4228, Validation Accuracy: 0.6700, Validation F1: 0.5698, Best F1: 0.6004 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.4129, Validation Accuracy: 0.6639, Validation F1: 0.5467, Best F1: 0.6004 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.4007, Validation Accuracy: 0.6667, Validation F1: 0.5433, Best F1: 0.6004 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.3897, Validation Accuracy: 0.6782, Validation F1: 0.5942, Best F1: 0.6004 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3816, Validation Accuracy: 0.6612, Validation F1: 0.5532, Best F1: 0.6004 at Epoch 1
+Test Accuracy: 0.6800, Test F1: 0.5805
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 479603, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6183, Validation Accuracy: 0.7122, Validation F1: 0.6757, Best F1: 0.6757 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4983, Validation Accuracy: 0.7057, Validation F1: 0.6359, Best F1: 0.6757 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4692, Validation Accuracy: 0.6463, Validation F1: 0.4856, Best F1: 0.6757 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4576, Validation Accuracy: 0.6892, Validation F1: 0.6134, Best F1: 0.6757 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4409, Validation Accuracy: 0.6886, Validation F1: 0.6161, Best F1: 0.6757 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4320, Validation Accuracy: 0.6809, Validation F1: 0.5823, Best F1: 0.6757 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.4216, Validation Accuracy: 0.6859, Validation F1: 0.6135, Best F1: 0.6757 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.4084, Validation Accuracy: 0.6798, Validation F1: 0.5851, Best F1: 0.6757 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.4026, Validation Accuracy: 0.7079, Validation F1: 0.6598, Best F1: 0.6757 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.3886, Validation Accuracy: 0.6963, Validation F1: 0.6230, Best F1: 0.6757 at Epoch 1
+Test Accuracy: 0.7041, Test F1: 0.6304
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 896506, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5959, Validation Accuracy: 0.7710, Validation F1: 0.7695, Best F1: 0.7695 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4665, Validation Accuracy: 0.7776, Validation F1: 0.7903, Best F1: 0.7903 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4417, Validation Accuracy: 0.7765, Validation F1: 0.7784, Best F1: 0.7903 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4228, Validation Accuracy: 0.7754, Validation F1: 0.7954, Best F1: 0.7954 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4103, Validation Accuracy: 0.7144, Validation F1: 0.7676, Best F1: 0.7954 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3882, Validation Accuracy: 0.7194, Validation F1: 0.7697, Best F1: 0.7954 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3726, Validation Accuracy: 0.7386, Validation F1: 0.7763, Best F1: 0.7954 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3435, Validation Accuracy: 0.7452, Validation F1: 0.7710, Best F1: 0.7954 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3259, Validation Accuracy: 0.7364, Validation F1: 0.7508, Best F1: 0.7954 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3059, Validation Accuracy: 0.7364, Validation F1: 0.7408, Best F1: 0.7954 at Epoch 4
+Test Accuracy: 0.7305, Test F1: 0.7296
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 655643, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6180, Validation Accuracy: 0.7337, Validation F1: 0.7749, Best F1: 0.7749 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4962, Validation Accuracy: 0.7512, Validation F1: 0.7652, Best F1: 0.7749 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4678, Validation Accuracy: 0.7611, Validation F1: 0.7779, Best F1: 0.7779 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4536, Validation Accuracy: 0.7606, Validation F1: 0.7850, Best F1: 0.7850 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4426, Validation Accuracy: 0.7414, Validation F1: 0.7788, Best F1: 0.7850 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4312, Validation Accuracy: 0.7265, Validation F1: 0.7743, Best F1: 0.7850 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4224, Validation Accuracy: 0.7397, Validation F1: 0.7756, Best F1: 0.7850 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.4138, Validation Accuracy: 0.7419, Validation F1: 0.7570, Best F1: 0.7850 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.4016, Validation Accuracy: 0.7392, Validation F1: 0.7720, Best F1: 0.7850 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3930, Validation Accuracy: 0.7446, Validation F1: 0.7629, Best F1: 0.7850 at Epoch 4
+Test Accuracy: 0.7305, Test F1: 0.7508
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 396270, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5864, Validation Accuracy: 0.7573, Validation F1: 0.7321, Best F1: 0.7321 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4676, Validation Accuracy: 0.7463, Validation F1: 0.7566, Best F1: 0.7566 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4458, Validation Accuracy: 0.7496, Validation F1: 0.7299, Best F1: 0.7566 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4235, Validation Accuracy: 0.7326, Validation F1: 0.6790, Best F1: 0.7566 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4054, Validation Accuracy: 0.7166, Validation F1: 0.6518, Best F1: 0.7566 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3969, Validation Accuracy: 0.6930, Validation F1: 0.6038, Best F1: 0.7566 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3679, Validation Accuracy: 0.6969, Validation F1: 0.6161, Best F1: 0.7566 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3502, Validation Accuracy: 0.7057, Validation F1: 0.6408, Best F1: 0.7566 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3294, Validation Accuracy: 0.6925, Validation F1: 0.6216, Best F1: 0.7566 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3088, Validation Accuracy: 0.6980, Validation F1: 0.6309, Best F1: 0.7566 at Epoch 2
+Test Accuracy: 0.7122, Test F1: 0.6480
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 854293, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6266, Validation Accuracy: 0.6969, Validation F1: 0.6245, Best F1: 0.6245 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4967, Validation Accuracy: 0.7326, Validation F1: 0.6864, Best F1: 0.6864 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4710, Validation Accuracy: 0.7611, Validation F1: 0.7431, Best F1: 0.7431 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4544, Validation Accuracy: 0.7562, Validation F1: 0.7312, Best F1: 0.7431 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4414, Validation Accuracy: 0.7337, Validation F1: 0.6832, Best F1: 0.7431 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4432, Validation Accuracy: 0.7540, Validation F1: 0.7217, Best F1: 0.7431 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.4244, Validation Accuracy: 0.7776, Validation F1: 0.7687, Best F1: 0.7687 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.4133, Validation Accuracy: 0.7315, Validation F1: 0.6785, Best F1: 0.7687 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.4050, Validation Accuracy: 0.7529, Validation F1: 0.7276, Best F1: 0.7687 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3925, Validation Accuracy: 0.7331, Validation F1: 0.6920, Best F1: 0.7687 at Epoch 7
+Test Accuracy: 0.7385, Test F1: 0.6968
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 71152, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5878, Validation Accuracy: 0.6925, Validation F1: 0.5912, Best F1: 0.5912 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4732, Validation Accuracy: 0.7825, Validation F1: 0.7802, Best F1: 0.7802 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4443, Validation Accuracy: 0.7908, Validation F1: 0.7880, Best F1: 0.7880 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4232, Validation Accuracy: 0.7842, Validation F1: 0.7825, Best F1: 0.7880 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3994, Validation Accuracy: 0.7798, Validation F1: 0.7893, Best F1: 0.7893 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3781, Validation Accuracy: 0.7836, Validation F1: 0.7821, Best F1: 0.7893 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3621, Validation Accuracy: 0.7710, Validation F1: 0.7747, Best F1: 0.7893 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3395, Validation Accuracy: 0.7820, Validation F1: 0.7778, Best F1: 0.7893 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.3193, Validation Accuracy: 0.7727, Validation F1: 0.7718, Best F1: 0.7893 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.3034, Validation Accuracy: 0.7243, Validation F1: 0.6827, Best F1: 0.7893 at Epoch 5
+Test Accuracy: 0.7351, Test F1: 0.6957
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 618021, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5982, Validation Accuracy: 0.7501, Validation F1: 0.7746, Best F1: 0.7746 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4960, Validation Accuracy: 0.7770, Validation F1: 0.7834, Best F1: 0.7834 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4631, Validation Accuracy: 0.7814, Validation F1: 0.7907, Best F1: 0.7907 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4502, Validation Accuracy: 0.7705, Validation F1: 0.7872, Best F1: 0.7907 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4354, Validation Accuracy: 0.7650, Validation F1: 0.7847, Best F1: 0.7907 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4287, Validation Accuracy: 0.7562, Validation F1: 0.7784, Best F1: 0.7907 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.4108, Validation Accuracy: 0.7655, Validation F1: 0.7637, Best F1: 0.7907 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3985, Validation Accuracy: 0.7424, Validation F1: 0.7722, Best F1: 0.7907 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3845, Validation Accuracy: 0.7573, Validation F1: 0.7664, Best F1: 0.7907 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3702, Validation Accuracy: 0.7556, Validation F1: 0.7691, Best F1: 0.7907 at Epoch 3
+Test Accuracy: 0.7580, Test F1: 0.7689
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 39503, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5655, Validation Accuracy: 0.7315, Validation F1: 0.6983, Best F1: 0.6983 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4674, Validation Accuracy: 0.7364, Validation F1: 0.7098, Best F1: 0.7098 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4394, Validation Accuracy: 0.6837, Validation F1: 0.5701, Best F1: 0.7098 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4128, Validation Accuracy: 0.7177, Validation F1: 0.6522, Best F1: 0.7098 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3949, Validation Accuracy: 0.7457, Validation F1: 0.7144, Best F1: 0.7144 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.3624, Validation Accuracy: 0.7348, Validation F1: 0.6983, Best F1: 0.7144 at Epoch 5
+Epoch 7/10, Epoch Loss: 0.3365, Validation Accuracy: 0.7304, Validation F1: 0.6776, Best F1: 0.7144 at Epoch 5
+Epoch 8/10, Epoch Loss: 0.3098, Validation Accuracy: 0.7320, Validation F1: 0.6976, Best F1: 0.7144 at Epoch 5
+Epoch 9/10, Epoch Loss: 0.2867, Validation Accuracy: 0.7221, Validation F1: 0.6618, Best F1: 0.7144 at Epoch 5
+Epoch 10/10, Epoch Loss: 0.2604, Validation Accuracy: 0.7216, Validation F1: 0.6627, Best F1: 0.7144 at Epoch 5
+Test Accuracy: 0.7213, Test F1: 0.6601
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 308408, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6044, Validation Accuracy: 0.7666, Validation F1: 0.7681, Best F1: 0.7681 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4945, Validation Accuracy: 0.7474, Validation F1: 0.7066, Best F1: 0.7681 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4733, Validation Accuracy: 0.7743, Validation F1: 0.7575, Best F1: 0.7681 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4563, Validation Accuracy: 0.7770, Validation F1: 0.7752, Best F1: 0.7752 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4476, Validation Accuracy: 0.7864, Validation F1: 0.7796, Best F1: 0.7796 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4323, Validation Accuracy: 0.7825, Validation F1: 0.7959, Best F1: 0.7959 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.4258, Validation Accuracy: 0.7787, Validation F1: 0.7841, Best F1: 0.7959 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.4126, Validation Accuracy: 0.7721, Validation F1: 0.7703, Best F1: 0.7959 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.4059, Validation Accuracy: 0.7430, Validation F1: 0.7146, Best F1: 0.7959 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3934, Validation Accuracy: 0.7633, Validation F1: 0.7504, Best F1: 0.7959 at Epoch 6
+Test Accuracy: 0.7706, Test F1: 0.7555
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 918104, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5766, Validation Accuracy: 0.7238, Validation F1: 0.7648, Best F1: 0.7648 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4654, Validation Accuracy: 0.7683, Validation F1: 0.7838, Best F1: 0.7838 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4355, Validation Accuracy: 0.7545, Validation F1: 0.7808, Best F1: 0.7838 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4260, Validation Accuracy: 0.7589, Validation F1: 0.7897, Best F1: 0.7897 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.3991, Validation Accuracy: 0.7353, Validation F1: 0.7795, Best F1: 0.7897 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.3767, Validation Accuracy: 0.7463, Validation F1: 0.7812, Best F1: 0.7897 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.3644, Validation Accuracy: 0.7600, Validation F1: 0.7765, Best F1: 0.7897 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3375, Validation Accuracy: 0.7205, Validation F1: 0.7675, Best F1: 0.7897 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3208, Validation Accuracy: 0.7271, Validation F1: 0.7732, Best F1: 0.7897 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.2988, Validation Accuracy: 0.7364, Validation F1: 0.7600, Best F1: 0.7897 at Epoch 4
+Test Accuracy: 0.7294, Test F1: 0.7542
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 879467, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6136, Validation Accuracy: 0.7348, Validation F1: 0.7634, Best F1: 0.7634 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5062, Validation Accuracy: 0.7584, Validation F1: 0.7760, Best F1: 0.7760 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4759, Validation Accuracy: 0.7265, Validation F1: 0.7743, Best F1: 0.7760 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4647, Validation Accuracy: 0.7430, Validation F1: 0.7118, Best F1: 0.7760 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4563, Validation Accuracy: 0.7716, Validation F1: 0.7875, Best F1: 0.7875 at Epoch 5
+Epoch 6/10, Epoch Loss: 0.4527, Validation Accuracy: 0.7716, Validation F1: 0.7907, Best F1: 0.7907 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.4326, Validation Accuracy: 0.7776, Validation F1: 0.7870, Best F1: 0.7907 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.4303, Validation Accuracy: 0.7743, Validation F1: 0.7666, Best F1: 0.7907 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.4180, Validation Accuracy: 0.7836, Validation F1: 0.7835, Best F1: 0.7907 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.4135, Validation Accuracy: 0.7743, Validation F1: 0.7833, Best F1: 0.7907 at Epoch 6
+Test Accuracy: 0.7890, Test F1: 0.7946
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 305803, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5806, Validation Accuracy: 0.6903, Validation F1: 0.5895, Best F1: 0.5895 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4774, Validation Accuracy: 0.7326, Validation F1: 0.6947, Best F1: 0.6947 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4465, Validation Accuracy: 0.6793, Validation F1: 0.5687, Best F1: 0.6947 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4296, Validation Accuracy: 0.7007, Validation F1: 0.6191, Best F1: 0.6947 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4170, Validation Accuracy: 0.7155, Validation F1: 0.6701, Best F1: 0.6947 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3983, Validation Accuracy: 0.7062, Validation F1: 0.6388, Best F1: 0.6947 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3832, Validation Accuracy: 0.7216, Validation F1: 0.7088, Best F1: 0.7088 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3659, Validation Accuracy: 0.7057, Validation F1: 0.6334, Best F1: 0.7088 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3560, Validation Accuracy: 0.6969, Validation F1: 0.6177, Best F1: 0.7088 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3341, Validation Accuracy: 0.6870, Validation F1: 0.5946, Best F1: 0.7088 at Epoch 7
+Test Accuracy: 0.6972, Test F1: 0.6118
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 441238, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5883, Validation Accuracy: 0.7452, Validation F1: 0.7734, Best F1: 0.7734 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5022, Validation Accuracy: 0.7578, Validation F1: 0.7276, Best F1: 0.7734 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4713, Validation Accuracy: 0.7842, Validation F1: 0.7971, Best F1: 0.7971 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4533, Validation Accuracy: 0.7562, Validation F1: 0.7341, Best F1: 0.7971 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4466, Validation Accuracy: 0.7304, Validation F1: 0.6810, Best F1: 0.7971 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4283, Validation Accuracy: 0.7293, Validation F1: 0.6913, Best F1: 0.7971 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.4141, Validation Accuracy: 0.7188, Validation F1: 0.6662, Best F1: 0.7971 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3961, Validation Accuracy: 0.7155, Validation F1: 0.6667, Best F1: 0.7971 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3813, Validation Accuracy: 0.6639, Validation F1: 0.5357, Best F1: 0.7971 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3609, Validation Accuracy: 0.7002, Validation F1: 0.6345, Best F1: 0.7971 at Epoch 3
+Test Accuracy: 0.7190, Test F1: 0.6602
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 142666, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5592, Validation Accuracy: 0.7611, Validation F1: 0.7845, Best F1: 0.7845 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4682, Validation Accuracy: 0.7650, Validation F1: 0.7397, Best F1: 0.7845 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4350, Validation Accuracy: 0.7666, Validation F1: 0.7916, Best F1: 0.7916 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4058, Validation Accuracy: 0.7710, Validation F1: 0.7834, Best F1: 0.7916 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.3842, Validation Accuracy: 0.7672, Validation F1: 0.7814, Best F1: 0.7916 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.3596, Validation Accuracy: 0.7622, Validation F1: 0.7866, Best F1: 0.7916 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3280, Validation Accuracy: 0.7562, Validation F1: 0.7663, Best F1: 0.7916 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.2949, Validation Accuracy: 0.7716, Validation F1: 0.7840, Best F1: 0.7916 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.2806, Validation Accuracy: 0.7463, Validation F1: 0.7516, Best F1: 0.7916 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.2535, Validation Accuracy: 0.7364, Validation F1: 0.7663, Best F1: 0.7916 at Epoch 3
+Test Accuracy: 0.7213, Test F1: 0.7518
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 652713, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6031, Validation Accuracy: 0.7161, Validation F1: 0.6726, Best F1: 0.6726 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5121, Validation Accuracy: 0.7337, Validation F1: 0.7108, Best F1: 0.7108 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4827, Validation Accuracy: 0.6985, Validation F1: 0.6115, Best F1: 0.7108 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4614, Validation Accuracy: 0.7446, Validation F1: 0.7359, Best F1: 0.7359 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4510, Validation Accuracy: 0.6749, Validation F1: 0.5535, Best F1: 0.7359 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4447, Validation Accuracy: 0.7161, Validation F1: 0.6614, Best F1: 0.7359 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4294, Validation Accuracy: 0.7397, Validation F1: 0.7099, Best F1: 0.7359 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.4164, Validation Accuracy: 0.7326, Validation F1: 0.7117, Best F1: 0.7359 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.4066, Validation Accuracy: 0.7062, Validation F1: 0.6318, Best F1: 0.7359 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3922, Validation Accuracy: 0.7337, Validation F1: 0.6909, Best F1: 0.7359 at Epoch 4
+Test Accuracy: 0.7156, Test F1: 0.6667
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 643202, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5744, Validation Accuracy: 0.7803, Validation F1: 0.7828, Best F1: 0.7828 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4720, Validation Accuracy: 0.7847, Validation F1: 0.7837, Best F1: 0.7837 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4395, Validation Accuracy: 0.7842, Validation F1: 0.7719, Best F1: 0.7837 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4189, Validation Accuracy: 0.7688, Validation F1: 0.7364, Best F1: 0.7837 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3952, Validation Accuracy: 0.7622, Validation F1: 0.7787, Best F1: 0.7837 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3764, Validation Accuracy: 0.7600, Validation F1: 0.7455, Best F1: 0.7837 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3584, Validation Accuracy: 0.7820, Validation F1: 0.7733, Best F1: 0.7837 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3369, Validation Accuracy: 0.7556, Validation F1: 0.7408, Best F1: 0.7837 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3249, Validation Accuracy: 0.7628, Validation F1: 0.7714, Best F1: 0.7837 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3113, Validation Accuracy: 0.7507, Validation F1: 0.7354, Best F1: 0.7837 at Epoch 2
+Test Accuracy: 0.7466, Test F1: 0.7295
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 633654, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6155, Validation Accuracy: 0.6678, Validation F1: 0.5625, Best F1: 0.5625 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5093, Validation Accuracy: 0.6645, Validation F1: 0.5491, Best F1: 0.5625 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4835, Validation Accuracy: 0.6722, Validation F1: 0.5751, Best F1: 0.5751 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4634, Validation Accuracy: 0.6496, Validation F1: 0.5246, Best F1: 0.5751 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4590, Validation Accuracy: 0.6689, Validation F1: 0.5640, Best F1: 0.5751 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4497, Validation Accuracy: 0.6661, Validation F1: 0.5496, Best F1: 0.5751 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.4412, Validation Accuracy: 0.6656, Validation F1: 0.5558, Best F1: 0.5751 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.4338, Validation Accuracy: 0.6623, Validation F1: 0.5365, Best F1: 0.5751 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.4306, Validation Accuracy: 0.6634, Validation F1: 0.5535, Best F1: 0.5751 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.4169, Validation Accuracy: 0.6798, Validation F1: 0.6031, Best F1: 0.6031 at Epoch 10
+Test Accuracy: 0.6823, Test F1: 0.6071
+======================================================================================================================================================
+Config: hidden_size=150 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 470184, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 150, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6006, Validation Accuracy: 0.7496, Validation F1: 0.7453, Best F1: 0.7453 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4736, Validation Accuracy: 0.7672, Validation F1: 0.7591, Best F1: 0.7591 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4487, Validation Accuracy: 0.7589, Validation F1: 0.7234, Best F1: 0.7591 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4371, Validation Accuracy: 0.7814, Validation F1: 0.7867, Best F1: 0.7867 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4228, Validation Accuracy: 0.7787, Validation F1: 0.7666, Best F1: 0.7867 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4148, Validation Accuracy: 0.7776, Validation F1: 0.7920, Best F1: 0.7920 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.3960, Validation Accuracy: 0.7727, Validation F1: 0.7855, Best F1: 0.7920 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.3875, Validation Accuracy: 0.7820, Validation F1: 0.7851, Best F1: 0.7920 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3705, Validation Accuracy: 0.7710, Validation F1: 0.7829, Best F1: 0.7920 at Epoch 6
+Epoch 10/10, Epoch Loss: 0.3652, Validation Accuracy: 0.7688, Validation F1: 0.7568, Best F1: 0.7920 at Epoch 6
+Test Accuracy: 0.7718, Test F1: 0.7576
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.0 bidirectional=False
+Config: {'seed': 154478, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5885, Validation Accuracy: 0.7084, Validation F1: 0.6247, Best F1: 0.6247 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4870, Validation Accuracy: 0.7435, Validation F1: 0.6985, Best F1: 0.6985 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4649, Validation Accuracy: 0.7716, Validation F1: 0.7604, Best F1: 0.7604 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4567, Validation Accuracy: 0.7551, Validation F1: 0.7264, Best F1: 0.7604 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4417, Validation Accuracy: 0.7155, Validation F1: 0.6519, Best F1: 0.7604 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4308, Validation Accuracy: 0.7403, Validation F1: 0.7149, Best F1: 0.7604 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.4171, Validation Accuracy: 0.7227, Validation F1: 0.6671, Best F1: 0.7604 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.4078, Validation Accuracy: 0.7133, Validation F1: 0.6593, Best F1: 0.7604 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3904, Validation Accuracy: 0.7111, Validation F1: 0.6460, Best F1: 0.7604 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3715, Validation Accuracy: 0.7276, Validation F1: 0.6994, Best F1: 0.7604 at Epoch 3
+Test Accuracy: 0.7213, Test F1: 0.6936
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.0 bidirectional=True
+Config: {'seed': 944566, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5878, Validation Accuracy: 0.7727, Validation F1: 0.7687, Best F1: 0.7687 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4709, Validation Accuracy: 0.7875, Validation F1: 0.7916, Best F1: 0.7916 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4395, Validation Accuracy: 0.7710, Validation F1: 0.7465, Best F1: 0.7916 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4231, Validation Accuracy: 0.7748, Validation F1: 0.7844, Best F1: 0.7916 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3952, Validation Accuracy: 0.7650, Validation F1: 0.7482, Best F1: 0.7916 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3662, Validation Accuracy: 0.7650, Validation F1: 0.7641, Best F1: 0.7916 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3432, Validation Accuracy: 0.7529, Validation F1: 0.7449, Best F1: 0.7916 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3104, Validation Accuracy: 0.7463, Validation F1: 0.7495, Best F1: 0.7916 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2858, Validation Accuracy: 0.7419, Validation F1: 0.7095, Best F1: 0.7916 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2586, Validation Accuracy: 0.7353, Validation F1: 0.7082, Best F1: 0.7916 at Epoch 2
+Test Accuracy: 0.7431, Test F1: 0.7128
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.25 bidirectional=False
+Config: {'seed': 220026, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6025, Validation Accuracy: 0.7331, Validation F1: 0.7663, Best F1: 0.7663 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4906, Validation Accuracy: 0.7490, Validation F1: 0.7544, Best F1: 0.7663 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4644, Validation Accuracy: 0.7326, Validation F1: 0.7619, Best F1: 0.7663 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4500, Validation Accuracy: 0.6996, Validation F1: 0.7546, Best F1: 0.7663 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.4408, Validation Accuracy: 0.7227, Validation F1: 0.7652, Best F1: 0.7663 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.4281, Validation Accuracy: 0.7243, Validation F1: 0.7619, Best F1: 0.7663 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.4206, Validation Accuracy: 0.7293, Validation F1: 0.7671, Best F1: 0.7671 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.4056, Validation Accuracy: 0.7457, Validation F1: 0.7466, Best F1: 0.7671 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3830, Validation Accuracy: 0.7375, Validation F1: 0.7505, Best F1: 0.7671 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3762, Validation Accuracy: 0.7348, Validation F1: 0.7608, Best F1: 0.7671 at Epoch 7
+Test Accuracy: 0.7282, Test F1: 0.7579
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.25 bidirectional=True
+Config: {'seed': 818904, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5764, Validation Accuracy: 0.7584, Validation F1: 0.7277, Best F1: 0.7277 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4638, Validation Accuracy: 0.7748, Validation F1: 0.7978, Best F1: 0.7978 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4388, Validation Accuracy: 0.7825, Validation F1: 0.7914, Best F1: 0.7978 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4166, Validation Accuracy: 0.7710, Validation F1: 0.7912, Best F1: 0.7978 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3964, Validation Accuracy: 0.7617, Validation F1: 0.7749, Best F1: 0.7978 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3666, Validation Accuracy: 0.7666, Validation F1: 0.7885, Best F1: 0.7978 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3368, Validation Accuracy: 0.7661, Validation F1: 0.7727, Best F1: 0.7978 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3103, Validation Accuracy: 0.7628, Validation F1: 0.7677, Best F1: 0.7978 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2875, Validation Accuracy: 0.7650, Validation F1: 0.7606, Best F1: 0.7978 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2732, Validation Accuracy: 0.7485, Validation F1: 0.7365, Best F1: 0.7978 at Epoch 2
+Test Accuracy: 0.7397, Test F1: 0.7235
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.5 bidirectional=False
+Config: {'seed': 731025, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6005, Validation Accuracy: 0.7320, Validation F1: 0.6946, Best F1: 0.6946 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4935, Validation Accuracy: 0.7672, Validation F1: 0.7805, Best F1: 0.7805 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4696, Validation Accuracy: 0.7705, Validation F1: 0.7553, Best F1: 0.7805 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4547, Validation Accuracy: 0.7710, Validation F1: 0.7459, Best F1: 0.7805 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4445, Validation Accuracy: 0.7776, Validation F1: 0.7682, Best F1: 0.7805 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.4333, Validation Accuracy: 0.7803, Validation F1: 0.7879, Best F1: 0.7879 at Epoch 6
+Epoch 7/10, Epoch Loss: 0.4201, Validation Accuracy: 0.7661, Validation F1: 0.7853, Best F1: 0.7879 at Epoch 6
+Epoch 8/10, Epoch Loss: 0.4055, Validation Accuracy: 0.7644, Validation F1: 0.7634, Best F1: 0.7879 at Epoch 6
+Epoch 9/10, Epoch Loss: 0.3940, Validation Accuracy: 0.7705, Validation F1: 0.7880, Best F1: 0.7880 at Epoch 9
+Epoch 10/10, Epoch Loss: 0.3798, Validation Accuracy: 0.7359, Validation F1: 0.7666, Best F1: 0.7880 at Epoch 9
+Test Accuracy: 0.7443, Test F1: 0.7736
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=1 dropout=0.5 bidirectional=True
+Config: {'seed': 58108, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 1, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5856, Validation Accuracy: 0.7639, Validation F1: 0.7590, Best F1: 0.7590 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4706, Validation Accuracy: 0.6881, Validation F1: 0.5671, Best F1: 0.7590 at Epoch 1
+Epoch 3/10, Epoch Loss: 0.4410, Validation Accuracy: 0.7573, Validation F1: 0.7203, Best F1: 0.7590 at Epoch 1
+Epoch 4/10, Epoch Loss: 0.4148, Validation Accuracy: 0.7562, Validation F1: 0.7283, Best F1: 0.7590 at Epoch 1
+Epoch 5/10, Epoch Loss: 0.3904, Validation Accuracy: 0.7424, Validation F1: 0.6976, Best F1: 0.7590 at Epoch 1
+Epoch 6/10, Epoch Loss: 0.3655, Validation Accuracy: 0.7392, Validation F1: 0.7055, Best F1: 0.7590 at Epoch 1
+Epoch 7/10, Epoch Loss: 0.3376, Validation Accuracy: 0.7633, Validation F1: 0.7418, Best F1: 0.7590 at Epoch 1
+Epoch 8/10, Epoch Loss: 0.3102, Validation Accuracy: 0.7501, Validation F1: 0.7350, Best F1: 0.7590 at Epoch 1
+Epoch 9/10, Epoch Loss: 0.2906, Validation Accuracy: 0.7452, Validation F1: 0.7222, Best F1: 0.7590 at Epoch 1
+Epoch 10/10, Epoch Loss: 0.2650, Validation Accuracy: 0.7534, Validation F1: 0.7436, Best F1: 0.7590 at Epoch 1
+Test Accuracy: 0.7500, Test F1: 0.7411
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.0 bidirectional=False
+Config: {'seed': 465316, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5790, Validation Accuracy: 0.7512, Validation F1: 0.7299, Best F1: 0.7299 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4906, Validation Accuracy: 0.7474, Validation F1: 0.7413, Best F1: 0.7413 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4647, Validation Accuracy: 0.7359, Validation F1: 0.7338, Best F1: 0.7413 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4507, Validation Accuracy: 0.6903, Validation F1: 0.6158, Best F1: 0.7413 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4363, Validation Accuracy: 0.7002, Validation F1: 0.6473, Best F1: 0.7413 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.4245, Validation Accuracy: 0.6815, Validation F1: 0.5863, Best F1: 0.7413 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.4072, Validation Accuracy: 0.6562, Validation F1: 0.5300, Best F1: 0.7413 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3910, Validation Accuracy: 0.6601, Validation F1: 0.5432, Best F1: 0.7413 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3742, Validation Accuracy: 0.6738, Validation F1: 0.5997, Best F1: 0.7413 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3593, Validation Accuracy: 0.6524, Validation F1: 0.5142, Best F1: 0.7413 at Epoch 2
+Test Accuracy: 0.6640, Test F1: 0.5327
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.0 bidirectional=True
+Config: {'seed': 903578, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5462, Validation Accuracy: 0.7523, Validation F1: 0.7777, Best F1: 0.7777 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4601, Validation Accuracy: 0.7622, Validation F1: 0.7876, Best F1: 0.7876 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4316, Validation Accuracy: 0.7622, Validation F1: 0.7753, Best F1: 0.7876 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4021, Validation Accuracy: 0.7628, Validation F1: 0.7780, Best F1: 0.7876 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3738, Validation Accuracy: 0.7727, Validation F1: 0.7839, Best F1: 0.7876 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3478, Validation Accuracy: 0.7496, Validation F1: 0.7697, Best F1: 0.7876 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3079, Validation Accuracy: 0.7490, Validation F1: 0.7686, Best F1: 0.7876 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.2877, Validation Accuracy: 0.7298, Validation F1: 0.7576, Best F1: 0.7876 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2626, Validation Accuracy: 0.7199, Validation F1: 0.7319, Best F1: 0.7876 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2400, Validation Accuracy: 0.7293, Validation F1: 0.7631, Best F1: 0.7876 at Epoch 2
+Test Accuracy: 0.7133, Test F1: 0.7475
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.25 bidirectional=False
+Config: {'seed': 989795, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5967, Validation Accuracy: 0.7430, Validation F1: 0.7713, Best F1: 0.7713 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5035, Validation Accuracy: 0.7364, Validation F1: 0.7749, Best F1: 0.7749 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4670, Validation Accuracy: 0.7337, Validation F1: 0.7762, Best F1: 0.7762 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4550, Validation Accuracy: 0.7496, Validation F1: 0.7765, Best F1: 0.7765 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4391, Validation Accuracy: 0.7359, Validation F1: 0.7693, Best F1: 0.7765 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4323, Validation Accuracy: 0.7309, Validation F1: 0.7669, Best F1: 0.7765 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4171, Validation Accuracy: 0.7392, Validation F1: 0.7654, Best F1: 0.7765 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.3975, Validation Accuracy: 0.7408, Validation F1: 0.7621, Best F1: 0.7765 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.3919, Validation Accuracy: 0.7337, Validation F1: 0.7685, Best F1: 0.7765 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3724, Validation Accuracy: 0.7337, Validation F1: 0.7529, Best F1: 0.7765 at Epoch 4
+Test Accuracy: 0.7443, Test F1: 0.7625
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.25 bidirectional=True
+Config: {'seed': 958172, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5575, Validation Accuracy: 0.7177, Validation F1: 0.6436, Best F1: 0.6436 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4684, Validation Accuracy: 0.7512, Validation F1: 0.7087, Best F1: 0.7087 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4403, Validation Accuracy: 0.7490, Validation F1: 0.7023, Best F1: 0.7087 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4208, Validation Accuracy: 0.7370, Validation F1: 0.6888, Best F1: 0.7087 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3936, Validation Accuracy: 0.7397, Validation F1: 0.6930, Best F1: 0.7087 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3646, Validation Accuracy: 0.7276, Validation F1: 0.6934, Best F1: 0.7087 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3365, Validation Accuracy: 0.7309, Validation F1: 0.6934, Best F1: 0.7087 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3189, Validation Accuracy: 0.7320, Validation F1: 0.6958, Best F1: 0.7087 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2913, Validation Accuracy: 0.7111, Validation F1: 0.6544, Best F1: 0.7087 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2707, Validation Accuracy: 0.7348, Validation F1: 0.6998, Best F1: 0.7087 at Epoch 2
+Test Accuracy: 0.7374, Test F1: 0.6983
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.5 bidirectional=False
+Config: {'seed': 927689, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6117, Validation Accuracy: 0.7523, Validation F1: 0.7485, Best F1: 0.7485 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5027, Validation Accuracy: 0.7770, Validation F1: 0.7929, Best F1: 0.7929 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4795, Validation Accuracy: 0.7738, Validation F1: 0.7659, Best F1: 0.7929 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4608, Validation Accuracy: 0.7880, Validation F1: 0.7949, Best F1: 0.7949 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4537, Validation Accuracy: 0.7315, Validation F1: 0.7784, Best F1: 0.7949 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4457, Validation Accuracy: 0.7584, Validation F1: 0.7793, Best F1: 0.7949 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4281, Validation Accuracy: 0.7595, Validation F1: 0.7772, Best F1: 0.7949 at Epoch 4
+Epoch 8/10, Epoch Loss: 0.4215, Validation Accuracy: 0.7490, Validation F1: 0.7800, Best F1: 0.7949 at Epoch 4
+Epoch 9/10, Epoch Loss: 0.4040, Validation Accuracy: 0.7507, Validation F1: 0.7783, Best F1: 0.7949 at Epoch 4
+Epoch 10/10, Epoch Loss: 0.3946, Validation Accuracy: 0.7474, Validation F1: 0.7734, Best F1: 0.7949 at Epoch 4
+Test Accuracy: 0.7431, Test F1: 0.7667
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=2 dropout=0.5 bidirectional=True
+Config: {'seed': 271026, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 2, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5732, Validation Accuracy: 0.7298, Validation F1: 0.7071, Best F1: 0.7071 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4704, Validation Accuracy: 0.7518, Validation F1: 0.7384, Best F1: 0.7384 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4451, Validation Accuracy: 0.7243, Validation F1: 0.6790, Best F1: 0.7384 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4242, Validation Accuracy: 0.7485, Validation F1: 0.7190, Best F1: 0.7384 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4078, Validation Accuracy: 0.7046, Validation F1: 0.6285, Best F1: 0.7384 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3889, Validation Accuracy: 0.7326, Validation F1: 0.6970, Best F1: 0.7384 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3648, Validation Accuracy: 0.6864, Validation F1: 0.6102, Best F1: 0.7384 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3453, Validation Accuracy: 0.7073, Validation F1: 0.6629, Best F1: 0.7384 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3238, Validation Accuracy: 0.6870, Validation F1: 0.6107, Best F1: 0.7384 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3029, Validation Accuracy: 0.6996, Validation F1: 0.6361, Best F1: 0.7384 at Epoch 2
+Test Accuracy: 0.7248, Test F1: 0.6648
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.0 bidirectional=False
+Config: {'seed': 15387, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5964, Validation Accuracy: 0.6914, Validation F1: 0.7511, Best F1: 0.7511 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4994, Validation Accuracy: 0.7188, Validation F1: 0.7619, Best F1: 0.7619 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4733, Validation Accuracy: 0.7232, Validation F1: 0.7627, Best F1: 0.7627 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4468, Validation Accuracy: 0.7210, Validation F1: 0.7613, Best F1: 0.7627 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4411, Validation Accuracy: 0.7254, Validation F1: 0.7608, Best F1: 0.7627 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4197, Validation Accuracy: 0.6936, Validation F1: 0.7540, Best F1: 0.7627 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.3972, Validation Accuracy: 0.7282, Validation F1: 0.7673, Best F1: 0.7673 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.3888, Validation Accuracy: 0.7095, Validation F1: 0.7620, Best F1: 0.7673 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.3749, Validation Accuracy: 0.7024, Validation F1: 0.7493, Best F1: 0.7673 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.3518, Validation Accuracy: 0.6969, Validation F1: 0.7542, Best F1: 0.7673 at Epoch 7
+Test Accuracy: 0.6858, Test F1: 0.7463
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.0 bidirectional=True
+Config: {'seed': 599031, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.0, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5565, Validation Accuracy: 0.7738, Validation F1: 0.7936, Best F1: 0.7936 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4602, Validation Accuracy: 0.7842, Validation F1: 0.7950, Best F1: 0.7950 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4417, Validation Accuracy: 0.7825, Validation F1: 0.7719, Best F1: 0.7950 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4058, Validation Accuracy: 0.7677, Validation F1: 0.7614, Best F1: 0.7950 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3770, Validation Accuracy: 0.7699, Validation F1: 0.7674, Best F1: 0.7950 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3445, Validation Accuracy: 0.7595, Validation F1: 0.7439, Best F1: 0.7950 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3101, Validation Accuracy: 0.7419, Validation F1: 0.7081, Best F1: 0.7950 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.2847, Validation Accuracy: 0.7551, Validation F1: 0.7389, Best F1: 0.7950 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2557, Validation Accuracy: 0.7298, Validation F1: 0.7159, Best F1: 0.7950 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2241, Validation Accuracy: 0.7414, Validation F1: 0.7361, Best F1: 0.7950 at Epoch 2
+Test Accuracy: 0.7500, Test F1: 0.7477
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.25 bidirectional=False
+Config: {'seed': 429184, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5926, Validation Accuracy: 0.7079, Validation F1: 0.6376, Best F1: 0.6376 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5021, Validation Accuracy: 0.7419, Validation F1: 0.7018, Best F1: 0.7018 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4748, Validation Accuracy: 0.7529, Validation F1: 0.7384, Best F1: 0.7384 at Epoch 3
+Epoch 4/10, Epoch Loss: 0.4497, Validation Accuracy: 0.7293, Validation F1: 0.6776, Best F1: 0.7384 at Epoch 3
+Epoch 5/10, Epoch Loss: 0.4414, Validation Accuracy: 0.7430, Validation F1: 0.7064, Best F1: 0.7384 at Epoch 3
+Epoch 6/10, Epoch Loss: 0.4264, Validation Accuracy: 0.7468, Validation F1: 0.7208, Best F1: 0.7384 at Epoch 3
+Epoch 7/10, Epoch Loss: 0.4149, Validation Accuracy: 0.7381, Validation F1: 0.6948, Best F1: 0.7384 at Epoch 3
+Epoch 8/10, Epoch Loss: 0.3953, Validation Accuracy: 0.7271, Validation F1: 0.6728, Best F1: 0.7384 at Epoch 3
+Epoch 9/10, Epoch Loss: 0.3894, Validation Accuracy: 0.7073, Validation F1: 0.6382, Best F1: 0.7384 at Epoch 3
+Epoch 10/10, Epoch Loss: 0.3767, Validation Accuracy: 0.7133, Validation F1: 0.6497, Best F1: 0.7384 at Epoch 3
+Test Accuracy: 0.7064, Test F1: 0.6374
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.25 bidirectional=True
+Config: {'seed': 32416, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.25, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5570, Validation Accuracy: 0.7721, Validation F1: 0.7589, Best F1: 0.7589 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4655, Validation Accuracy: 0.7534, Validation F1: 0.7643, Best F1: 0.7643 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4449, Validation Accuracy: 0.7600, Validation F1: 0.7458, Best F1: 0.7643 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4061, Validation Accuracy: 0.7589, Validation F1: 0.7360, Best F1: 0.7643 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.3848, Validation Accuracy: 0.7567, Validation F1: 0.7386, Best F1: 0.7643 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.3651, Validation Accuracy: 0.7540, Validation F1: 0.7475, Best F1: 0.7643 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3433, Validation Accuracy: 0.7221, Validation F1: 0.6693, Best F1: 0.7643 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3136, Validation Accuracy: 0.7490, Validation F1: 0.7304, Best F1: 0.7643 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.2984, Validation Accuracy: 0.7353, Validation F1: 0.7025, Best F1: 0.7643 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.2748, Validation Accuracy: 0.7287, Validation F1: 0.6780, Best F1: 0.7643 at Epoch 2
+Test Accuracy: 0.7099, Test F1: 0.6595
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.5 bidirectional=False
+Config: {'seed': 896858, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': False}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.6073, Validation Accuracy: 0.6678, Validation F1: 0.5644, Best F1: 0.5644 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.5018, Validation Accuracy: 0.7128, Validation F1: 0.6628, Best F1: 0.6628 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4852, Validation Accuracy: 0.6991, Validation F1: 0.6135, Best F1: 0.6628 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4661, Validation Accuracy: 0.7238, Validation F1: 0.6706, Best F1: 0.6706 at Epoch 4
+Epoch 5/10, Epoch Loss: 0.4597, Validation Accuracy: 0.7221, Validation F1: 0.6627, Best F1: 0.6706 at Epoch 4
+Epoch 6/10, Epoch Loss: 0.4436, Validation Accuracy: 0.7210, Validation F1: 0.6697, Best F1: 0.6706 at Epoch 4
+Epoch 7/10, Epoch Loss: 0.4392, Validation Accuracy: 0.7441, Validation F1: 0.7613, Best F1: 0.7613 at Epoch 7
+Epoch 8/10, Epoch Loss: 0.4252, Validation Accuracy: 0.7172, Validation F1: 0.6494, Best F1: 0.7613 at Epoch 7
+Epoch 9/10, Epoch Loss: 0.4178, Validation Accuracy: 0.7271, Validation F1: 0.6791, Best F1: 0.7613 at Epoch 7
+Epoch 10/10, Epoch Loss: 0.4049, Validation Accuracy: 0.7567, Validation F1: 0.7518, Best F1: 0.7613 at Epoch 7
+Test Accuracy: 0.7546, Test F1: 0.7476
+======================================================================================================================================================
+Config: hidden_size=200 num_layers=3 dropout=0.5 bidirectional=True
+Config: {'seed': 304000, 'embedding_build_type': 'pretrained', 'model_type': 'vanilla_rnn', 'embedding_dim': 300, 'hidden_dim': 200, 'num_layers': 3, 'train_batch_size': 10, 'test_batch_size': 32, 'num_epochs': 10, 'learning_rate': 0.0001, 'vocab_size': -1, 'batch_size_train': 10, 'batch_size_test': 32, 'dropout': 0.5, 'bidirectional': True}
+Using device: cpu
+Model type: vanilla_rnn, Embedding build type: pretrained
+Epoch 1/10, Epoch Loss: 0.5791, Validation Accuracy: 0.7337, Validation F1: 0.7718, Best F1: 0.7718 at Epoch 1
+Epoch 2/10, Epoch Loss: 0.4815, Validation Accuracy: 0.7556, Validation F1: 0.7828, Best F1: 0.7828 at Epoch 2
+Epoch 3/10, Epoch Loss: 0.4429, Validation Accuracy: 0.7260, Validation F1: 0.7706, Best F1: 0.7828 at Epoch 2
+Epoch 4/10, Epoch Loss: 0.4235, Validation Accuracy: 0.7441, Validation F1: 0.7762, Best F1: 0.7828 at Epoch 2
+Epoch 5/10, Epoch Loss: 0.4161, Validation Accuracy: 0.7403, Validation F1: 0.7787, Best F1: 0.7828 at Epoch 2
+Epoch 6/10, Epoch Loss: 0.4020, Validation Accuracy: 0.7501, Validation F1: 0.7816, Best F1: 0.7828 at Epoch 2
+Epoch 7/10, Epoch Loss: 0.3775, Validation Accuracy: 0.7463, Validation F1: 0.7638, Best F1: 0.7828 at Epoch 2
+Epoch 8/10, Epoch Loss: 0.3588, Validation Accuracy: 0.7567, Validation F1: 0.7793, Best F1: 0.7828 at Epoch 2
+Epoch 9/10, Epoch Loss: 0.3430, Validation Accuracy: 0.7375, Validation F1: 0.7741, Best F1: 0.7828 at Epoch 2
+Epoch 10/10, Epoch Loss: 0.3238, Validation Accuracy: 0.7337, Validation F1: 0.7605, Best F1: 0.7828 at Epoch 2
+Test Accuracy: 0.7271, Test F1: 0.7551
+======================================================================================================================================================
